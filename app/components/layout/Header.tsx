@@ -58,8 +58,6 @@ const navigation = [
     ],
   },
   { name: "Bespoke", href: "/bespoke" },
-  { name: "About Us", href: "/about" },
-  { name: "Contact", href: "/contact" },
 ];
 
 export function Header() {
@@ -69,9 +67,10 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
-      {/* Top bar */}
-      <div className="bg-primary text-primary-foreground text-center py-2 text-xs tracking-widest uppercase">
-        Free Shipping on Orders Above NPR 10,000 • 925 Certified Silver
+      <div className="bg-primary text-primary-foreground py-1 text-center text-xs md:text-sm overflow-hidden ">
+        <div className="animate-marquee whitespace-nowrap">
+          Free Shipping on Orders Above NPR 10,000 • 925 Certified Silver
+        </div>
       </div>
 
       <div className="container mx-auto px-4 lg:px-8">
@@ -118,9 +117,8 @@ export function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <h1 className="text-xl md:text-2xl font-serif tracking-wider">
-              <span className="font-semibold">ARYAL</span>
-              <span className="font-light italic ml-1">Sirin Gems</span>
+            <h1 className="text-xl md:text-2xl font-serif font-cursive ">
+              <span className="font-semibold">Aryal siring gems</span>
             </h1>
           </Link>
 
@@ -189,10 +187,10 @@ export function Header() {
               asChild
               className="text-foreground hover:text-muted-foreground hidden sm:flex"
             >
-              <Link href="/account">
+              {/* <Link href="/account">
                 <User className="h-5 w-5" />
                 <span className="sr-only">Account</span>
-              </Link>
+              </Link> */}
             </Button>
             <Button
               variant="ghost"

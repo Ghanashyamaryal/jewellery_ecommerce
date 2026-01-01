@@ -29,7 +29,9 @@ export default function BespokePage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Thank you for your inquiry! We'll contact you within 24 hours.");
+    toast.success(
+      "Thank you for your inquiry! We'll contact you within 24 hours."
+    );
     setFormData({
       name: "",
       email: "",
@@ -45,7 +47,7 @@ export default function BespokePage() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative py-24 md:py-32 bg-muted/50">
+      <section className="relative py-12 md:py-12 xl:py-20 bg-muted/50">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
             Custom Creations
@@ -54,22 +56,40 @@ export default function BespokePage() {
             Bespoke Jewelry
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Create a one-of-a-kind piece that tells your unique story. 
-            Work directly with our master artisans to bring your vision to life.
+            Create a one-of-a-kind piece that tells your unique story. Work
+            directly with our master artisans to bring your vision to life.
           </p>
         </div>
       </section>
 
       {/* Process */}
-      <section className="py-24">
+      <section className="py-12 md:py-12 xl:py-20">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl font-serif text-center mb-16">The Bespoke Process</h2>
+          <h2 className="text-3xl font-serif text-center mb-16">
+            The Bespoke Process
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Consultation", desc: "Share your ideas and inspiration with us" },
-              { step: "02", title: "Design", desc: "Our artisans create detailed sketches" },
-              { step: "03", title: "Crafting", desc: "Your piece is handcrafted with care" },
-              { step: "04", title: "Delivery", desc: "Receive your unique creation" },
+              {
+                step: "01",
+                title: "Consultation",
+                desc: "Share your ideas and inspiration with us",
+              },
+              {
+                step: "02",
+                title: "Design",
+                desc: "Our artisans create detailed sketches",
+              },
+              {
+                step: "03",
+                title: "Crafting",
+                desc: "Your piece is handcrafted with care",
+              },
+              {
+                step: "04",
+                title: "Delivery",
+                desc: "Receive your unique creation",
+              },
             ].map((item) => (
               <div key={item.step} className="text-center">
                 <div className="w-16 h-16 rounded-full border-2 border-foreground flex items-center justify-center mx-auto mb-4">
@@ -84,12 +104,15 @@ export default function BespokePage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-12 md:py-12 xl:py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-serif text-center mb-4">Start Your Journey</h2>
+            <h2 className="text-3xl font-serif text-center mb-4">
+              Start Your Journey
+            </h2>
             <p className="text-center text-muted-foreground mb-12">
-              Tell us about your dream piece and we'll get back to you within 24 hours.
+              Tell us about your dream piece and we'll get back to you within 24
+              hours.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -99,7 +122,9 @@ export default function BespokePage() {
                   <Input
                     id="name"
                     value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
                     required
                   />
                 </div>
@@ -109,7 +134,9 @@ export default function BespokePage() {
                     id="email"
                     type="email"
                     value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                     required
                   />
                 </div>
@@ -121,14 +148,18 @@ export default function BespokePage() {
                   <Input
                     id="phone"
                     value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="jewelryType">Jewelry Type *</Label>
                   <Select
                     value={formData.jewelryType}
-                    onValueChange={(value) => setFormData({ ...formData, jewelryType: value })}
+                    onValueChange={(value) =>
+                      setFormData({ ...formData, jewelryType: value })
+                    }
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="Select type" />
@@ -150,13 +181,17 @@ export default function BespokePage() {
                   <Label htmlFor="metalPreference">Metal Preference</Label>
                   <Select
                     value={formData.metalPreference}
-                    onValueChange={(value) => setFormData({ ...formData, metalPreference: value })}
+                    onValueChange={(value) =>
+                      setFormData({ ...formData, metalPreference: value })
+                    }
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="Select metal" />
                     </SelectTrigger>
                     <SelectContent className="bg-background border border-border">
-                      <SelectItem value="925-silver">925 Sterling Silver</SelectItem>
+                      <SelectItem value="925-silver">
+                        925 Sterling Silver
+                      </SelectItem>
                       <SelectItem value="copper">Copper</SelectItem>
                       <SelectItem value="mixed">Mixed Metals</SelectItem>
                     </SelectContent>
@@ -166,7 +201,9 @@ export default function BespokePage() {
                   <Label htmlFor="stonePreference">Stone Preference</Label>
                   <Select
                     value={formData.stonePreference}
-                    onValueChange={(value) => setFormData({ ...formData, stonePreference: value })}
+                    onValueChange={(value) =>
+                      setFormData({ ...formData, stonePreference: value })
+                    }
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="Select stone" />
@@ -188,7 +225,9 @@ export default function BespokePage() {
                   id="budget"
                   type="number"
                   value={formData.budget}
-                  onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, budget: e.target.value })
+                  }
                   placeholder="e.g., 50000"
                 />
               </div>
@@ -198,14 +237,19 @@ export default function BespokePage() {
                 <Textarea
                   id="description"
                   value={formData.description}
-                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, description: e.target.value })
+                  }
                   placeholder="Describe your ideal piece in detail..."
                   rows={5}
                   required
                 />
               </div>
 
-              <Button type="submit" className="w-full tracking-widest uppercase text-sm">
+              <Button
+                type="submit"
+                className="w-full tracking-widest uppercase text-sm"
+              >
                 Submit Your Design
               </Button>
             </form>
