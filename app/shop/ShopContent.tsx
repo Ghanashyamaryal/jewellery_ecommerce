@@ -119,22 +119,8 @@ export function ShopContent() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-muted/50 py-16 md:py-24">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            Our Collection
-          </p>
-          <h1 className="text-3xl md:text-5xl font-serif mb-4">Shop All</h1>
-          <p className="text-muted-foreground max-w-xl mx-auto">
-            Discover our curated collection of handcrafted Nepali silver jewelry
-            and rare gemstones
-          </p>
-        </div>
-      </section>
-
       {/* Shop Content */}
-      <section className="py-12">
+      <section className="py-4">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Desktop Filters */}

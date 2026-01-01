@@ -34,13 +34,15 @@ const collections = [
 
 export function FeaturedCollections() {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-8 md:py-12 xl:py-16 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
             Curated Collections
           </p>
-          <h2 className="text-3xl md:text-4xl font-serif">Explore Our World</h2>
+          <h2 className="text-3xl md:text-4xl font-serif">
+            Explore Our Categories
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

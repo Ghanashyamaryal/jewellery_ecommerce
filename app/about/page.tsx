@@ -23,12 +23,12 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="py-24">
+      <section className="py-8 md:py-12 xl:py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="aspect-[4/5] overflow-hidden bg-muted">
               <img
-                src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=800&h=1000&fit=crop&q=80"
+                src="/image1.png"
                 alt="Master artisan at work"
                 className="w-full h-full object-cover"
               />
@@ -60,7 +60,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-8 md:py-12 xl:py-16 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-3xl font-serif text-center mb-16">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -88,7 +88,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24">
+      <section className="py-8 md:py-12 xl:py-16">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h2 className="text-3xl font-serif mb-6">Experience Our Craft</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">

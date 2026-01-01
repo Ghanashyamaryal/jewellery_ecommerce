@@ -11,9 +11,9 @@ export default function Home() {
     <Layout>
       <HeroSection />
       <FeaturedCollections />
-      <BrandStory />
       <BirthstoneWidget />
       <InstagramGallery />
+      <BrandStory />
       <CTASection />
     </Layout>
   );

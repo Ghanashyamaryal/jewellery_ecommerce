@@ -1,46 +1,66 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const BACKGROUND_IMAGES = [
+  "/home.jpg",
+  "/homeimage.jpg",
+  "/image1.png",
+  "/home.jpg",
+];
+
 export function HeroSection() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % BACKGROUND_IMAGES.length);
+    }, 2000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-muted via-background to-accent">
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23333333' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        />
+    <section className="relative h-[70vh] min-h-[600px] flex items-center overflow-hidden bg-[#1a1625]">
+      <div className="absolute inset-0 z-0">
+        {BACKGROUND_IMAGES.map((img, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? "opacity-90" : "opacity-0"
+            }`}
+          >
+            <Image
+              src={img}
+              alt="Jewelry"
+              fill
+              className="object-cover"
+              priority={index === 0}
+            />
+          </div>
+        ))}
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground animate-fade-in">
+      <div className="relative z-10 container mx-auto px-3 lg:px-16 flex justify-start items-center w-full">
+        <div className="max-w-2xl space-y-8 text-left">
+          {" "}
+          <p className="text-sm md:text-base tracking-[0.3em] uppercase text-white/90">
             Authentic Nepali Craftsmanship
           </p>
-
           <h1
-            className="text-4xl md:text-6xl lg:text-7xl font-serif leading-tight animate-fade-in-up"
+            className="text-4xl lg:py-8 md:text-6xl font-serif leading-tight animate-fade-in-up text-white"
             style={{ animationDelay: "0.1s" }}
           >
             Timeless Silver,
             <br />
             <span className="italic font-light">Rare Gemstones</span>
           </h1>
-
-          <p
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in-up"
-            style={{ animationDelay: "0.2s" }}
-          >
-            Discover handcrafted 925 sterling silver jewelry and ethically
-            sourced gemstones, carrying centuries of Nepali heritage.
-          </p>
-
           <div
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
+            className="flex flex-col sm:flex-row items-start justify-start gap-4 animate-fade-in-up"
             style={{ animationDelay: "0.3s" }}
           >
             <Button
@@ -48,7 +68,7 @@ export function HeroSection() {
               size="lg"
               className="min-w-[200px] tracking-widest uppercase text-sm"
             >
-              <Link href="/shop">
+              <Link href="/shop" className="flex items-center">
                 Discover Collections
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -57,7 +77,7 @@ export function HeroSection() {
               asChild
               variant="outline"
               size="lg"
-              className="min-w-[200px] tracking-widest uppercase text-sm"
+              className="min-w-[200px] tracking-widest uppercase text-sm bg-transparent text-white border-white/40 hover:bg-white hover:text-black"
             >
               <Link href="/bespoke">Custom Design</Link>
             </Button>
@@ -65,13 +85,9 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-foreground/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-foreground/30 rounded-full mt-2" />
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-white/20 rounded-full mt-2" />
         </div>
       </div>
     </section>

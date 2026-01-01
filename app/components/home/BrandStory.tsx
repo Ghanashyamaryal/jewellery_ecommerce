@@ -4,24 +4,21 @@ import { Button } from "@/components/ui/button";
 
 export function BrandStory() {
   return (
-    <section className="py-24 bg-muted/50">
+    <section className="py-8 md:py-12 xl:py-16 bg-muted/50">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Image */}
           <div className="relative">
             <div className="aspect-[4/5] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=800&h=1000&fit=crop&q=80"
+                src="/homeimage.jpg"
                 alt="Nepali artisan crafting silver jewelry"
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Decorative frame */}
             <div className="absolute -bottom-6 -right-6 w-48 h-48 border border-secondary -z-10" />
             <div className="absolute -top-6 -left-6 w-48 h-48 border border-secondary -z-10" />
           </div>
 
-          {/* Content */}
           <div className="space-y-8">
             <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">
               Our Heritage
@@ -58,7 +55,7 @@ export function BrandStory() {
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-serif text-foreground">50+</p>
+                <p className="text-3xl font-serif text-foreground">15+</p>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground">
                   Years Heritage
                 </p>
@@ -72,12 +69,12 @@ export function BrandStory() {
             </div>
             <Button
               asChild
-              variant="outline"
+              variant="default"
               size="lg"
               className="tracking-widest uppercase text-sm"
             >
               <Link href="/about">
-                Our Story
+                Discover Our Story
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

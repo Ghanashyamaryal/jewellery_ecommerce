@@ -33,25 +33,6 @@ const trustBadges = [
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
-      {/* Trust Badges */}
-      <div className="border-b border-primary-foreground/10">
-        <div className="container mx-auto px-4 lg:px-8 py-8">
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            {trustBadges.map((badge) => (
-              <div
-                key={badge.label}
-                className="flex items-center gap-3 text-sm"
-              >
-                <span className="w-10 h-10 rounded-full border border-primary-foreground/30 flex items-center justify-center font-serif text-xs">
-                  {badge.icon}
-                </span>
-                <span className="tracking-wide">{badge.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer */}
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
