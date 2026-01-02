@@ -15,8 +15,6 @@ export function BrandStory() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 border border-secondary -z-10" />
-            <div className="absolute -top-6 -left-6 w-48 h-48 border border-secondary -z-10" />
           </div>
 
           <div className="space-y-8">

@@ -25,7 +25,6 @@ export default function ContactPage() {
 
   return (
     <Layout>
-      {/* Hero */}
       <section className="relative py-16 md:py-20 bg-muted/50">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">

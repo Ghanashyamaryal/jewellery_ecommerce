@@ -194,7 +194,7 @@ export function BirthstoneWidget() {
           <div className="flex justify-center gap-2 mb-12">
             <button
               onClick={() => setActiveTab("month")}
-              className={`px-8 py-3 text-sm tracking-widest uppercase transition-all duration-300 border ${
+              className={`px-8 py-3 text-sm tracking-widest cursor-pointer uppercase transition-all duration-300 border ${
                 activeTab === "month"
                   ? "border-foreground bg-foreground text-background"
                   : "border-border hover:border-foreground/50"
@@ -204,7 +204,7 @@ export function BirthstoneWidget() {
             </button>
             <button
               onClick={() => setActiveTab("zodiac")}
-              className={`px-8 py-3 text-sm tracking-widest uppercase transition-all duration-300 border ${
+              className={`px-8 py-3 text-sm tracking-widest cursor-pointer uppercase transition-all duration-300 border ${
                 activeTab === "zodiac"
                   ? "border-foreground bg-foreground text-background"
                   : "border-border hover:border-foreground/50"
@@ -221,7 +221,7 @@ export function BirthstoneWidget() {
                 <button
                   key={item.month}
                   onClick={() => setSelectedMonth(index)}
-                  className={`p-3 text-center transition-all duration-300 border ${
+                  className={`p-3 text-center transition-all cursor-pointer duration-300 border ${
                     selectedMonth === index
                       ? "border-foreground bg-foreground text-background"
                       : "border-border hover:border-foreground/50"
@@ -245,7 +245,7 @@ export function BirthstoneWidget() {
                 <button
                   key={item.sign}
                   onClick={() => setSelectedZodiac(index)}
-                  className={`p-3 text-center transition-all duration-300 border ${
+                  className={`p-3 text-center transition-all cursor-pointer duration-300 border ${
                     selectedZodiac === index
                       ? "border-foreground bg-foreground text-background"
                       : "border-border hover:border-foreground/50"
@@ -282,7 +282,7 @@ export function BirthstoneWidget() {
                   <Button
                     asChild
                     size="sm"
-                    className="tracking-widest uppercase text-xs"
+                    className="tracking-widest cursor-pointer uppercase text-xs"
                   >
                     <Link
                       href={`/shop/gemstones?stone=${selectedMonth_data.stone.toLowerCase()}`}
@@ -316,7 +316,7 @@ export function BirthstoneWidget() {
                   <Button
                     asChild
                     size="sm"
-                    className="tracking-widest uppercase text-xs"
+                    className="tracking-widest cursor-pointer uppercase text-xs"
                   >
                     <Link
                       href={`/shop/gemstones?stone=${selectedZodiac_data.stone.toLowerCase()}`}

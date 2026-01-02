@@ -241,7 +241,7 @@ export default function ProductPage() {
                   },
                   {
                     icon: RotateCw,
-                    label: "14-Day Returns",
+                    label: "7-Day Returns",
                     desc: "Money-back guarantee",
                   },
                   {

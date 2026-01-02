@@ -4,12 +4,40 @@ import Link from "next/link";
 import { Eye, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Product } from "@/data/products";
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 interface ProductCardProps {
   product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
+  const getRatingStars = (rating: number) => {
+    const fullStars = Math.floor(rating);
+    const halfStar = rating % 1 !== 0;
+    const stars = [];
+
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(<FaStar key={i} className="text-yellow-500 text-[14px]" />);
+    }
+
+    if (halfStar) {
+      stars.push(
+        <FaStarHalfAlt
+          key={fullStars}
+          className="text-yellow-500 text-[14px]"
+        />
+      );
+    }
+
+    while (stars.length < 5) {
+      stars.push(
+        <FaStar key={stars.length} className="text-gray-300 text-[14px]" />
+      );
+    }
+
+    return stars;
+  };
+
   return (
     <div className="group relative">
       {/* Image Container */}
@@ -31,32 +59,27 @@ export function ProductCard({ product }: ProductCardProps) {
         )}
 
         {/* Badges */}
-        <div className="absolute top-3 left-3 flex flex-col gap-2">
+        <div className="absolute top-3 left-3 flex flex-col ">
           {product.isNew && (
-            <span className="px-2 py-1 text-[10px] tracking-widest uppercase bg-foreground text-background">
+            <span className="px-2 py-1 w-fit text-[10px] tracking-widest uppercase bg-foreground text-background">
               New
-            </span>
-          )}
-          {product.comparePrice && (
-            <span className="px-2 py-1 text-[10px] tracking-widest uppercase bg-destructive text-destructive-foreground">
-              Sale
             </span>
           )}
         </div>
 
         {/* Quick Actions */}
-        <div className="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+        <div className="absolute bg-background/90 top-3 right-3 flex flex-col  rounded-xl opacity-100 transition-opacity overflow-hidden">
           <Button
             variant="secondary"
             size="icon"
-            className="h-8 w-8 bg-background/90 hover:bg-background"
+            className="h-8 w-8 bg-background/90 hover:bg-background rounded-none"
           >
             <Heart className="h-4 w-4" />
           </Button>
           <Button
             variant="secondary"
             size="icon"
-            className="h-8 w-8 bg-background/90 hover:bg-background"
+            className="h-8 w-8 bg-background/90 hover:bg-background rounded-none"
             asChild
           >
             <Link href={`/product/${product.slug}`}>
@@ -67,7 +90,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </Link>
 
       {/* Product Info */}
-      <div className="pt-4 space-y-2">
+      <div className="pt-4 px-1  space-y-2">
         {/* Features */}
         <div className="flex gap-2 flex-wrap">
           {product.features.slice(0, 2).map((feature) => (
@@ -82,19 +105,24 @@ export function ProductCard({ product }: ProductCardProps) {
 
         {/* Title */}
         <Link href={`/product/${product.slug}`}>
-          <h3 className="font-serif text-lg hover:text-muted-foreground transition-colors">
+          <h3 className="font-serif text-lg line-clamp-2 hover:text-muted-foreground transition-colors">
             {product.name}
           </h3>
         </Link>
 
-        {/* Weight */}
-        <p className="text-xs text-muted-foreground">
-          Approx. {product.weight}
-        </p>
+        {/* Weight and Rating */}
+        <div className="flex items-center flex-wrap justify-between gap-1">
+          <div className="flex gap-1">
+            {getRatingStars(product?.rating ?? 4)}
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Approx. {product.weight}
+          </p>
+        </div>
 
         {/* Price */}
-        <div className="flex items-center gap-2">
-          <span className="font-medium">
+        <div className="flex items-center gap-1">
+          <span className="font-medium text-sm">
             NPR {product.price.toLocaleString()}
           </span>
           {product.comparePrice && (

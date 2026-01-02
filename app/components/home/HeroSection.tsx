@@ -19,7 +19,7 @@ export function HeroSection() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % BACKGROUND_IMAGES.length);
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(timer);
   }, []);
@@ -47,7 +47,6 @@ export function HeroSection() {
 
       <div className="relative z-10 container mx-auto px-3 lg:px-16 flex justify-start items-center w-full">
         <div className="max-w-2xl space-y-8 text-left">
-          {" "}
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-white/90">
             Authentic Nepali Craftsmanship
           </p>
@@ -85,9 +84,26 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/20 rounded-full mt-2" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-4">
+        <div className="animate-bounce mb-2">
+          <div className="w-5 h-8 border-2 border-white/20 rounded-full flex justify-center">
+            <div className="w-0.5 h-2 bg-white/40 rounded-full mt-1.5" />
+          </div>
+        </div>
+
+        <div className="flex gap-2.5 items-center">
+          {BACKGROUND_IMAGES.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`h-1.5 transition-all duration-500 rounded-full ${
+                index === currentSlide
+                  ? "w-8 bg-white"
+                  : "w-1.5 bg-white/30 hover:bg-white/60"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>

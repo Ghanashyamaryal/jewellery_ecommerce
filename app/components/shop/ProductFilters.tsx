@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, X } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { Checkbox } from "@/components/ui/checkbox";
 import { categories, metalTypes, stoneTypes, occasions } from "@/data/products";
+import { Button } from "../ui/button";
+import { Numerals } from "react-day-picker";
 
 interface ProductFiltersProps {
   filters: {
@@ -14,11 +16,15 @@ interface ProductFiltersProps {
     occasion: string;
     priceRange: [number, number];
   };
+  activeFiltersCount: number;
+  clearFilters?: () => void;
   onFilterChange: (key: string, value: any) => void;
 }
 
 export function ProductFilters({
   filters,
+  clearFilters,
+  activeFiltersCount,
   onFilterChange,
 }: ProductFiltersProps) {
   const [openSections, setOpenSections] = useState({
@@ -35,10 +41,23 @@ export function ProductFilters({
 
   return (
     <aside className="space-y-6">
-      <div>
+      <div className="flex items-center justify-between">
         <h2 className="text-sm font-medium tracking-widest uppercase mb-6">
           Filters
         </h2>
+        <div>
+          {activeFiltersCount > 0 && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={clearFilters}
+              className="text-xs gap-1"
+            >
+              Clear all
+              <X className="h-3 w-3" />
+            </Button>
+          )}
+        </div>
       </div>
 
       {/* Category */}

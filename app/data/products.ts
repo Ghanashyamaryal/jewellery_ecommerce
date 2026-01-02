@@ -9,6 +9,7 @@ export interface Product {
   metalType: string;
   stoneType?: string;
   weight: string;
+  rating?: number;
   description: string;
   features: string[];
   images: string[];
@@ -23,7 +24,7 @@ export const products: Product[] = [
     id: "1",
     name: "Himalayan Amethyst Ring",
     slug: "himalayan-amethyst-ring",
-    price: 12500,
+    price: 1250000,
     comparePrice: 15000,
     category: "Jewelry",
     subcategory: "Rings",
@@ -35,6 +36,8 @@ export const products: Product[] = [
     images: [
       "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&h=1000&fit=crop&q=80",
       "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&h=1000&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&h=1000&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&h=1000&fit=crop&q=80",
     ],
     inStock: true,
     isFeatured: true,
@@ -45,7 +48,8 @@ export const products: Product[] = [
     id: "2",
     name: "Turquoise Statement Necklace",
     slug: "turquoise-statement-necklace",
-    price: 28000,
+    price: 280000,
+    comparePrice: 15000,
     category: "Jewelry",
     subcategory: "Necklaces",
     metalType: "925 Sterling Silver",
@@ -95,6 +99,7 @@ export const products: Product[] = [
     features: ["925 Certified", "Handcrafted", "Natural Stone"],
     images: [
       "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&h=1000&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&h=1000&fit=crop&q=80",
     ],
     inStock: true,
     occasion: ["Everyday Wear", "Festive"],
@@ -111,7 +116,8 @@ export const products: Product[] = [
     description: "A beautiful natural amethyst crystal point sourced from the Himalayan region. Perfect for collectors or crystal enthusiasts.",
     features: ["Natural", "Ethically Sourced", "Certificate Included"],
     images: [
-      "https://images.unsplash.com/photo-1551122087-f99a4ade0164?w=800&h=1000&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&h=1000&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&h=1000&fit=crop&q=80",
     ],
     inStock: true,
   },
@@ -128,6 +134,8 @@ export const products: Product[] = [
     features: ["925 Certified", "Handcrafted", "Traditional Design"],
     images: [
       "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&h=1000&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&h=1000&fit=crop&q=80",
+
     ],
     inStock: true,
     isFeatured: true,
@@ -145,6 +153,8 @@ export const products: Product[] = [
     features: ["925 Certified", "Handcrafted", "Oxidized Finish"],
     images: [
       "https://images.unsplash.com/photo-1603974372039-adc49044b6bd?w=800&h=1000&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&h=1000&fit=crop&q=80",
+
     ],
     inStock: true,
     occasion: ["Statement", "Everyday Wear"],
@@ -156,6 +166,7 @@ export const products: Product[] = [
     price: 6500,
     category: "Jewelry",
     subcategory: "Earrings",
+    rating: 4.5,
     metalType: "925 Sterling Silver",
     stoneType: "Peridot",
     weight: "4g",
@@ -163,6 +174,8 @@ export const products: Product[] = [
     features: ["925 Certified", "Handcrafted", "Natural Stone"],
     images: [
       "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=800&h=1000&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&h=1000&fit=crop&q=80",
+
     ],
     inStock: true,
     isNew: true,

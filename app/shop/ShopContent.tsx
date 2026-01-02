@@ -120,7 +120,7 @@ export function ShopContent() {
   return (
     <>
       {/* Shop Content */}
-      <section className="py-4">
+      <section className="py-8 lg:py-12">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Desktop Filters */}
@@ -128,14 +128,14 @@ export function ShopContent() {
               <ProductFilters
                 filters={filters}
                 onFilterChange={handleFilterChange}
+                clearFilters={clearFilters}
+                activeFiltersCount={activeFiltersCount}
               />
             </div>
 
-            {/* Products */}
             <div className="flex-1">
-              {/* Toolbar */}
               <div className="flex items-center justify-between mb-8 pb-6 border-b border-border">
-                <div className="flex items-center gap-4">
+                <div className="flex flex-col items-center gap-2">
                   {/* Mobile Filter Button */}
                   <Sheet>
                     <SheetTrigger asChild className="lg:hidden">
@@ -143,7 +143,7 @@ export function ShopContent() {
                         <Filter className="h-4 w-4" />
                         Filters
                         {activeFiltersCount > 0 && (
-                          <span className="ml-1 px-1.5 py-0.5 text-[10px] bg-foreground text-background rounded-full">
+                          <span className="ml-1 px-1.5 py-0.5 text-[13px]  text-black">
                             {activeFiltersCount}
                           </span>
                         )}
@@ -151,28 +151,13 @@ export function ShopContent() {
                     </SheetTrigger>
                     <SheetContent side="left" className="w-80 overflow-y-auto">
                       <ProductFilters
+                        activeFiltersCount={activeFiltersCount}
+                        clearFilters={clearFilters}
                         filters={filters}
                         onFilterChange={handleFilterChange}
                       />
                     </SheetContent>
                   </Sheet>
-
-                  <p className="text-sm text-muted-foreground">
-                    {filteredProducts.length} product
-                    {filteredProducts.length !== 1 ? "s" : ""}
-                  </p>
-
-                  {activeFiltersCount > 0 && (
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={clearFilters}
-                      className="text-xs gap-1"
-                    >
-                      Clear all
-                      <X className="h-3 w-3" />
-                    </Button>
-                  )}
                 </div>
 
                 <Select value={sortBy} onValueChange={setSortBy}>
@@ -191,7 +176,7 @@ export function ShopContent() {
 
               {/* Product Grid */}
               {filteredProducts.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 gap-y-12">
                   {filteredProducts.map((product) => (
                     <ProductCard key={product.id} product={product} />
                   ))}
@@ -207,21 +192,6 @@ export function ShopContent() {
                   </Button>
                 </div>
               )}
-
-              {/* SEO Footer */}
-              <div className="mt-16 pt-8 border-t border-border">
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  Discover authentic Nepali silver jewelry and precious
-                  gemstones at Aryal Sirin Gems. Our collection features
-                  handcrafted 925 sterling silver rings, necklaces, earrings,
-                  and pendants adorned with natural gemstones including
-                  amethyst, turquoise, moonstone, garnet, and more. Each piece
-                  is crafted by skilled Nepali artisans using traditional
-                  techniques passed down through generations. Shop with
-                  confidence knowing all our silver is 925 certified and
-                  gemstones are ethically sourced.
-                </p>
-              </div>
             </div>
           </div>
         </div>
