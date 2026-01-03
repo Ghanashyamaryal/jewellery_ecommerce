@@ -16,7 +16,7 @@ export function Layout({ children }: LayoutProps) {
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
-      {/* <WhatsAppButton /> */}
+      <WhatsAppButton />
       <CartDrawer />
     </div>
   );
