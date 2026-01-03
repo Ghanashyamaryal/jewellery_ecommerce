@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export function BrandStory() {
   return (
     <section className="py-8 md:py-12 xl:py-16 bg-muted/50">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="w-full max-w-390 mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative">
             <div className="aspect-[4/5] overflow-hidden">

@@ -36,7 +36,7 @@ const instagramPosts = [
 export function InstagramGallery() {
   return (
     <section className="py-8 md:py-12 xl:py-16 bg-muted/30">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="w-full max-w-390 mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
             @aryalsiringems

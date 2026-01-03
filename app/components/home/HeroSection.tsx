@@ -45,7 +45,7 @@ export function HeroSection() {
         ))}
       </div>
 
-      <div className="relative z-10 container mx-auto px-3 lg:px-16 flex justify-start items-center w-full">
+      <div className="relative z-10  max-w-390 mx-auto px-4 lg:px-8 flex justify-start items-center w-full">
         <div className="max-w-2xl space-y-8 text-left">
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-white/90">
             Authentic Nepali Craftsmanship

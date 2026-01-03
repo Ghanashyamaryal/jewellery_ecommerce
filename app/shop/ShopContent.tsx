@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { Filter, X } from "lucide-react";
-import { ProductCard } from "@/components/shop/ProductCard";
+import { ProductCard } from "@/components/common/ProductCard";
 import { ProductFilters } from "@/components/shop/ProductFilters";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -31,7 +31,7 @@ export function ShopContent() {
     metalType: "all",
     stoneType: searchParams.get("stone") || "all",
     occasion: "all",
-    priceRange: [0, 50000] as [number, number],
+    priceRange: [0, 500000] as [number, number],
   });
 
   const handleFilterChange = (key: string, value: any) => {
@@ -104,7 +104,7 @@ export function ShopContent() {
       (key !== "priceRange" && value !== "all") ||
       (key === "priceRange" &&
         Array.isArray(value) &&
-        (value[0] > 0 || value[1] < 50000))
+        (value[0] > 0 || value[1] < 500000))
   ).length;
 
   const clearFilters = () => {
@@ -113,7 +113,7 @@ export function ShopContent() {
       metalType: "all",
       stoneType: "all",
       occasion: "all",
-      priceRange: [0, 50000],
+      priceRange: [0, 500000],
     });
   };
 

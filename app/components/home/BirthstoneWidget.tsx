@@ -178,7 +178,7 @@ export function BirthstoneWidget() {
   return (
     <section className="py-8 md:py-12 xl:py-16 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-[1050px] mx-auto text-center">
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
             Personalized For You
           </p>

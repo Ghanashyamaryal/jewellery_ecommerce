@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export function CTASection() {
   return (
     <section className="py-8 md:py-12 xl:py-16 bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 lg:px-8 text-center">
+      <div className="w-full max-w-390 mx-auto px-4 lg:px-8 text-center">
         <div className="max-w-2xl mx-auto space-y-8">
           <h2 className="text-3xl md:text-4xl font-serif">
             Ready to Discover Your Perfect Piece?

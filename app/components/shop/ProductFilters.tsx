@@ -184,7 +184,7 @@ export function ProductFilters({
                 onFilterChange("priceRange", value as [number, number])
               }
               min={0}
-              max={50000}
+              max={500000}
               step={1000}
               className="mt-2"
             />

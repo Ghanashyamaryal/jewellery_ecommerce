@@ -97,7 +97,7 @@ export default function FeaturedCollections() {
 
   return (
     <section className="py-8 md:py-12 xl:py-16 bg-background">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="w-full max-w-390 mx-auto px-4 lg:px-8">
         <div className="text-center mb-8 xl:mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
             Curated Collections
