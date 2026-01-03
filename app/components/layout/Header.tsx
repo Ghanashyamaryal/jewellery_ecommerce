@@ -73,7 +73,7 @@ export function Header() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="w-full max-w-390 mx-auto px-4 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Mobile menu */}
           <Sheet>

@@ -1,6 +1,6 @@
 import { products } from "@/data/products";
 import { ArrowRight, Instagram } from "lucide-react";
-import { ProductCard } from "../shop/ProductCard";
+import { ProductCard } from "../common/ProductCard";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
@@ -40,7 +40,7 @@ const instagramPosts = [
 export function FeaturedProduct() {
   return (
     <section className="py-8 md:py-12 xl:py-16 bg-muted/30">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="w-full max-w-390 mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif mb-2">
             Featured Products
