@@ -93,7 +93,7 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="pt-4 px-1  space-y-2">
         {/* Features */}
         <div className="flex gap-2 flex-wrap">
-          {product.features.slice(0, 2).map((feature) => (
+          {product.features.slice(0, 1).map((feature) => (
             <span
               key={feature}
               className="text-[10px] tracking-wider uppercase text-muted-foreground"
