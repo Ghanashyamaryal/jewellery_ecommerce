@@ -7,7 +7,7 @@ export function RelatedProducts({ products }: { products: any[] }) {
   if (products.length === 0) return null;
 
   return (
-    <div className="bg-muted/50 py-16 mt-12 rounded-xl">
+    <div className="bg-muted/50 py-16  rounded-xl">
       <div className="w-full max-w-380 px-4 lg:px-8">
         <h2 className="text-3xl font-serif text-center mb-12">
           You May Also Like
