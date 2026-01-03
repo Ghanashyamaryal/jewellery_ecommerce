@@ -122,7 +122,7 @@ export default function ProductDetails({ product }: { product: any }) {
     : null;
 
   return (
-    <section className="w-full max-w-390 mx-auto px-4 md:px-8 py-6 md:py-6">
+    <section className="w-full max-w-390 mx-auto px-4 lg:px-8 py-6 md:py-6">
       <div className=" mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-12 mb-8">
           <div className="space-y-4">
