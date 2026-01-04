@@ -18,12 +18,19 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
+import { useRouter } from "next/navigation";
 
 export function CartDrawer() {
   const dispatch = useAppDispatch();
   const items = useAppSelector(selectCartItems);
   const total = useAppSelector(selectCartTotal);
   const isOpen = useAppSelector(selectIsCartOpen);
+  const router = useRouter();
+
+  function handleCheckout() {
+    router.push("/checkout");
+    dispatch(closeCart());
+  }
 
   return (
     <Sheet open={isOpen} onOpenChange={() => dispatch(closeCart())}>
@@ -136,7 +143,10 @@ export function CartDrawer() {
                 Shipping and taxes calculated at checkout
               </p>
               <div className="grid gap-2">
-                <Button className="w-full tracking-widest uppercase text-sm">
+                <Button
+                  className="w-full tracking-widest uppercase text-sm"
+                  onClick={handleCheckout}
+                >
                   Checkout
                 </Button>
                 <Button

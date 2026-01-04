@@ -17,8 +17,8 @@ const footerLinks = {
     { name: "Contact Us", href: "/contact" },
   ],
   support: [
-    { name: "Shipping & Returns", href: "/shipping" },
-    { name: "Care Instructions", href: "/care" },
+    { name: "Shipping & Returns", href: "/shipping-and-return" },
+    { name: "Care Instructions", href: "/care-instruction" },
     { name: "Size Guide", href: "/size-guide" },
     { name: "FAQs", href: "/faq" },
   ],
@@ -170,7 +170,10 @@ export function Footer() {
               <Link href="/privacy" className="hover:text-primary-foreground">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="hover:text-primary-foreground">
+              <Link
+                href="/terms-and-condition"
+                className="hover:text-primary-foreground"
+              >
                 Terms of Service
               </Link>
             </div>

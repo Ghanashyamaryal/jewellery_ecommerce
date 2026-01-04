@@ -26,8 +26,11 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { useAppDispatch } from "@/store/hooks";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { addToCart } from "@/store/cartSlice";
+import { toggleWishlist, selectIsInWishlist } from "@/store/wishlistSlice";
+import { useToast } from "@/hooks/use-toast";
+import ShareProduct from "./ShareProduct";
 
 const stoneGuides = {
   amethyst: {
@@ -62,9 +65,12 @@ export default function ProductDetails({ product }: { product: any }) {
   const router = useRouter();
   const slug = params.slug as string;
   const dispatch = useAppDispatch();
+  const { toast } = useToast();
 
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
+
+  const isWishlisted = useAppSelector(selectIsInWishlist(product.id));
 
   const maxQuantity = product.stockCount || 1;
 
@@ -84,6 +90,22 @@ export default function ProductDetails({ product }: { product: any }) {
   const finalPrice = calculatePrice();
   const hasDiscount = product.discountType && product.discountValue;
 
+  const toggleWishlistHandler = () => {
+    dispatch(toggleWishlist(product));
+
+    if (isWishlisted) {
+      toast({
+        title: "Removed from Wishlist",
+        description: `${product.name} has been removed from your wishlist.`,
+      });
+    } else {
+      toast({
+        title: "Added to Wishlist",
+        description: `${product.name} has been added to your wishlist.`,
+      });
+    }
+  };
+
   const handleQuantityIncrease = () => {
     if (quantity < maxQuantity) {
       setQuantity(quantity + 1);
@@ -101,6 +123,11 @@ export default function ProductDetails({ product }: { product: any }) {
         quantity,
       })
     );
+
+    toast({
+      title: "Added to Cart",
+      description: `${quantity} × ${product.name} added to your cart.`,
+    });
   };
 
   const handleBuyNow = () => {
@@ -110,7 +137,13 @@ export default function ProductDetails({ product }: { product: any }) {
         quantity,
       })
     );
-    router.push("/cart");
+
+    toast({
+      title: "Added to Cart",
+      description: `${quantity} × ${product.name} added to your cart.`,
+    });
+
+    router.push("/checkout");
   };
 
   const stoneGuide = product.stoneType
@@ -243,7 +276,7 @@ export default function ProductDetails({ product }: { product: any }) {
                 <div className="flex items-center border border-input rounded-lg">
                   <button
                     onClick={handleQuantityDecrease}
-                    className="px-3 py-2 text-muted-foreground hover:text-foreground disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="px-3 py-2 text-muted-foreground cursor-pointer hover:text-foreground disabled:opacity-50 disabled:cursor-not-allowed"
                     disabled={quantity <= 1}
                   >
                     −
@@ -253,7 +286,7 @@ export default function ProductDetails({ product }: { product: any }) {
                   </span>
                   <button
                     onClick={handleQuantityIncrease}
-                    className="px-3 py-2 text-muted-foreground hover:text-foreground disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="px-3 py-2 text-muted-foreground cursor-pointer hover:text-foreground disabled:opacity-50 disabled:cursor-not-allowed"
                     disabled={quantity >= maxQuantity}
                   >
                     +
@@ -297,15 +330,32 @@ export default function ProductDetails({ product }: { product: any }) {
                 </div>
                 <div className="flex flex-col gap-3 w-fit">
                   <div className="flex flex-row gap-2 ">
-                    <Button variant="outline" className="w-full">
-                      <Heart className="h-4 w-4" />
+                    <Button
+                      variant="outline"
+                      className={`w-full transition-colors duration-300 ${
+                        isWishlisted ? "border-red-500 bg-red-50" : ""
+                      }`}
+                      onClick={toggleWishlistHandler}
+                    >
+                      <Heart
+                        className={`h-4 w-4 transition-all ${
+                          isWishlisted
+                            ? "fill-red-500 text-red-500 scale-110"
+                            : "text-foreground"
+                        }`}
+                      />
                     </Button>
-                    <Button variant="outline" className="w-full">
-                      <Share2 className="h-4 w-4" />
-                    </Button>
+                    <div className="w-full">
+                      <ShareProduct
+                        productName={product.name || "Product"}
+                        productPrice={finalPrice}
+                        productImage={product.images[0]}
+                        slug={slug as string}
+                      />
+                    </div>
                   </div>
                   <a
-                    href={`https://wa.me/9779812345678?text=Hi%20I'm%20interested%20in%20${encodeURIComponent(
+                    href={`https://wa.me/9779860120739?text=Hi%20I'm%20interested%20in%20${encodeURIComponent(
                       product.name
                     )}`}
                     target="_blank"
@@ -314,10 +364,10 @@ export default function ProductDetails({ product }: { product: any }) {
                   >
                     <Button
                       variant="outline"
-                      className="w-full bg-green-500 text-white border-none flex items-center justify-center gap-2 py-2 px-4 hover:bg-green-600 hover:text-white"
+                      className="bg-green-500 text-white border-none flex items-center justify-center gap-2 py-2 px-4 hover:bg-green-600 hover:text-white flex-shrink min-w-0"
                     >
-                      <MessageCircle className="h-5 w-5" />
-                      Ask on WhatsApp
+                      <MessageCircle className="h-5 w-5 flex-shrink-0" />
+                      <span className="truncate">Ask on WhatsApp</span>
                     </Button>
                   </a>
                 </div>
