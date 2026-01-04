@@ -21,6 +21,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import Link from "next/link";
+import { useTypewriter } from "@/hooks/use-typewriter";
 
 const navigation = [
   {
@@ -65,6 +66,14 @@ export function Header() {
   const dispatch = useAppDispatch();
   const cartItemsCount = useAppSelector(selectCartItemsCount);
 
+  const animatedPlaceholder = useTypewriter([
+    "rings",
+    "necklaces",
+    "gemstones",
+    "lifestyle",
+    "pendants",
+  ]);
+
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
       <div className="bg-primary text-primary-foreground py-1 text-center text-xs md:text-sm overflow-hidden ">
@@ -75,7 +84,6 @@ export function Header() {
 
       <div className="w-full max-w-390 mx-auto px-2  lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          {/* Mobile menu */}
           <Sheet>
             <SheetTrigger asChild className="lg:hidden">
               <Button variant="ghost" size="icon" className="mr-2">
@@ -115,14 +123,12 @@ export function Header() {
             </SheetContent>
           </Sheet>
 
-          {/* Logo */}
           <Link href="/" className="flex items-center">
             <h1 className="text-xl md:text-2xl font-serif font-cursive ">
               <span className="font-semibold">Aryal siring gems</span>
             </h1>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
             {navigation.map((item) =>
               item.submenu ? (
@@ -159,7 +165,6 @@ export function Header() {
             )}
           </nav>
 
-          {/* Utility Icons */}
           <div className="flex items-center gap-1 md:gap-2">
             <Button
               variant="ghost"
@@ -186,12 +191,7 @@ export function Header() {
               size="icon"
               asChild
               className="text-foreground hover:text-muted-foreground hidden sm:flex"
-            >
-              {/* <Link href="/account">
-                <User className="h-5 w-5" />
-                <span className="sr-only">Account</span>
-              </Link> */}
-            </Button>
+            ></Button>
             <Button
               variant="ghost"
               size="icon"
@@ -209,14 +209,13 @@ export function Header() {
           </div>
         </div>
 
-        {/* Search Bar */}
         {isSearchOpen && (
           <div className="py-4 border-t border-border animate-fade-in">
             <div className="relative">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <input
                 type="search"
-                placeholder="Search for jewelry, gemstones..."
+                placeholder={`Search for ${animatedPlaceholder}|`}
                 className="w-full pl-12 pr-4 py-3 bg-muted border-0 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-primary"
                 autoFocus
               />

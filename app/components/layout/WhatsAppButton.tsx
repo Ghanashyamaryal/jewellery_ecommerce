@@ -5,12 +5,14 @@ interface WhatsAppButtonProps {
 }
 
 export function WhatsAppButton({ productName }: WhatsAppButtonProps) {
-  const phoneNumber = "9779800000000";
+  const phoneNumber = "9779860120739";
   const message = productName
-    ? `Hi! I'm interested in ${productName} from Aryal Sirin Gems.`
+    ? `Hi! I'm interested in ${productName} from Aryal Siring Gems.`
     : "Hi! I'm interested in your jewelry collection.";
-  
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
 
   return (
     <a
@@ -21,7 +23,9 @@ export function WhatsAppButton({ productName }: WhatsAppButtonProps) {
       aria-label="Chat on WhatsApp"
     >
       <MessageCircle className="h-5 w-5" />
-      <span className="hidden group-hover:inline text-sm font-medium">Chat with us</span>
+      <span className="hidden group-hover:inline text-sm font-medium">
+        Chat with us
+      </span>
     </a>
   );
 }
