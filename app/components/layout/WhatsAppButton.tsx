@@ -19,7 +19,7 @@ export function WhatsAppButton({ productName }: WhatsAppButtonProps) {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group"
+      className="fixed bottom-6 max-lg:[body:has([data-sticky-cta])_&]:bottom-24 right-6 z-50 flex items-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group"
       aria-label="Chat on WhatsApp"
     >
       <MessageCircle className="h-5 w-5" />

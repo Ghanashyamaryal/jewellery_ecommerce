@@ -1,0 +1,142 @@
+{
+  "amethyst": {
+    "source": "https://commons.wikimedia.org/wiki/File:Amethyst._Magaliesburg,_South_Africa.jpg",
+    "author": "JJ Harrison",
+    "license": "CC BY-SA 3.0"
+  },
+  "turquoise": {
+    "source": "https://commons.wikimedia.org/wiki/File:Turquoise_(Blue_Moon_Mine,_Candelaria_Hills,_west_of_Tonopah,_Nevada,_USA)_1.jpg",
+    "author": "James St. John",
+    "license": "CC BY 2.0"
+  },
+  "garnet": {
+    "source": "https://commons.wikimedia.org/wiki/File:Oval_faceted_red_garnet_1.jpg",
+    "author": "W.car",
+    "license": "CC BY 4.0"
+  },
+  "lapis-lazuli": {
+    "source": "https://commons.wikimedia.org/wiki/File:Tumble-polished_lapis_lazuli_1.jpg",
+    "author": "W.car",
+    "license": "CC BY-SA 4.0"
+  },
+  "amber": {
+    "source": "https://commons.wikimedia.org/wiki/File:Tumble-polished_Baltic_amber_2.jpg",
+    "author": "W.car",
+    "license": "CC BY-SA 4.0"
+  },
+  "moonstone": {
+    "source": "https://commons.wikimedia.org/wiki/File:Moonstone.JPG",
+    "author": "Wouterhagens",
+    "license": "Public domain"
+  },
+  "peridot": {
+    "source": "https://commons.wikimedia.org/wiki/File:Gemperidot.JPG",
+    "author": "Michelle Jo",
+    "license": "Public domain"
+  },
+  "tiger-eye": {
+    "source": "https://commons.wikimedia.org/wiki/File:Tiger's_eye_2.jpg",
+    "author": "LivingShadow",
+    "license": "CC BY-SA 3.0"
+  },
+  "coral": {
+    "source": "https://commons.wikimedia.org/wiki/File:Corallium_rubrum_(Linnaeus,_1758)_2.JPG",
+    "author": "Parent Géry",
+    "license": "CC0"
+  },
+  "shell": {
+    "source": "https://commons.wikimedia.org/wiki/File:White_Spider_Conch.jpg",
+    "author": "Erez the III",
+    "license": "CC0"
+  },
+  "onyx": {
+    "source": "https://commons.wikimedia.org/wiki/File:Black_oval_onyx_cabochons_2.jpg",
+    "author": "W.carter",
+    "license": "CC BY 4.0"
+  },
+  "rose-quartz": {
+    "source": "https://commons.wikimedia.org/wiki/File:Two_rose_quartz_cabocons_3.jpg",
+    "author": "W.carter",
+    "license": "CC BY-SA 4.0"
+  },
+  "citrine": {
+    "source": "https://commons.wikimedia.org/wiki/File:Citrine_taillee.jpg",
+    "author": "Didier Descouens",
+    "license": "CC BY-SA 4.0"
+  },
+  "labradorite": {
+    "source": "https://commons.wikimedia.org/wiki/File:Labradorite_3.jpg",
+    "author": "James St. John",
+    "license": "CC BY 2.0"
+  },
+  "malachite": {
+    "source": "https://commons.wikimedia.org/wiki/File:Tumbled_malachite_gemstone_1.jpg",
+    "author": "W.carter",
+    "license": "CC BY 4.0"
+  },
+  "jade": {
+    "source": "https://commons.wikimedia.org/wiki/File:Jadewyomingnephrite.jpg",
+    "author": "Astynax",
+    "license": "Public domain"
+  },
+  "pearl": {
+    "source": "https://commons.wikimedia.org/wiki/File:Akoya_pearl.jpg",
+    "author": "MASAYUKI KATO",
+    "license": "CC BY-SA 3.0"
+  },
+  "carnelian": {
+    "source": "https://commons.wikimedia.org/wiki/File:Carnelian_-_tumble_polished_stone.jpg",
+    "author": "jaja_1985",
+    "license": "CC BY 2.0"
+  },
+  "rudraksha": {
+    "source": "https://commons.wikimedia.org/wiki/File:RudrakshaBeads.jpg",
+    "author": "Merasmita",
+    "license": "CC BY-SA 4.0"
+  },
+  "crystal-quartz": {
+    "source": "https://commons.wikimedia.org/wiki/File:Quartz-qtz-12a.jpg",
+    "author": "Robert M. Lavinsky",
+    "license": "CC BY-SA 3.0"
+  },
+  "aquamarine": {
+    "source": "https://commons.wikimedia.org/wiki/File:Elliptical_aquamarine.jpg",
+    "author": "Mauro Cateb",
+    "license": "CC BY-SA 4.0"
+  },
+  "cubic-zirconia": {
+    "source": "https://commons.wikimedia.org/wiki/File:Cubic_zirconia_(synthetic_zirconium_dioxide)_1.jpg",
+    "author": "James St. John",
+    "license": "CC BY 2.0"
+  },
+  "emerald": {
+    "source": "https://commons.wikimedia.org/wiki/File:Emerald,_Colombia.png",
+    "author": "DonGuennie (G-Empire The World Of Gems)",
+    "license": "CC BY-SA 4.0"
+  },
+  "ruby": {
+    "source": "https://commons.wikimedia.org/wiki/File:Ruby_oval_1.07cts.jpg",
+    "author": "Wiener Edelstein Zentrum",
+    "license": "CC BY-SA 3.0"
+  },
+  "sapphire": {
+    "source": "https://commons.wikimedia.org/wiki/File:Sapphire_oval,_untreated_2.25cts.jpg",
+    "author": "Wiener Edelstein Zentrum",
+    "license": "CC BY-SA 3.0"
+  },
+  "opal": {
+    "source": "https://commons.wikimedia.org/wiki/File:Precious_opal_(Coober_Pedy_Opal_Field,_South_Australia).jpg",
+    "author": "James St. John",
+    "license": "CC BY 2.0"
+  },
+  "topaz": {
+    "source": "https://commons.wikimedia.org/wiki/File:Blue_topaz_-_a.JPG",
+    "author": "Mauro Cateb",
+    "license": "CC BY-SA 3.0"
+  },
+  "tanzanite": {
+    "source": "https://commons.wikimedia.org/wiki/File:Tanzanita.jpg",
+    "author": "Gemologos2009",
+    "license": "CC BY 3.0"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "./schemas/collections.schema.json",
+  "version": 1,
+  "items": [
+    {
+      "id": "col_tibetan_heritage", "slug": "tibetan-heritage", "name": "Tibetan Heritage",
+      "description": "Turquoise, coral and amber pieces rooted in Himalayan tradition.",
+      "image": "/images/collections/tibetan-heritage.jpg",
+      "type": "rule", "rules": { "tags": ["tibetan"] },
+      "isActive": true, "sortOrder": 1
+    },
+    {
+      "id": "col_mens_edit", "slug": "mens-edit", "name": "The Men's Edit",
+      "description": "Rings, kadas, chains and pendants designed for men.",
+      "image": "/images/collections/mens-edit.jpg",
+      "type": "rule", "rules": { "genders": ["men"] },
+      "isActive": true, "sortOrder": 2
+    },
+    {
+      "id": "col_bridal", "slug": "bridal", "name": "Bridal & Wedding",
+      "description": "Statement silver and sacred pieces for the wedding season.",
+      "image": "/images/collections/bridal.jpg",
+      "type": "rule", "rules": { "occasions": ["Wedding"] },
+      "isActive": true, "sortOrder": 3
+    },
+    {
+      "id": "col_tihar_gifts", "slug": "tihar-diwali-gifts", "name": "Tihar & Diwali Gifts",
+      "description": "Silver idols, diyas and pooja essentials for the festival of lights.",
+      "image": "/images/collections/tihar-diwali-gifts.jpg",
+      "type": "manual", "productIds": ["prd_0041", "prd_0042", "prd_0045", "prd_0046", "prd_0047", "prd_0048"],
+      "isActive": true, "startsAt": "2026-10-01T00:00:00Z", "endsAt": "2026-11-15T00:00:00Z", "sortOrder": 4
+    },
+    {
+      "id": "col_spiritual", "slug": "spiritual-meditation", "name": "Spiritual & Meditation",
+      "description": "Malas, singing bowls and sacred symbols for your practice.",
+      "image": "/images/collections/spiritual-meditation.jpg",
+      "type": "rule", "rules": { "occasions": ["Meditation"] },
+      "isActive": true, "sortOrder": 5
+    },
+    {
+      "id": "col_gifts_under_5000", "slug": "gifts-under-5000", "name": "Gifts Under NPR 5,000",
+      "description": "Thoughtful handcrafted gifts that don't break the bank.",
+      "image": "/images/collections/gifts-under-5000.jpg",
+      "type": "rule", "rules": { "maxPrice": 5000 },
+      "isActive": true, "sortOrder": 6
+    },
+    {
+      "id": "col_new_arrivals", "slug": "new-arrivals", "name": "New Arrivals",
+      "description": "The latest pieces from our workshop.",
+      "image": "/images/collections/new-arrivals.jpg",
+      "type": "rule", "rules": { "isNew": true },
+      "isActive": true, "sortOrder": 7
+    }
+  ]
+}

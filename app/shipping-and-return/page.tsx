@@ -4,7 +4,7 @@ import { Truck, ShieldCheck, RotateCcw, Award } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
 export const metadata: Metadata = {
-  title: "Shipping & Returns - Aryal Sirin Gems",
+  title: "Shipping & Returns - Aryal Siring Gems",
   description:
     "Information about secure shipping and our return policy for gemstones and fine jewelry.",
 };
@@ -58,7 +58,7 @@ const ShippingReturnsPage = () => {
               </li>
               <li>
                 <strong>Insurance:</strong> All shipments are fully insured by
-                Aryal Sirin Gems until they reach your doorstep.
+                Aryal Siring Gems until they reach your doorstep.
               </li>
               <li>
                 <strong>Delivery in Nepal:</strong> We offer secure courier

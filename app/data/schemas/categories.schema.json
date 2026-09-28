@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Categories (two levels)",
+  "type": "object",
+  "required": [
+    "version",
+    "items"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/item"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "item": {
+      "type": "object",
+      "required": [
+        "id",
+        "slug",
+        "name",
+        "parentId",
+        "description",
+        "attributeIds",
+        "isActive",
+        "sortOrder"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^cat_[a-z0-9_]+$"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "parentId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "attributeIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^attr_[a-z0-9_]+$"
+          }
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "sortOrder": {
+          "type": "integer"
+        },
+        "seo": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "metaTitle": {
+              "type": "string"
+            },
+            "metaDescription": {
+              "type": "string"
+            },
+            "keywords": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "canonicalUrl": {
+              "type": "string"
+            },
+            "ogImage": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

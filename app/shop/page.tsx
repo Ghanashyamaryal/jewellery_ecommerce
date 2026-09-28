@@ -1,25 +1,36 @@
-"use client";
-
-import { Suspense } from "react";
 import { Layout } from "@/components/layout/Layout";
+import {
+  getInitialShopState,
+  getProducts,
+  getShopFilterOptions,
+} from "@/lib/catalog";
 import { ShopContent } from "./ShopContent";
 
-function ShopSkeleton() {
-  return (
-    <section className="py-12">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="h-96 bg-muted animate-pulse rounded-lg" />
-      </div>
-    </section>
-  );
-}
+type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
-export default function ShopPage() {
+export const metadata = {
+  title: "Shop All | Silver Jewellery, Gemstones & Decor",
+};
+
+export default async function ShopPage({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}) {
+  const params = await searchParams;
+  const { filters, sort } = getInitialShopState(params);
+
   return (
     <Layout>
-      <Suspense fallback={<ShopSkeleton />}>
-        <ShopContent />
-      </Suspense>
+      <h1 className="sr-only">All Products</h1>
+      {/* key remounts the client state when the URL filters change */}
+      <ShopContent
+        key={JSON.stringify(params)}
+        products={getProducts()}
+        options={getShopFilterOptions(getProducts())}
+        initialFilters={filters}
+        initialSort={sort}
+      />
     </Layout>
   );
 }

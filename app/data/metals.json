@@ -1,0 +1,76 @@
+{
+  "$schema": "./schemas/metals.schema.json",
+  "version": 1,
+  "items": [
+    {
+      "id": "met_925_silver",
+      "slug": "925-sterling-silver",
+      "name": "925 Sterling Silver",
+      "purity": "92.5%",
+      "aliases": [
+        "sterling",
+        "silver",
+        "chandi",
+        "925"
+      ],
+      "care": "Store in an airtight pouch; polish with a silver cloth."
+    },
+    {
+      "id": "met_oxidised_silver",
+      "slug": "oxidised-silver",
+      "name": "Oxidised Silver",
+      "purity": "92.5%",
+      "aliases": [
+        "oxidized",
+        "oxidised",
+        "silver",
+        "antique silver",
+        "black silver",
+        "chandi"
+      ],
+      "care": "Wipe with a dry cloth only — polishing removes the oxidised finish."
+    },
+    {
+      "id": "met_fine_silver",
+      "slug": "999-fine-silver",
+      "name": "999 Fine Silver",
+      "purity": "99.9%",
+      "aliases": [
+        "pure silver",
+        "fine silver",
+        "silver",
+        "chandi"
+      ],
+      "care": "Soft metal: handle gently and polish with a silver cloth."
+    },
+    {
+      "id": "met_white_metal",
+      "slug": "white-metal",
+      "name": "White Metal",
+      "aliases": [
+        "white metal",
+        "alloy",
+        "silver tone",
+        "silver plated"
+      ],
+      "care": "Keep dry and wipe with a soft cloth."
+    },
+    {
+      "id": "met_german_silver",
+      "slug": "german-silver",
+      "name": "German Silver",
+      "aliases": [
+        "nickel silver",
+        "german silver",
+        "silver tone"
+      ],
+      "care": "Keep dry; clean with a mild soap solution."
+    },
+    {
+      "id": "met_none",
+      "slug": "none",
+      "name": "No Metal",
+      "aliases": []
+    }
+  ]
+}

@@ -14,6 +14,34 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
+import { Hammer, MessagesSquare, PenTool, Truck } from "lucide-react";
+
+const BESPOKE_STEPS = [
+  {
+    step: "01",
+    icon: MessagesSquare,
+    title: "Consultation",
+    desc: "Share your ideas, inspiration and budget with our design team.",
+  },
+  {
+    step: "02",
+    icon: PenTool,
+    title: "Design",
+    desc: "Our artisans create detailed sketches for your approval.",
+  },
+  {
+    step: "03",
+    icon: Hammer,
+    title: "Crafting",
+    desc: "Your piece is handcrafted with care in precious metals.",
+  },
+  {
+    step: "04",
+    icon: Truck,
+    title: "Delivery",
+    desc: "Receive your unique creation, beautifully packaged.",
+  },
+];
 
 export default function BespokePage() {
   const [formData, setFormData] = useState({
@@ -63,43 +91,57 @@ export default function BespokePage() {
       </section>
 
       {/* Process */}
-      <section className="py-12 md:py-12 xl:py-20">
+      <section className="py-12 md:py-16 xl:py-24">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl font-serif text-center mb-16">
-            The Bespoke Process
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Consultation",
-                desc: "Share your ideas and inspiration with us",
-              },
-              {
-                step: "02",
-                title: "Design",
-                desc: "Our artisans create detailed sketches",
-              },
-              {
-                step: "03",
-                title: "Crafting",
-                desc: "Your piece is handcrafted with care",
-              },
-              {
-                step: "04",
-                title: "Delivery",
-                desc: "Receive your unique creation",
-              },
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="w-16 h-16 rounded-full border-2 border-foreground flex items-center justify-center mx-auto mb-4">
-                  <span className="font-serif text-xl">{item.step}</span>
-                </div>
-                <h3 className="font-serif text-xl mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
-              </div>
-            ))}
+          <div className="text-center mb-12 md:mb-16">
+            <p className="text-sm tracking-[0.3em] uppercase text-gold mb-3">
+              How It Works
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif mb-4">
+              The Bespoke Process
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              From the first conversation to the final polish, every step is
+              guided by our master artisans.
+            </p>
           </div>
+
+          <ol className="relative grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-6">
+            {/* Connecting line (desktop) */}
+            <span
+              aria-hidden
+              className="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-px bg-linear-to-r from-gold/20 via-gold/60 to-gold/20"
+            />
+            {BESPOKE_STEPS.map((item, index) => (
+              <li
+                key={item.step}
+                className="group relative flex lg:flex-col items-start lg:items-center gap-5 lg:gap-0 lg:text-center"
+              >
+                {/* Connecting line (mobile/tablet) */}
+                {index < BESPOKE_STEPS.length - 1 && (
+                  <span
+                    aria-hidden
+                    className="lg:hidden absolute left-10 top-20 -bottom-8 w-px bg-gold/30"
+                  />
+                )}
+                <div className="relative z-10 shrink-0 w-20 h-20 rounded-full bg-background border border-gold/40 flex items-center justify-center shadow-sm transition-all duration-300 group-hover:border-gold group-hover:shadow-md group-hover:-translate-y-1 lg:mb-6">
+                  <item.icon
+                    className="w-7 h-7 text-foreground/80 transition-colors duration-300 group-hover:text-gold"
+                    strokeWidth={1.25}
+                  />
+                  <span className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-foreground text-background text-[11px] font-medium flex items-center justify-center tracking-wider">
+                    {item.step}
+                  </span>
+                </div>
+                <div className="pt-2 lg:pt-0 lg:px-4">
+                  <h3 className="font-serif text-xl mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 

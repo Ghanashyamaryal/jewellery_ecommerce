@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import { useSearchParams } from "next/navigation";
-import { Filter, X } from "lucide-react";
+import { useMemo, useRef, useState } from "react";
+import { Filter } from "lucide-react";
 import { ProductCard } from "@/components/common/ProductCard";
 import { ProductFilters } from "@/components/shop/ProductFilters";
 import { Button } from "@/components/ui/button";
@@ -14,73 +13,133 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { products } from "@/data/products";
+import type {
+  Product,
+  ShopFilterOptions,
+  ShopFilters,
+} from "@/types/catalog";
+import { usePagination } from "@/hooks/use-pagination";
+import { getActiveAttributeFilters } from "@/lib/shop-filters";
+import { ShopPagination } from "./_components/ShopPagination";
 
-const sortOptions = [
+const PAGE_SIZE = 20;
+
+const baseSortOptions = [
   { label: "Newest Arrivals", value: "newest" },
   { label: "Price: Low to High", value: "price-asc" },
   { label: "Price: High to Low", value: "price-desc" },
   { label: "Most Popular", value: "popular" },
 ];
 
-export function ShopContent() {
-  const searchParams = useSearchParams();
-  const [sortBy, setSortBy] = useState("newest");
-  const [filters, setFilters] = useState({
-    category: searchParams.get("category") || "all",
+const toKebab = (value: string) => value.toLowerCase().replace(/\s+/g, "-");
+
+interface ShopContentProps {
+  products: Product[];
+  options: ShopFilterOptions;
+  initialFilters?: Partial<Omit<ShopFilters, "priceRange">>;
+  initialSort?: string;
+  /** Adds a "Best Match" sort that keeps the incoming (search-ranked) order */
+  sortByRelevance?: boolean;
+}
+
+export function ShopContent({
+  products,
+  options,
+  initialFilters,
+  initialSort,
+  sortByRelevance = false,
+}: ShopContentProps) {
+  const sortOptions = sortByRelevance
+    ? [{ label: "Best Match", value: "relevance" }, ...baseSortOptions]
+    : baseSortOptions;
+
+  const defaultFilters: ShopFilters = {
+    category: "all",
     metalType: "all",
-    stoneType: searchParams.get("stone") || "all",
+    stoneType: "all",
+    gender: "all",
     occasion: "all",
-    priceRange: [0, 500000] as [number, number],
+    attributes: {},
+    priceRange: [0, options.maxPrice],
+  };
+
+  const [sortBy, setSortBy] = useState(
+    sortOptions.some((o) => o.value === initialSort)
+      ? initialSort!
+      : sortOptions[0].value
+  );
+  const [filters, setFilters] = useState<ShopFilters>({
+    ...defaultFilters,
+    ...initialFilters,
   });
 
-  const handleFilterChange = (key: string, value: any) => {
+  const handleFilterChange = <K extends keyof ShopFilters>(
+    key: K,
+    value: ShopFilters[K]
+  ) => {
     setFilters((prev) => ({ ...prev, [key]: value }));
+    setPage(1);
+  };
+
+  const handleAttributeChange = (key: string, value: string) => {
+    setPage(1);
+    setFilters((prev) => ({
+      ...prev,
+      attributes: { ...prev.attributes, [key]: value },
+    }));
   };
 
   const filteredProducts = useMemo(() => {
     let result = [...products];
 
-    // Category filter
+    // Category filter (top-level or subcategory slug)
     if (filters.category !== "all") {
       result = result.filter(
         (p) =>
-          p.subcategory?.toLowerCase().replace(/\s+/g, "-") ===
-            filters.category || p.category.toLowerCase() === filters.category
+          p.category.slug === filters.category ||
+          p.subcategory?.slug === filters.category
       );
     }
 
-    // Metal type filter
+    // Any metal on the piece counts (e.g. silver clasp on a bead necklace)
     if (filters.metalType !== "all") {
-      result = result.filter(
-        (p) =>
-          p.metalType.toLowerCase().replace(/\s+/g, "-") === filters.metalType
+      result = result.filter((p) =>
+        p.metals.some((m) => m.metal.slug === filters.metalType)
       );
     }
 
-    // Stone type filter
+    // A product can carry several stones; match any of them
     if (filters.stoneType !== "all") {
-      result = result.filter(
-        (p) => p.stoneType?.toLowerCase() === filters.stoneType
+      result = result.filter((p) =>
+        filters.stoneType === "no-stone"
+          ? p.stones.length === 0
+          : p.stones.some((s) => s.stone.slug === filters.stoneType)
       );
     }
 
-    // Price range filter
+    // Unisex pieces show under both men and women
+    if (filters.gender !== "all") {
+      result = result.filter(
+        (p) => p.gender === filters.gender || p.gender === "unisex"
+      );
+    }
+
     result = result.filter(
       (p) =>
         p.price >= filters.priceRange[0] && p.price <= filters.priceRange[1]
     );
 
-    // Occasion filter
     if (filters.occasion !== "all") {
       result = result.filter((p) =>
-        p.occasion?.some(
-          (o) => o.toLowerCase().replace(/\s+/g, "-") === filters.occasion
-        )
+        p.occasion?.some((o) => toKebab(o) === filters.occasion)
       );
     }
 
-    // Sorting
+    // Attribute filters: ring size, deity, earring type… (matches attributes or any variant)
+    for (const [key, value] of getActiveAttributeFilters(filters.attributes)) {
+      result = result.filter((p) => p.attributeIndex[key]?.includes(value));
+    }
+
     switch (sortBy) {
       case "price-asc":
         result.sort((a, b) => a.price - b.price);
@@ -89,33 +148,60 @@ export function ShopContent() {
         result.sort((a, b) => b.price - a.price);
         break;
       case "newest":
-        result.sort((a, b) => (a.isNew ? -1 : 1));
+        result.sort(
+          (a, b) =>
+            Number(!!b.isNew) - Number(!!a.isNew) ||
+            b.createdAt.localeCompare(a.createdAt)
+        );
         break;
       case "popular":
-        result.sort((a, b) => (a.isFeatured ? -1 : 1));
+        result.sort(
+          (a, b) =>
+            Number(!!b.isFeatured) - Number(!!a.isFeatured) ||
+            (b.rating ?? 0) - (a.rating ?? 0)
+        );
         break;
     }
 
     return result;
-  }, [filters, sortBy]);
+  }, [products, filters, sortBy]);
 
-  const activeFiltersCount = Object.entries(filters).filter(
-    ([key, value]) =>
-      (key !== "priceRange" && value !== "all") ||
-      (key === "priceRange" &&
-        Array.isArray(value) &&
-        (value[0] > 0 || value[1] < 500000))
-  ).length;
+  const { page, totalPages, setPage, pageItems, rangeStart, rangeEnd } =
+    usePagination(filteredProducts, PAGE_SIZE);
+  const gridTopRef = useRef<HTMLDivElement>(null);
+
+  const goToPage = (next: number) => {
+    setPage(next);
+    gridTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const handleSortChange = (value: string) => {
+    setSortBy(value);
+    setPage(1);
+  };
+
+  const activeFiltersCount =
+    ["category", "metalType", "stoneType", "gender", "occasion"].filter(
+      (key) => filters[key as keyof ShopFilters] !== "all"
+    ).length +
+    getActiveAttributeFilters(filters.attributes).length +
+    (filters.priceRange[0] > 0 || filters.priceRange[1] < options.maxPrice ? 1 : 0);
 
   const clearFilters = () => {
-    setFilters({
-      category: "all",
-      metalType: "all",
-      stoneType: "all",
-      occasion: "all",
-      priceRange: [0, 500000],
-    });
+    setFilters(defaultFilters);
+    setPage(1);
   };
+
+  const filtersPanel = (
+    <ProductFilters
+      filters={filters}
+      options={options}
+      onFilterChange={handleFilterChange}
+      onAttributeChange={handleAttributeChange}
+      clearFilters={clearFilters}
+      activeFiltersCount={activeFiltersCount}
+    />
+  );
 
   return (
     <>
@@ -124,18 +210,11 @@ export function ShopContent() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Desktop Filters */}
-            <div className="hidden lg:block w-64 shrink-0">
-              <ProductFilters
-                filters={filters}
-                onFilterChange={handleFilterChange}
-                clearFilters={clearFilters}
-                activeFiltersCount={activeFiltersCount}
-              />
-            </div>
+            <div className="hidden lg:block w-64 shrink-0">{filtersPanel}</div>
 
-            <div className="flex-1">
+            <div ref={gridTopRef} className="flex-1 scroll-mt-28">
               <div className="flex items-center justify-between mb-8 pb-6 border-b border-border">
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex items-center gap-4">
                   {/* Mobile Filter Button */}
                   <Sheet>
                     <SheetTrigger asChild className="lg:hidden">
@@ -150,17 +229,19 @@ export function ShopContent() {
                       </Button>
                     </SheetTrigger>
                     <SheetContent side="left" className="w-80 overflow-y-auto">
-                      <ProductFilters
-                        activeFiltersCount={activeFiltersCount}
-                        clearFilters={clearFilters}
-                        filters={filters}
-                        onFilterChange={handleFilterChange}
-                      />
+                      {filtersPanel}
                     </SheetContent>
                   </Sheet>
+                  <p className="text-sm text-muted-foreground hidden sm:block">
+                    {totalPages > 1
+                      ? `Showing ${rangeStart}–${rangeEnd} of ${filteredProducts.length} products`
+                      : `${filteredProducts.length} ${
+                          filteredProducts.length === 1 ? "product" : "products"
+                        }`}
+                  </p>
                 </div>
 
-                <Select value={sortBy} onValueChange={setSortBy}>
+                <Select value={sortBy} onValueChange={handleSortChange}>
                   <SelectTrigger className="w-[180px]">
                     <SelectValue placeholder="Sort by" />
                   </SelectTrigger>
@@ -176,11 +257,18 @@ export function ShopContent() {
 
               {/* Product Grid */}
               {filteredProducts.length > 0 ? (
-                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 gap-y-12">
-                  {filteredProducts.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                  ))}
-                </div>
+                <>
+                  <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 gap-y-12">
+                    {pageItems.map((product) => (
+                      <ProductCard key={product.id} product={product} />
+                    ))}
+                  </div>
+                  <ShopPagination
+                    page={page}
+                    totalPages={totalPages}
+                    onPageChange={goToPage}
+                  />
+                </>
               ) : (
                 <div className="text-center py-24">
                   <h3 className="text-xl font-serif mb-2">No products found</h3>

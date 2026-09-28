@@ -59,6 +59,48 @@
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --animate-marquee: marquee 20s linear infinite;
+  --animate-mega-in: mega-in 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-mega-out: mega-out 160ms ease-in forwards;
+  --animate-fade-in: fade-in 300ms ease-out;
+  --animate-enter-from-left: enter-from-left 250ms cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-enter-from-right: enter-from-right 250ms cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-exit-to-left: exit-to-left 250ms ease-in forwards;
+  --animate-exit-to-right: exit-to-right 250ms ease-in forwards;
+
+  @keyframes mega-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes mega-out {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-8px); }
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes enter-from-left {
+    from { opacity: 0; transform: translateX(-40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes enter-from-right {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes exit-to-left {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(-40px); }
+  }
+
+  @keyframes exit-to-right {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(40px); }
+  }
 
   @keyframes accordion-down {
     from {
@@ -200,6 +242,32 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tailwind v4 no longer sets cursor: pointer on buttons; layered so utilities like cursor-not-allowed still win */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [role="tab"],
+  [role="menuitem"],
+  [role="option"],
+  [role="checkbox"],
+  [role="radio"],
+  [role="switch"],
+  select,
+  summary,
+  label[for],
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="submit"],
+  input[type="button"] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
 }
 
 h1,

@@ -1,0 +1,801 @@
+{
+  "$schema": "./schemas/stones.schema.json",
+  "version": 1,
+  "items": [
+    {
+      "id": "stn_amethyst",
+      "slug": "amethyst",
+      "name": "Amethyst",
+      "aliases": [
+        "amethese",
+        "amethist",
+        "ametyst",
+        "amathyst",
+        "amethys",
+        "katela",
+        "jamunia",
+        "purple stone"
+      ],
+      "family": "Quartz",
+      "color": "Purple",
+      "colorHex": "#9966CC",
+      "hardnessMohs": 7,
+      "birthMonth": 2,
+      "zodiac": [
+        "Pisces",
+        "Aquarius"
+      ],
+      "planet": "Saturn",
+      "chakra": "Crown",
+      "origin": [
+        "Nepal",
+        "Brazil",
+        "Zambia"
+      ],
+      "properties": "Peace, spiritual awareness, intuition",
+      "care": "Avoid prolonged exposure to sunlight as it may fade the colour. Clean with lukewarm water and mild soap.",
+      "description": "A violet variety of quartz, prized as a stone of calm and clarity.",
+      "image": "/stones/amethyst.jpg"
+    },
+    {
+      "id": "stn_turquoise",
+      "slug": "turquoise",
+      "name": "Turquoise",
+      "aliases": [
+        "turqoise",
+        "turquise",
+        "turquois",
+        "turkoise",
+        "firoza",
+        "feroza",
+        "phiroza",
+        "blue stone"
+      ],
+      "color": "Blue-green",
+      "colorHex": "#40E0D0",
+      "hardnessMohs": 5.5,
+      "birthMonth": 12,
+      "zodiac": [
+        "Sagittarius"
+      ],
+      "chakra": "Throat",
+      "origin": [
+        "Tibet",
+        "Iran",
+        "USA"
+      ],
+      "properties": "Protection, communication, healing",
+      "care": "Protect from excessive heat and moisture. Avoid harsh chemicals and perfumes.",
+      "description": "The sky-blue stone of the Himalaya, worn for protection and good fortune.",
+      "image": "/stones/turquoise.jpg"
+    },
+    {
+      "id": "stn_amber",
+      "slug": "amber",
+      "name": "Amber",
+      "aliases": [
+        "ambar",
+        "ambor",
+        "amber resin",
+        "kahruba",
+        "yellow stone"
+      ],
+      "family": "Organic",
+      "color": "Honey yellow",
+      "colorHex": "#FFBF00",
+      "hardnessMohs": 2.5,
+      "zodiac": [
+        "Leo"
+      ],
+      "chakra": "Solar Plexus",
+      "origin": [
+        "Baltic",
+        "Tibet"
+      ],
+      "properties": "Warmth, vitality, cleansing",
+      "care": "Soft and light: keep away from heat, alcohol and perfume. Wipe with a soft damp cloth.",
+      "description": "Fossilised tree resin, much loved in Tibetan and Himalayan jewellery.",
+      "image": "/stones/amber.jpg"
+    },
+    {
+      "id": "stn_coral",
+      "slug": "coral",
+      "name": "Coral",
+      "aliases": [
+        "corel",
+        "korel",
+        "moonga",
+        "munga",
+        "red coral",
+        "praval"
+      ],
+      "family": "Organic",
+      "color": "Red-orange",
+      "colorHex": "#FF7F50",
+      "hardnessMohs": 3.5,
+      "zodiac": [
+        "Aries",
+        "Scorpio"
+      ],
+      "planet": "Mars",
+      "chakra": "Root",
+      "origin": [
+        "Mediterranean",
+        "Japan"
+      ],
+      "properties": "Courage, energy, Mars stone",
+      "care": "Very soft and porous. Avoid chemicals, heat and ultrasonic cleaners.",
+      "description": "Organic gem from the sea, traditionally worn for courage and vitality.",
+      "image": "/stones/coral.jpg"
+    },
+    {
+      "id": "stn_shell",
+      "slug": "shell",
+      "name": "Shell",
+      "aliases": [
+        "shel",
+        "conch",
+        "shankha",
+        "sankha",
+        "mother of pearl",
+        "mop",
+        "seashell"
+      ],
+      "family": "Organic",
+      "color": "White",
+      "colorHex": "#FFF5EE",
+      "hardnessMohs": 3.5,
+      "zodiac": [
+        "Cancer"
+      ],
+      "origin": [
+        "India",
+        "Philippines"
+      ],
+      "properties": "Purity, calm, auspicious beginnings",
+      "care": "Keep dry and away from acids and perfume.",
+      "description": "Conch and mother-of-pearl shell, sacred in Hindu and Buddhist traditions.",
+      "image": "/stones/shell.jpg"
+    },
+    {
+      "id": "stn_lapis_lazuli",
+      "slug": "lapis-lazuli",
+      "name": "Lapis Lazuli",
+      "aliases": [
+        "lapis",
+        "lapsese",
+        "lapses",
+        "lapiz",
+        "lajward",
+        "lajvart",
+        "lapis lazulli"
+      ],
+      "color": "Deep blue",
+      "colorHex": "#26619C",
+      "hardnessMohs": 5.5,
+      "zodiac": [
+        "Sagittarius",
+        "Libra"
+      ],
+      "chakra": "Third Eye",
+      "origin": [
+        "Afghanistan",
+        "Chile"
+      ],
+      "properties": "Wisdom, truth, self-expression",
+      "care": "Relatively soft. Clean with a dry or slightly damp cloth, no chemicals.",
+      "description": "Royal blue stone flecked with golden pyrite, treasured for thousands of years.",
+      "image": "/stones/lapis-lazuli.jpg"
+    },
+    {
+      "id": "stn_garnet",
+      "slug": "garnet",
+      "name": "Garnet",
+      "aliases": [
+        "garnate",
+        "garnett",
+        "garnit",
+        "gomed",
+        "red stone"
+      ],
+      "family": "Garnet",
+      "color": "Deep red",
+      "colorHex": "#9B111E",
+      "hardnessMohs": 7.5,
+      "birthMonth": 1,
+      "zodiac": [
+        "Capricorn",
+        "Aquarius"
+      ],
+      "planet": "Rahu",
+      "chakra": "Root",
+      "origin": [
+        "India",
+        "Madagascar",
+        "Nepal"
+      ],
+      "properties": "Passion, energy, strength",
+      "care": "Durable and easy to care for. Clean with warm soapy water.",
+      "description": "A rich red stone of passion and commitment, and January's birthstone.",
+      "image": "/stones/garnet.jpg"
+    },
+    {
+      "id": "stn_moonstone",
+      "slug": "moonstone",
+      "name": "Moonstone",
+      "aliases": [
+        "moon stone",
+        "rainbow moonstone",
+        "chandrakant",
+        "moonston"
+      ],
+      "family": "Feldspar",
+      "color": "White with blue sheen",
+      "colorHex": "#E6E6FA",
+      "hardnessMohs": 6,
+      "birthMonth": 6,
+      "zodiac": [
+        "Cancer",
+        "Libra"
+      ],
+      "planet": "Moon",
+      "chakra": "Crown",
+      "origin": [
+        "India",
+        "Sri Lanka"
+      ],
+      "properties": "New beginnings, intuition, inner growth",
+      "care": "Handle gently as it is relatively soft. Avoid prolonged sun exposure.",
+      "description": "Feldspar with a floating blue glow, associated with the moon and intuition.",
+      "image": "/stones/moonstone.jpg"
+    },
+    {
+      "id": "stn_peridot",
+      "slug": "peridot",
+      "name": "Peridot",
+      "aliases": [
+        "peridote",
+        "peridoth",
+        "olivine",
+        "green stone"
+      ],
+      "color": "Lime green",
+      "colorHex": "#B4C424",
+      "hardnessMohs": 6.5,
+      "birthMonth": 8,
+      "zodiac": [
+        "Leo",
+        "Virgo"
+      ],
+      "chakra": "Heart",
+      "origin": [
+        "Pakistan",
+        "Myanmar",
+        "USA"
+      ],
+      "properties": "Strength, balance, prosperity",
+      "care": "Avoid extreme temperature changes. Clean with mild soap and water.",
+      "description": "A bright green gem formed deep in the earth, and August's birthstone.",
+      "image": "/stones/peridot.jpg"
+    },
+    {
+      "id": "stn_onyx",
+      "slug": "onyx",
+      "name": "Black Onyx",
+      "aliases": [
+        "onix",
+        "onyx",
+        "black stone",
+        "sulemani"
+      ],
+      "family": "Chalcedony",
+      "color": "Black",
+      "colorHex": "#0F0F0F",
+      "hardnessMohs": 7,
+      "zodiac": [
+        "Leo",
+        "Capricorn"
+      ],
+      "chakra": "Root",
+      "origin": [
+        "India",
+        "Brazil"
+      ],
+      "properties": "Strength, grounding, protection",
+      "care": "Durable. Clean with warm soapy water and a soft cloth.",
+      "description": "A bold black chalcedony, popular in men's rings and pendants.",
+      "image": "/stones/onyx.jpg"
+    },
+    {
+      "id": "stn_tiger_eye",
+      "slug": "tiger-eye",
+      "name": "Tiger Eye",
+      "aliases": [
+        "tigers eye",
+        "tiger's eye",
+        "tigereye",
+        "tiger ey"
+      ],
+      "family": "Quartz",
+      "color": "Golden brown",
+      "colorHex": "#B5651D",
+      "hardnessMohs": 7,
+      "zodiac": [
+        "Leo",
+        "Capricorn"
+      ],
+      "planet": "Ketu",
+      "chakra": "Solar Plexus",
+      "origin": [
+        "South Africa",
+        "India"
+      ],
+      "properties": "Confidence, focus, good luck",
+      "care": "Clean with warm soapy water. Avoid harsh chemicals.",
+      "description": "A chatoyant golden stone with a silky band of light.",
+      "image": "/stones/tiger-eye.jpg"
+    },
+    {
+      "id": "stn_rose_quartz",
+      "slug": "rose-quartz",
+      "name": "Rose Quartz",
+      "aliases": [
+        "rose quarts",
+        "pink quartz",
+        "love stone",
+        "pink stone"
+      ],
+      "family": "Quartz",
+      "color": "Pink",
+      "colorHex": "#F7CAC9",
+      "hardnessMohs": 7,
+      "zodiac": [
+        "Taurus",
+        "Libra"
+      ],
+      "chakra": "Heart",
+      "origin": [
+        "Brazil",
+        "Madagascar"
+      ],
+      "properties": "Love, compassion, emotional healing",
+      "care": "Keep out of strong sunlight. Clean with water and a soft cloth.",
+      "description": "The gentle pink stone of unconditional love.",
+      "image": "/stones/rose-quartz.jpg"
+    },
+    {
+      "id": "stn_citrine",
+      "slug": "citrine",
+      "name": "Citrine",
+      "aliases": [
+        "citrin",
+        "sitrine",
+        "sunela",
+        "yellow quartz"
+      ],
+      "family": "Quartz",
+      "color": "Golden yellow",
+      "colorHex": "#E4D00A",
+      "hardnessMohs": 7,
+      "birthMonth": 11,
+      "zodiac": [
+        "Gemini",
+        "Aries"
+      ],
+      "planet": "Jupiter",
+      "chakra": "Solar Plexus",
+      "origin": [
+        "Brazil",
+        "Madagascar"
+      ],
+      "properties": "Abundance, joy, success",
+      "care": "Avoid prolonged sunlight. Clean with warm soapy water.",
+      "description": "A sunny yellow quartz known as the merchant's stone.",
+      "image": "/stones/citrine.jpg"
+    },
+    {
+      "id": "stn_labradorite",
+      "slug": "labradorite",
+      "name": "Labradorite",
+      "aliases": [
+        "labradorit",
+        "labradourite",
+        "spectrolite"
+      ],
+      "family": "Feldspar",
+      "color": "Grey with flash",
+      "colorHex": "#6C7A89",
+      "hardnessMohs": 6,
+      "zodiac": [
+        "Scorpio",
+        "Sagittarius"
+      ],
+      "chakra": "Throat",
+      "origin": [
+        "Madagascar",
+        "Canada"
+      ],
+      "properties": "Transformation, intuition, protection",
+      "care": "Avoid knocks and chemicals. Clean with a soft damp cloth.",
+      "description": "A grey feldspar that flashes blue, green and gold in the light.",
+      "image": "/stones/labradorite.jpg"
+    },
+    {
+      "id": "stn_malachite",
+      "slug": "malachite",
+      "name": "Malachite",
+      "aliases": [
+        "malakite",
+        "malachait"
+      ],
+      "color": "Banded green",
+      "colorHex": "#0BDA51",
+      "hardnessMohs": 3.75,
+      "zodiac": [
+        "Scorpio",
+        "Capricorn"
+      ],
+      "chakra": "Heart",
+      "origin": [
+        "Congo",
+        "Russia"
+      ],
+      "properties": "Transformation, protection",
+      "care": "Soft and sensitive to acids and heat. Wipe clean only.",
+      "description": "A vivid green stone with swirling bands.",
+      "image": "/stones/malachite.jpg"
+    },
+    {
+      "id": "stn_jade",
+      "slug": "jade",
+      "name": "Jade",
+      "aliases": [
+        "jed",
+        "nephrite",
+        "jadeite",
+        "green jade"
+      ],
+      "color": "Green",
+      "colorHex": "#00A86B",
+      "hardnessMohs": 6.5,
+      "zodiac": [
+        "Taurus",
+        "Virgo"
+      ],
+      "chakra": "Heart",
+      "origin": [
+        "Myanmar",
+        "China"
+      ],
+      "properties": "Harmony, luck, longevity",
+      "care": "Clean with warm soapy water. Avoid harsh chemicals.",
+      "description": "A tough, smooth green stone revered across Asia.",
+      "image": "/stones/jade.jpg"
+    },
+    {
+      "id": "stn_pearl",
+      "slug": "pearl",
+      "name": "Pearl",
+      "aliases": [
+        "perl",
+        "moti",
+        "freshwater pearl"
+      ],
+      "family": "Organic",
+      "color": "White",
+      "colorHex": "#F0EAD6",
+      "hardnessMohs": 2.75,
+      "birthMonth": 6,
+      "zodiac": [
+        "Cancer",
+        "Gemini"
+      ],
+      "planet": "Moon",
+      "origin": [
+        "China",
+        "Japan"
+      ],
+      "properties": "Purity, wisdom, calm",
+      "care": "Put on last, take off first. Wipe with a soft cloth after wearing.",
+      "description": "Organic gem grown inside molluscs, symbol of purity.",
+      "image": "/stones/pearl.jpg"
+    },
+    {
+      "id": "stn_carnelian",
+      "slug": "carnelian",
+      "name": "Carnelian",
+      "aliases": [
+        "cornelian",
+        "carnilian",
+        "aqeeq",
+        "akik",
+        "hakik"
+      ],
+      "family": "Chalcedony",
+      "color": "Orange-red",
+      "colorHex": "#B31B1B",
+      "hardnessMohs": 7,
+      "zodiac": [
+        "Leo",
+        "Virgo"
+      ],
+      "chakra": "Sacral",
+      "origin": [
+        "India",
+        "Brazil"
+      ],
+      "properties": "Motivation, courage, creativity",
+      "care": "Durable. Clean with warm soapy water.",
+      "description": "A warm orange chalcedony worn for courage and vitality.",
+      "image": "/stones/carnelian.jpg"
+    },
+    {
+      "id": "stn_rudraksha",
+      "slug": "rudraksha",
+      "name": "Rudraksha",
+      "aliases": [
+        "rudraksh",
+        "rudrakshya",
+        "rudraksa",
+        "rudra"
+      ],
+      "family": "Organic (seed)",
+      "color": "Brown",
+      "colorHex": "#6F4E37",
+      "zodiac": [],
+      "origin": [
+        "Nepal",
+        "Indonesia"
+      ],
+      "properties": "Spiritual protection, meditation",
+      "care": "Oil occasionally, keep away from soap and chemicals.",
+      "description": "Sacred seed of the Elaeocarpus tree, most prized from Nepal.",
+      "image": "/stones/rudraksha.jpg"
+    },
+    {
+      "id": "stn_crystal_quartz",
+      "slug": "crystal-quartz",
+      "name": "Crystal Quartz",
+      "aliases": [
+        "clear quartz",
+        "quartz",
+        "sphatik",
+        "sphatic",
+        "spatik",
+        "crystal"
+      ],
+      "family": "Quartz",
+      "color": "Clear",
+      "colorHex": "#F5F5F5",
+      "hardnessMohs": 7,
+      "birthMonth": 4,
+      "zodiac": [],
+      "chakra": "Crown",
+      "origin": [
+        "Nepal",
+        "Brazil"
+      ],
+      "properties": "Clarity, amplification, healing",
+      "care": "Durable. Clean with water; recharge in moonlight.",
+      "description": "The master healer, clear Himalayan quartz.",
+      "image": "/stones/crystal-quartz.jpg"
+    },
+    {
+      "id": "stn_aquamarine",
+      "slug": "aquamarine",
+      "name": "Aquamarine",
+      "aliases": [
+        "aquamarin",
+        "aqua marine",
+        "beruj"
+      ],
+      "family": "Beryl",
+      "color": "Sea blue",
+      "colorHex": "#7FFFD4",
+      "hardnessMohs": 7.5,
+      "birthMonth": 3,
+      "zodiac": [
+        "Pisces"
+      ],
+      "chakra": "Throat",
+      "origin": [
+        "Brazil",
+        "Pakistan"
+      ],
+      "properties": "Courage, calm, clarity",
+      "care": "Clean with warm soapy water.",
+      "description": "A pale sea-blue beryl, March's birthstone.",
+      "image": "/stones/aquamarine.jpg"
+    },
+    {
+      "id": "stn_cubic_zirconia",
+      "slug": "cubic-zirconia",
+      "name": "Cubic Zirconia",
+      "aliases": [
+        "cz",
+        "zircon",
+        "ad stone",
+        "white stone"
+      ],
+      "color": "Colourless",
+      "colorHex": "#FFFFFF",
+      "hardnessMohs": 8.5,
+      "zodiac": [
+        "Aries"
+      ],
+      "planet": "Venus",
+      "origin": [
+        "Lab created"
+      ],
+      "properties": "Brilliance, clarity",
+      "care": "Clean with warm soapy water and a soft brush.",
+      "description": "A brilliant, affordable lab-created stone.",
+      "image": "/stones/cubic-zirconia.jpg"
+    },
+    {
+      "id": "stn_emerald",
+      "slug": "emerald",
+      "name": "Emerald",
+      "aliases": [
+        "emrald",
+        "emarald",
+        "panna"
+      ],
+      "family": "Beryl",
+      "color": "Green",
+      "colorHex": "#50C878",
+      "hardnessMohs": 7.75,
+      "birthMonth": 5,
+      "zodiac": [
+        "Taurus",
+        "Gemini"
+      ],
+      "planet": "Mercury",
+      "chakra": "Heart",
+      "origin": [
+        "Colombia",
+        "Zambia"
+      ],
+      "properties": "Love, wisdom, growth",
+      "care": "Avoid ultrasonic cleaners and heat.",
+      "description": "The green beryl of Mercury, May's birthstone.",
+      "image": "/stones/emerald.jpg"
+    },
+    {
+      "id": "stn_ruby",
+      "slug": "ruby",
+      "name": "Ruby",
+      "aliases": [
+        "rubi",
+        "manik",
+        "manikya"
+      ],
+      "family": "Corundum",
+      "color": "Red",
+      "colorHex": "#E0115F",
+      "hardnessMohs": 9,
+      "birthMonth": 7,
+      "zodiac": [
+        "Cancer",
+        "Leo"
+      ],
+      "planet": "Sun",
+      "chakra": "Root",
+      "origin": [
+        "Myanmar",
+        "Mozambique"
+      ],
+      "properties": "Vitality, passion, leadership",
+      "care": "Very durable. Clean with warm soapy water.",
+      "description": "The red corundum of the Sun, July's birthstone.",
+      "image": "/stones/ruby.jpg"
+    },
+    {
+      "id": "stn_sapphire",
+      "slug": "sapphire",
+      "name": "Sapphire",
+      "aliases": [
+        "saphire",
+        "safire",
+        "neelam",
+        "blue sapphire"
+      ],
+      "family": "Corundum",
+      "color": "Blue",
+      "colorHex": "#0F52BA",
+      "hardnessMohs": 9,
+      "birthMonth": 9,
+      "zodiac": [
+        "Virgo",
+        "Libra",
+        "Capricorn"
+      ],
+      "planet": "Saturn",
+      "chakra": "Third Eye",
+      "origin": [
+        "Sri Lanka",
+        "Kashmir"
+      ],
+      "properties": "Wisdom, focus, prosperity",
+      "care": "Very durable. Clean with warm soapy water.",
+      "description": "Blue corundum of Saturn, September's birthstone.",
+      "image": "/stones/sapphire.jpg"
+    },
+    {
+      "id": "stn_opal",
+      "slug": "opal",
+      "name": "Opal",
+      "aliases": [
+        "opel",
+        "opale",
+        "fire opal"
+      ],
+      "color": "Multicolour",
+      "colorHex": "#A8C3BC",
+      "hardnessMohs": 6,
+      "birthMonth": 10,
+      "zodiac": [
+        "Libra",
+        "Scorpio"
+      ],
+      "origin": [
+        "Australia",
+        "Ethiopia"
+      ],
+      "properties": "Creativity, inspiration",
+      "care": "Delicate: avoid water soaking, heat and knocks.",
+      "description": "A stone that plays with every colour of light.",
+      "image": "/stones/opal.jpg"
+    },
+    {
+      "id": "stn_topaz",
+      "slug": "topaz",
+      "name": "Topaz",
+      "aliases": [
+        "topas",
+        "blue topaz",
+        "pukhraj"
+      ],
+      "color": "Blue / golden",
+      "colorHex": "#FFC87C",
+      "hardnessMohs": 8,
+      "zodiac": [
+        "Sagittarius",
+        "Scorpio"
+      ],
+      "planet": "Jupiter",
+      "chakra": "Solar Plexus",
+      "origin": [
+        "Brazil",
+        "Sri Lanka"
+      ],
+      "properties": "Joy, generosity, abundance",
+      "care": "Avoid heat and sudden temperature changes.",
+      "description": "A hard, sparkling gem in golden and sky-blue tones.",
+      "image": "/stones/topaz.jpg"
+    },
+    {
+      "id": "stn_tanzanite",
+      "slug": "tanzanite",
+      "name": "Tanzanite",
+      "aliases": [
+        "tanzanit",
+        "tanzonite"
+      ],
+      "color": "Violet-blue",
+      "colorHex": "#4D5BB5",
+      "hardnessMohs": 6.5,
+      "zodiac": [
+        "Sagittarius"
+      ],
+      "chakra": "Third Eye",
+      "origin": [
+        "Tanzania"
+      ],
+      "properties": "Transformation, insight",
+      "care": "Avoid knocks, heat and ultrasonic cleaners.",
+      "description": "A rare violet-blue gem found only in Tanzania.",
+      "image": "/stones/tanzanite.jpg"
+    }
+  ]
+}

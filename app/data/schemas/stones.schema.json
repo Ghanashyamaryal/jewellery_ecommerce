@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stones & gems",
+  "type": "object",
+  "required": [
+    "version",
+    "items"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/item"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "item": {
+      "type": "object",
+      "required": [
+        "id",
+        "slug",
+        "name",
+        "aliases",
+        "color",
+        "colorHex",
+        "zodiac",
+        "origin",
+        "properties",
+        "care",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^stn_[a-z0-9_]+$"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Misspellings / local names used by search"
+        },
+        "family": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "colorHex": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "hardnessMohs": {
+          "type": "number"
+        },
+        "birthMonth": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "zodiac": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "planet": {
+          "type": "string"
+        },
+        "chakra": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "properties": {
+          "type": "string"
+        },
+        "care": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

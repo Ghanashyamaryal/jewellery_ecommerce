@@ -26,9 +26,9 @@ const birthstones = [
   },
   {
     month: "April",
-    stone: "Diamond",
+    stone: "Crystal Quartz",
     color: "bg-white border border-muted",
-    description: "Eternal love",
+    description: "Clarity & healing",
   },
   {
     month: "May",
@@ -83,9 +83,9 @@ const birthstones = [
 const zodiacSigns = [
   {
     sign: "Aries",
-    stone: "Diamond",
-    color: "bg-white border border-muted",
-    description: "Courage & clarity",
+    stone: "Coral",
+    color: "bg-orange-500",
+    description: "Courage & energy",
     dateRange: "Mar 21 - Apr 19",
   },
   {
@@ -240,12 +240,12 @@ export function BirthstoneWidget() {
 
           {/* Zodiac Selector */}
           {activeTab === "zodiac" && (
-            <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 mb-12">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 mb-12">
               {zodiacSigns.map((item, index) => (
                 <button
                   key={item.sign}
                   onClick={() => setSelectedZodiac(index)}
-                  className={`p-3 text-center transition-all cursor-pointer duration-300 border ${
+                  className={`px-1 py-3 min-w-0 text-center transition-all cursor-pointer duration-300 border ${
                     selectedZodiac === index
                       ? "border-foreground bg-foreground text-background"
                       : "border-border hover:border-foreground/50"
@@ -254,7 +254,7 @@ export function BirthstoneWidget() {
                   <div
                     className={`w-4 h-4 rounded-full ${item.color} mx-auto mb-2`}
                   />
-                  <span className="text-[10px] uppercase tracking-wider">
+                  <span className="block text-[10px] uppercase tracking-wider lg:tracking-normal whitespace-nowrap">
                     {item.sign}
                   </span>
                 </button>
@@ -285,7 +285,7 @@ export function BirthstoneWidget() {
                     className="tracking-widest cursor-pointer uppercase text-xs"
                   >
                     <Link
-                      href={`/shop/gemstones?stone=${selectedMonth_data.stone.toLowerCase()}`}
+                      href={`/shop?stone=${selectedMonth_data.stone.toLowerCase()}`}
                     >
                       Shop {selectedMonth_data.stone}
                       <ArrowRight className="ml-2 h-3 w-3" />
@@ -319,7 +319,7 @@ export function BirthstoneWidget() {
                     className="tracking-widest cursor-pointer uppercase text-xs"
                   >
                     <Link
-                      href={`/shop/gemstones?stone=${selectedZodiac_data.stone.toLowerCase()}`}
+                      href={`/shop?stone=${selectedZodiac_data.stone.toLowerCase()}`}
                     >
                       Shop {selectedZodiac_data.stone}
                       <ArrowRight className="ml-2 h-3 w-3" />

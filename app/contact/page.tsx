@@ -54,13 +54,13 @@ export default function ContactPage() {
               {
                 icon: Mail,
                 title: "Email",
-                info: "hello@aryalsirinjems.com",
+                info: "hello@aryalsiringems.com",
                 subtitle: "We'll respond within 24 hours",
               },
               {
                 icon: MapPin,
                 title: "Location",
-                info: "Patan, Kathmandu, Nepal",
+                info: "Kathmandu, Nepal",
                 subtitle: "Visit our studio by appointment",
               },
             ].map((item) => {
