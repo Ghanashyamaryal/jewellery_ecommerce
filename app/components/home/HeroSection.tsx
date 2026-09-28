@@ -1,44 +1,51 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useAutoplay } from "@/hooks/use-autoplay";
 
-const BACKGROUND_IMAGES = [
-  "/home.jpg",
-  "/homeimage.jpg",
-  "/image1.png",
-  "/home.jpg",
-];
+// `tone` is the image's background brightness; text and controls flip to stay readable
+const SLIDES = [
+  { src: "/hero/gemstone-jewellery.jpg", tone: "dark" },
+  { src: "/hero/silver-cz-jewellery.jpg", tone: "light" },
+  { src: "/hero/silver-jewellery.jpg", tone: "dark" },
+  { src: "/hero/silver-idols.jpg", tone: "dark" },
+] as const;
 
 export function HeroSection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % BACKGROUND_IMAGES.length);
-    }, 3000);
-
-    return () => clearInterval(timer);
-  }, []);
+  const {
+    index: currentSlide,
+    goTo,
+    pause,
+    resume,
+  } = useAutoplay(SLIDES.length, 2000);
+  const isLight = SLIDES[currentSlide].tone === "light";
 
   return (
-    <section className="relative h-[70vh] min-h-[600px] flex items-center overflow-hidden bg-[#1a1625]">
+    <section
+      className="relative h-[70svh] min-h-120 lg:h-[calc(100svh-10.375rem)] max-h-240 flex items-center overflow-hidden bg-[#1a1625]"
+      onMouseEnter={pause}
+      onMouseLeave={resume}
+      onFocus={pause}
+      onBlur={resume}
+    >
       <div className="absolute inset-0 z-0">
-        {BACKGROUND_IMAGES.map((img, index) => (
+        {SLIDES.map((slide, index) => (
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentSlide ? "opacity-90" : "opacity-0"
+              index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
             <Image
-              src={img}
-              alt="Jewelry"
+              src={slide.src}
+              alt=""
               fill
-              className="object-cover"
+              sizes="100vw"
+              // Products sit on the right; keep them in frame when narrow screens crop
+              className="object-cover object-[75%_center]"
               priority={index === 0}
             />
           </div>
@@ -47,11 +54,17 @@ export function HeroSection() {
 
       <div className="relative z-10  max-w-390 mx-auto px-4 lg:px-8 flex justify-start items-center w-full">
         <div className="max-w-2xl space-y-8 text-left">
-          <p className="text-sm md:text-base tracking-[0.3em] uppercase text-white/90">
-            Authentic Nepali Craftsmanship
+          <p
+            className={`text-sm md:text-base tracking-[0.3em] uppercase transition-colors duration-1000 ${
+              isLight ? "text-foreground/80" : "text-white/90"
+            }`}
+          >
+            Handcrafted in Kathmandu, Nepal
           </p>
           <h1
-            className="text-4xl lg:py-8 md:text-6xl font-serif leading-tight animate-fade-in-up text-white"
+            className={`text-4xl lg:py-8 md:text-6xl font-serif leading-tight animate-fade-in-up transition-colors duration-1000 ${
+              isLight ? "text-foreground" : "text-white"
+            }`}
             style={{ animationDelay: "0.1s" }}
           >
             Timeless Silver,
@@ -76,7 +89,11 @@ export function HeroSection() {
               asChild
               variant="outline"
               size="lg"
-              className="min-w-[200px] tracking-widest uppercase text-sm bg-transparent text-white border-white/40 hover:bg-white hover:text-black"
+              className={`min-w-[200px] tracking-widest uppercase text-sm bg-transparent ${
+                isLight
+                  ? "text-foreground border-foreground/40 hover:bg-foreground hover:text-background"
+                  : "text-white border-white/40 hover:bg-white hover:text-black"
+              }`}
             >
               <Link href="/bespoke">Custom Design</Link>
             </Button>
@@ -84,22 +101,16 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-4">
-        <div className="animate-bounce mb-2">
-          <div className="w-5 h-8 border-2 border-white/20 rounded-full flex justify-center">
-            <div className="w-0.5 h-2 bg-white/40 rounded-full mt-1.5" />
-          </div>
-        </div>
-
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
         <div className="flex gap-2.5 items-center">
-          {BACKGROUND_IMAGES.map((_, index) => (
+          {SLIDES.map((_, index) => (
             <button
               key={index}
-              onClick={() => setCurrentSlide(index)}
+              onClick={() => goTo(index)}
               className={`h-1.5 transition-all duration-500 rounded-full ${
                 index === currentSlide
-                  ? "w-8 bg-white"
-                  : "w-1.5 bg-white/30 hover:bg-white/60"
+                  ? `w-8 ${isLight ? "bg-foreground" : "bg-white"}`
+                  : `w-1.5 ${isLight ? "bg-foreground/30 hover:bg-foreground/60" : "bg-white/30 hover:bg-white/60"}`
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />

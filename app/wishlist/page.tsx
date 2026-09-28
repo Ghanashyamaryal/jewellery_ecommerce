@@ -8,6 +8,8 @@ import { useAppSelector, useAppDispatch } from "@/store/hooks";
 import { addToCart } from "@/store/cartSlice";
 import { useToast } from "@/hooks/use-toast";
 import { removeFromWishlist, selectWishlistItems } from "@/store/wishlistSlice";
+import { getFinalPrice } from "@/lib/pricing";
+import type { Product } from "@/types/catalog";
 
 export default function WishlistPage() {
   const dispatch = useAppDispatch();
@@ -22,7 +24,7 @@ export default function WishlistPage() {
     });
   };
 
-  const handleAddToCart = (product: any) => {
+  const handleAddToCart = (product: Product) => {
     dispatch(addToCart({ product: product, quantity: 1 }));
     toast({
       title: "Added to Cart",
@@ -93,7 +95,7 @@ export default function WishlistPage() {
 
                   {/* Product Image */}
                   <Link
-                    href={`/products/${item.product.slug || item.product.id}`}
+                    href={`/product/${item.product.slug}`}
                   >
                     <div className="aspect-square overflow-hidden bg-muted">
                       <img
@@ -107,7 +109,7 @@ export default function WishlistPage() {
                   {/* Product Info */}
                   <div className="p-4 space-y-3">
                     <Link
-                      href={`/products/${item.product.slug || item.product.id}`}
+                      href={`/product/${item.product.slug}`}
                     >
                       <h3 className="font-medium text-sm line-clamp-2 hover:text-primary transition-colors">
                         {item.product.name}
@@ -116,7 +118,7 @@ export default function WishlistPage() {
 
                     <div className="flex items-center justify-between">
                       <p className="text-lg font-serif">
-                        Rs. {item.product.price?.toLocaleString()}
+                        Rs. {getFinalPrice(item.product).toLocaleString()}
                       </p>
                       {item.product.inStock ? (
                         <span className="text-xs text-green-600 font-medium">
@@ -129,16 +131,23 @@ export default function WishlistPage() {
                       )}
                     </div>
 
-                    {/* Add to Cart Button */}
-                    <Button
-                      onClick={() => handleAddToCart(item.product)}
-                      disabled={!item.product.inStock}
-                      className="w-full"
-                      size="sm"
-                    >
-                      <ShoppingCart className="h-4 w-4 mr-2" />
-                      Add to Cart
-                    </Button>
+                    {item.product.variants?.some((v) => v.isActive) ? (
+                      <Button asChild className="w-full" size="sm">
+                        <Link href={`/product/${item.product.slug}`}>
+                          Choose Size
+                        </Link>
+                      </Button>
+                    ) : (
+                      <Button
+                        onClick={() => handleAddToCart(item.product)}
+                        disabled={!item.product.inStock}
+                        className="w-full"
+                        size="sm"
+                      >
+                        <ShoppingCart className="h-4 w-4 mr-2" />
+                        Add to Cart
+                      </Button>
+                    )}
                   </div>
                 </div>
               ))}

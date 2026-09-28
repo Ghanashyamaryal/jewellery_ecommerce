@@ -1,0 +1,142 @@
+{
+  "jewelry": {
+    "source": "https://commons.wikimedia.org/wiki/File:Silver_chain.jpg",
+    "author": "Isha bovi",
+    "license": "CC BY-SA 4.0"
+  },
+  "rings": {
+    "source": "https://www.pexels.com/photo/person-wearing-silver-rings-9431873/",
+    "author": "cottonbro studio",
+    "license": "Pexels License"
+  },
+  "pendants": {
+    "source": "https://commons.wikimedia.org/wiki/File:Moonstone.cabochons.arp.jpg",
+    "author": "Arpingstone",
+    "license": "Public domain"
+  },
+  "necklaces": {
+    "source": "https://commons.wikimedia.org/wiki/File:Silver_necklace,_Baghat_Region,_circa_19th_century_CE.jpg",
+    "author": "SpeakingArch",
+    "license": "CC BY-SA 4.0"
+  },
+  "earrings": {
+    "source": "https://commons.wikimedia.org/wiki/File:Silver_filigree_and_leaf_earrings_with_pearls_by_Delfino_Garc%C3%ADa_Esperanza.jpg",
+    "author": "Thelmadatter (Friends of Oaxacan Folk Art)",
+    "license": "CC BY-SA 3.0"
+  },
+  "bracelets": {
+    "source": "https://commons.wikimedia.org/wiki/File:20260625_Gilt_silver_bracelet_with_linked_beads_and_vines.jpg",
+    "author": "Windmemories",
+    "license": "CC BY-SA 4.0"
+  },
+  "bangles": {
+    "source": "https://commons.wikimedia.org/wiki/File:Silver_bangles.jpg",
+    "author": "liz west from Boxborough, MA",
+    "license": "CC BY 2.0"
+  },
+  "chains": {
+    "source": "https://commons.wikimedia.org/wiki/File:Rolo_silver_chain_2.jpg",
+    "author": "W.carter",
+    "license": "CC BY-SA 4.0"
+  },
+  "anklets": {
+    "source": "https://commons.wikimedia.org/wiki/File:Traditional_Indian_silver_anklets_02.jpg",
+    "author": "Shoot stufz",
+    "license": "CC BY-SA 4.0"
+  },
+  "stone-jewelry": {
+    "source": "https://commons.wikimedia.org/wiki/File:Traditional_colorful_necklace_shop_in_streets_of_Kathmandu_(4).jpg",
+    "author": "Nabin K. Sapkota",
+    "license": "CC BY-SA 4.0"
+  },
+  "stone-necklaces": {
+    "source": "https://commons.wikimedia.org/wiki/File:02024_0001_Amber_necklaces.jpg",
+    "author": "Silar",
+    "license": "CC BY-SA 4.0"
+  },
+  "stone-bracelets": {
+    "source": "https://commons.wikimedia.org/wiki/File:Hand_and_power_stone_bracelets.jpg",
+    "author": "Tomascastelazo",
+    "license": "CC BY-SA 4.0"
+  },
+  "malas": {
+    "source": "https://commons.wikimedia.org/wiki/File:Rudraksha_mala.jpg",
+    "author": "Janak Bhatta",
+    "license": "CC BY-SA 4.0"
+  },
+  "stone-earrings": {
+    "source": "https://commons.wikimedia.org/wiki/File:Silver_filigree_and_turqoise_earrings_by_Jos%C3%A9_Jorge_Garc%C3%ADa_Garc%C3%ADa.jpg",
+    "author": "Thelmadatter (Friends of Oaxacan Folk Art)",
+    "license": "CC BY-SA 3.0"
+  },
+  "gemstones": {
+    "source": "https://commons.wikimedia.org/wiki/File:Jerusalem,_Old_City_Market_ap_047.jpg",
+    "author": "Ariel Palmon",
+    "license": "CC BY-SA 3.0"
+  },
+  "tumbled": {
+    "source": "https://commons.wikimedia.org/wiki/File:Tumbled_gemstone_pebbles_arp.jpg",
+    "author": "Arpingstone",
+    "license": "Public domain"
+  },
+  "faceted": {
+    "source": "https://commons.wikimedia.org/wiki/File:Cut_garnet_collection.JPG",
+    "author": "Humanfeather / Michelle Jo",
+    "license": "CC BY 3.0"
+  },
+  "raw": {
+    "source": "https://commons.wikimedia.org/wiki/File:Amethyst-geode_020_7765.jpg",
+    "author": "Ludvig14",
+    "license": "CC BY-SA 4.0"
+  },
+  "cabochon": {
+    "source": "https://commons.wikimedia.org/wiki/File:Black_oval_onyx_cabochons_2.jpg",
+    "author": "W.carter",
+    "license": "CC BY 4.0"
+  },
+  "idols-statues": {
+    "source": "https://commons.wikimedia.org/wiki/File:Brass_Structures_Created_Using_Bharai_Kaam_in_Tigariya,_Betul,_Madhya_Pradesh_031.jpg",
+    "author": "Shoot stufz",
+    "license": "CC BY-SA 4.0"
+  },
+  "deity-idols": {
+    "source": "https://commons.wikimedia.org/wiki/File:Brass_idols_of_Nabadwip_1.jpg",
+    "author": "বাক্যবাগীশ",
+    "license": "CC BY-SA 4.0"
+  },
+  "buddha-statues": {
+    "source": "https://commons.wikimedia.org/wiki/File:Buddha_Photo_by_Suwaas.jpg",
+    "author": "Suwaas",
+    "license": "CC BY-SA 4.0"
+  },
+  "figurines": {
+    "source": "https://commons.wikimedia.org/wiki/File:Brass_Structures_Created_Using_Bharai_Kaam_in_Tigariya,_Betul,_Madhya_Pradesh_021.jpg",
+    "author": "Shoot stufz",
+    "license": "CC BY-SA 4.0"
+  },
+  "home-decor": {
+    "source": "https://commons.wikimedia.org/wiki/File:Market_Scene_-_Thamel_District_-_Kathmandu_-_Nepal_(13465125184).jpg",
+    "author": "Adam Jones from Kelowna, BC, Canada",
+    "license": "CC BY-SA 2.0"
+  },
+  "pooja-items": {
+    "source": "https://commons.wikimedia.org/wiki/File:Hindu_pooja_thali.jpg",
+    "author": "suketdedhia",
+    "license": "CC0"
+  },
+  "utensils": {
+    "source": "https://commons.wikimedia.org/wiki/File:Utensils_of_tea_in_Tunisia_1.JPG",
+    "author": "Touzrimounir",
+    "license": "CC BY-SA 4.0"
+  },
+  "decor": {
+    "source": "https://commons.wikimedia.org/wiki/File:Gong_at_a_shop_near_Boudhanath.jpg",
+    "author": "Suyash Dwivedi",
+    "license": "CC BY-SA 4.0"
+  },
+  "wall-hangings": {
+    "source": "https://commons.wikimedia.org/wiki/File:Boudhanath_No_Drone_Zone_01.jpg",
+    "author": "Anup Raj Rai",
+    "license": "CC BY-SA 4.0"
+  }
+}

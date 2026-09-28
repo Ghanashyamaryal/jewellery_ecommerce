@@ -1,0 +1,6988 @@
+{
+  "$schema": "./schemas/products.schema.json",
+  "version": 2,
+  "items": [
+    {
+      "id": "prd_0001",
+      "sku": "RNG-0001",
+      "slug": "himalayan-amethyst-ring",
+      "name": "Himalayan Amethyst Ring",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_rings",
+      "shortDescription": "Handcrafted ring featuring deep purple Himalayan amethyst in intricate sterling silver filigree.",
+      "description": "A stunning handcrafted ring featuring a deep purple Himalayan amethyst set in intricate 925 sterling silver filigree work. The design draws inspiration from traditional Nepali motifs.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Natural Himalayan Amethyst",
+        "Certificate of Authenticity Included",
+        "Traditional Nepali Design"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 12500,
+        "compareAtPrice": 13889,
+        "currency": "NPR",
+        "discount": {
+          "type": "percentage",
+          "value": 10
+        },
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 3,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_amethyst",
+            "role": "primary",
+            "shape": "oval",
+            "caratWeight": 3.5,
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "traditional"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel"
+      },
+      "variants": [
+        {
+          "id": "RNG-0001-V1",
+          "sku": "RNG-0001-SIZE-6",
+          "name": "Size 6",
+          "options": {
+            "ringSize": "6"
+          },
+          "stockCount": 1,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0001-V2",
+          "sku": "RNG-0001-SIZE-7",
+          "name": "Size 7",
+          "options": {
+            "ringSize": "7"
+          },
+          "stockCount": 1,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0001-V3",
+          "sku": "RNG-0001-SIZE-8",
+          "name": "Size 8",
+          "options": {
+            "ringSize": "8"
+          },
+          "stockCount": 1,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0001_m1",
+          "type": "image",
+          "url": "/images/products/himalayan-amethyst-ring-1.jpg",
+          "alt": "Sterling silver ring set with a faceted purple amethyst on a white background",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0001_m2",
+          "type": "image",
+          "url": "/images/products/himalayan-amethyst-ring-2.jpg",
+          "alt": "Handmade silver ring with a faceted amethyst in a tall bezel, resting on suede cord",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0001_m3",
+          "type": "image",
+          "url": "/images/products/himalayan-amethyst-ring-3.jpg",
+          "alt": "Hand wearing a small amethyst ring on textured lace fabric",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 12.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 7
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear",
+        "Festive"
+      ],
+      "tags": [
+        "filigree",
+        "handmade",
+        "nepali design"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Himalayan Amethyst Ring | Aryal Siring Gems",
+        "metaDescription": "Handcrafted ring featuring deep purple Himalayan amethyst in intricate sterling silver filigree.",
+        "keywords": [
+          "filigree",
+          "handmade",
+          "nepali design"
+        ]
+      },
+      "flags": {
+        "isFeatured": true,
+        "isNew": true,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 8
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-01T00:00:00.000Z",
+      "updatedAt": "2026-06-01T00:00:00.000Z",
+      "publishedAt": "2026-06-01T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0002",
+      "sku": "RNG-0002",
+      "slug": "mens-black-onyx-signet-ring",
+      "name": "Men's Black Onyx Signet Ring",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_rings",
+      "shortDescription": "Bold square black onyx signet ring in solid sterling silver.",
+      "description": "A classic men's signet ring set with a polished square black onyx on a heavy sterling silver band.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "men",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 9800,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 8,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_onyx",
+            "role": "primary",
+            "shape": "square",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel"
+      },
+      "variants": [
+        {
+          "id": "RNG-0002-V1",
+          "sku": "RNG-0002-SIZE-9",
+          "name": "Size 9",
+          "options": {
+            "ringSize": "9"
+          },
+          "stockCount": 2,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0002-V2",
+          "sku": "RNG-0002-SIZE-10",
+          "name": "Size 10",
+          "options": {
+            "ringSize": "10"
+          },
+          "stockCount": 2,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0002-V3",
+          "sku": "RNG-0002-SIZE-11",
+          "name": "Size 11",
+          "options": {
+            "ringSize": "11"
+          },
+          "stockCount": 2,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0002-V4",
+          "sku": "RNG-0002-SIZE-12",
+          "name": "Size 12",
+          "options": {
+            "ringSize": "12"
+          },
+          "stockCount": 2,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0002_m1",
+          "type": "image",
+          "url": "/images/products/mens-black-onyx-signet-ring-1.jpg",
+          "alt": "Men's oxidised silver signet ring with a polished black onyx top, resting on a rock",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0002_m2",
+          "type": "image",
+          "url": "/images/products/mens-black-onyx-signet-ring-2.jpg",
+          "alt": "Man's hand wearing a silver ring set with black onyx",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0002_m3",
+          "type": "image",
+          "url": "/images/products/mens-black-onyx-signet-ring-3.jpg",
+          "alt": "Hand wearing a silver ring with a black gemstone, holding white flowers",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 14.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 7
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear",
+        "Office"
+      ],
+      "tags": [
+        "signet",
+        "bold",
+        "gents ring"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Men's Black Onyx Signet Ring | Aryal Siring Gems",
+        "metaDescription": "Bold square black onyx signet ring in solid sterling silver.",
+        "keywords": [
+          "signet",
+          "bold",
+          "gents ring"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 45
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-03T00:00:00.000Z",
+      "updatedAt": "2026-06-03T00:00:00.000Z",
+      "publishedAt": "2026-06-03T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0003",
+      "sku": "RNG-0003",
+      "slug": "tibetan-turquoise-mens-ring",
+      "name": "Tibetan Turquoise Men's Ring",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_rings",
+      "shortDescription": "Oxidised silver ring with a Tibetan turquoise centre and coral accents.",
+      "description": "Inspired by Tibetan nomad jewellery, this oxidised silver ring carries a large turquoise stone flanked by tiny red coral dots.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "men",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 11500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 3,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_oxidised_silver",
+            "role": "primary",
+            "finish": "oxidised"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_turquoise",
+            "role": "primary",
+            "shape": "oval",
+            "isNatural": true
+          },
+          {
+            "stoneId": "stn_coral",
+            "role": "accent",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "tibetan",
+          "tribal"
+        ],
+        "finish": "oxidised",
+        "hallmarked": true,
+        "settingType": "bezel"
+      },
+      "variants": [
+        {
+          "id": "RNG-0003-V1",
+          "sku": "RNG-0003-SIZE-9",
+          "name": "Size 9",
+          "options": {
+            "ringSize": "9"
+          },
+          "stockCount": 1,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0003-V2",
+          "sku": "RNG-0003-SIZE-10",
+          "name": "Size 10",
+          "options": {
+            "ringSize": "10"
+          },
+          "stockCount": 1,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0003-V3",
+          "sku": "RNG-0003-SIZE-11",
+          "name": "Size 11",
+          "options": {
+            "ringSize": "11"
+          },
+          "stockCount": 1,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0003_m1",
+          "type": "image",
+          "url": "/images/products/tibetan-turquoise-mens-ring-1.jpg",
+          "alt": "Two handmade silver rings set with oval turquoise cabochons",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0003_m2",
+          "type": "image",
+          "url": "/images/products/tibetan-turquoise-mens-ring-2.jpg",
+          "alt": "Close-up of an oxidised silver ring with a large veined turquoise stone worn on the hand",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0003_m3",
+          "type": "image",
+          "url": "/images/products/tibetan-turquoise-mens-ring-3.jpg",
+          "alt": "Man's hand wearing an ornate silver ring set with turquoise",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 16.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 7
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Statement"
+      ],
+      "tags": [
+        "tibetan",
+        "oxidised",
+        "tribal",
+        "gents ring"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Tibetan Turquoise Men's Ring | Aryal Siring Gems",
+        "metaDescription": "Oxidised silver ring with a Tibetan turquoise centre and coral accents.",
+        "keywords": [
+          "tibetan",
+          "oxidised",
+          "tribal",
+          "gents ring"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": true,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 82
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-05T00:00:00.000Z",
+      "updatedAt": "2026-06-05T00:00:00.000Z",
+      "publishedAt": "2026-06-05T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0004",
+      "sku": "RNG-0004",
+      "slug": "garnet-cluster-ring",
+      "name": "Garnet Cluster Ring",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_rings",
+      "shortDescription": "Flower-shaped cluster of red garnets in sterling silver.",
+      "description": "Seven round garnets arranged as a flower on a slim sterling silver band. A perfect January birthstone gift.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 7200,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 8,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_garnet",
+            "role": "primary",
+            "shape": "round",
+            "count": 7,
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "cluster"
+      },
+      "variants": [
+        {
+          "id": "RNG-0004-V1",
+          "sku": "RNG-0004-SIZE-5",
+          "name": "Size 5",
+          "options": {
+            "ringSize": "5"
+          },
+          "stockCount": 2,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0004-V2",
+          "sku": "RNG-0004-SIZE-6",
+          "name": "Size 6",
+          "options": {
+            "ringSize": "6"
+          },
+          "stockCount": 2,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0004-V3",
+          "sku": "RNG-0004-SIZE-7",
+          "name": "Size 7",
+          "options": {
+            "ringSize": "7"
+          },
+          "stockCount": 2,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0004-V4",
+          "sku": "RNG-0004-SIZE-8",
+          "name": "Size 8",
+          "options": {
+            "ringSize": "8"
+          },
+          "stockCount": 2,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0004_m1",
+          "type": "image",
+          "url": "/images/products/garnet-cluster-ring-1.jpg",
+          "alt": "Silver ring set with deep red faceted garnets on a red background",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0004_m2",
+          "type": "image",
+          "url": "/images/products/garnet-cluster-ring-2.jpg",
+          "alt": "Silver ring with a deep red faceted garnet beside festive decorations",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0004_m3",
+          "type": "image",
+          "url": "/images/products/garnet-cluster-ring-3.jpg",
+          "alt": "Modern flat sterling silver ring set with a faceted red garnet",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 6.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 7
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "tags": [
+        "cluster",
+        "red",
+        "january birthstone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Garnet Cluster Ring | Aryal Siring Gems",
+        "metaDescription": "Flower-shaped cluster of red garnets in sterling silver.",
+        "keywords": [
+          "cluster",
+          "red",
+          "january birthstone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 119
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-07T00:00:00.000Z",
+      "updatedAt": "2026-06-07T00:00:00.000Z",
+      "publishedAt": "2026-06-07T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0005",
+      "sku": "RNG-0005",
+      "slug": "plain-oxidised-band-ring",
+      "name": "Plain Oxidised Band Ring",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_rings",
+      "shortDescription": "Minimal oxidised silver band for everyday wear.",
+      "description": "A simple, comfortable oxidised sterling silver band with a hammered texture. Ideal as a couple ring.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 3500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 20,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_oxidised_silver",
+            "role": "primary",
+            "finish": "oxidised"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "minimal"
+        ],
+        "finish": "oxidised",
+        "hallmarked": true
+      },
+      "variants": [
+        {
+          "id": "RNG-0005-V1",
+          "sku": "RNG-0005-SIZE-6",
+          "name": "Size 6",
+          "options": {
+            "ringSize": "6"
+          },
+          "stockCount": 4,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0005-V2",
+          "sku": "RNG-0005-SIZE-7",
+          "name": "Size 7",
+          "options": {
+            "ringSize": "7"
+          },
+          "stockCount": 4,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0005-V3",
+          "sku": "RNG-0005-SIZE-8",
+          "name": "Size 8",
+          "options": {
+            "ringSize": "8"
+          },
+          "stockCount": 4,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0005-V4",
+          "sku": "RNG-0005-SIZE-9",
+          "name": "Size 9",
+          "options": {
+            "ringSize": "9"
+          },
+          "stockCount": 4,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0005-V5",
+          "sku": "RNG-0005-SIZE-10",
+          "name": "Size 10",
+          "options": {
+            "ringSize": "10"
+          },
+          "stockCount": 4,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0005_m1",
+          "type": "image",
+          "url": "/images/products/plain-oxidised-band-ring-1.jpg",
+          "alt": "Plain dark oxidised silver band ring standing on a grey surface",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0005_m2",
+          "type": "image",
+          "url": "/images/products/plain-oxidised-band-ring-2.jpg",
+          "alt": "Two textured silver band rings on a wooden table",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0005_m3",
+          "type": "image",
+          "url": "/images/products/plain-oxidised-band-ring-3.jpg",
+          "alt": "Two plain silver band rings on a white background",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 7.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 7
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear"
+      ],
+      "tags": [
+        "band",
+        "minimal",
+        "couple ring",
+        "no stone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Plain Oxidised Band Ring | Aryal Siring Gems",
+        "metaDescription": "Minimal oxidised silver band for everyday wear.",
+        "keywords": [
+          "band",
+          "minimal",
+          "couple ring",
+          "no stone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.4,
+        "count": 16
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z",
+      "publishedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0006",
+      "sku": "RNG-0006",
+      "slug": "lapis-lazuli-statement-ring",
+      "name": "Lapis Lazuli Statement Ring",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_rings",
+      "shortDescription": "Royal blue lapis lazuli in a chunky sterling silver setting.",
+      "description": "A rectangular lapis lazuli with golden pyrite flecks set in a chunky, hand-finished sterling silver ring.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 8900,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 4,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_lapis_lazuli",
+            "role": "primary",
+            "shape": "rectangle",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel"
+      },
+      "variants": [
+        {
+          "id": "RNG-0006-V1",
+          "sku": "RNG-0006-SIZE-7",
+          "name": "Size 7",
+          "options": {
+            "ringSize": "7"
+          },
+          "stockCount": 1,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0006-V2",
+          "sku": "RNG-0006-SIZE-8",
+          "name": "Size 8",
+          "options": {
+            "ringSize": "8"
+          },
+          "stockCount": 1,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0006-V3",
+          "sku": "RNG-0006-SIZE-9",
+          "name": "Size 9",
+          "options": {
+            "ringSize": "9"
+          },
+          "stockCount": 1,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "RNG-0006-V4",
+          "sku": "RNG-0006-SIZE-10",
+          "name": "Size 10",
+          "options": {
+            "ringSize": "10"
+          },
+          "stockCount": 1,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0006_m1",
+          "type": "image",
+          "url": "/images/products/lapis-lazuli-statement-ring-1.jpg",
+          "alt": "Heavy silver ring set with a large oval deep-blue lapis lazuli cabochon",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0006_m2",
+          "type": "image",
+          "url": "/images/products/lapis-lazuli-statement-ring-2.jpg",
+          "alt": "Wide silver band ring with a deep blue cabochon on green stone",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0006_m3",
+          "type": "image",
+          "url": "/images/products/lapis-lazuli-statement-ring-3.jpg",
+          "alt": "Silver ring with a dark blue teardrop stone displayed on quartz",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 11.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 7
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Statement"
+      ],
+      "tags": [
+        "blue",
+        "bold",
+        "cocktail ring"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Lapis Lazuli Statement Ring | Aryal Siring Gems",
+        "metaDescription": "Royal blue lapis lazuli in a chunky sterling silver setting.",
+        "keywords": [
+          "blue",
+          "bold",
+          "cocktail ring"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 53
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-11T00:00:00.000Z",
+      "updatedAt": "2026-06-11T00:00:00.000Z",
+      "publishedAt": "2026-06-11T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0007",
+      "sku": "PND-0007",
+      "slug": "garnet-pendant",
+      "name": "Garnet Pendant",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_pendants",
+      "shortDescription": "Rich red garnet pendant in elegant silver bezel. Perfect January birthstone piece.",
+      "description": "A rich red garnet pendant set in an elegant silver bezel. This January birthstone piece radiates warmth and passion.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Natural Red Garnet",
+        "Chain Included",
+        "January Birthstone"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 9500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 12,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_garnet",
+            "role": "primary",
+            "shape": "oval",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel",
+        "closureType": "lobster"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0007_m1",
+          "type": "image",
+          "url": "/images/products/garnet-pendant-1.jpg",
+          "alt": "Silver pendant with a deep red garnet on a fine silver chain",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0007_m2",
+          "type": "image",
+          "url": "/images/products/garnet-pendant-2.jpg",
+          "alt": "Handmade silver pendant set with a red garnet on autumn leaves",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0007_m3",
+          "type": "image",
+          "url": "/images/products/garnet-pendant-3.jpg",
+          "alt": "Hammered silver necklace with a round garnet cabochon",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 10.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear",
+        "Festive"
+      ],
+      "tags": [
+        "bezel",
+        "red",
+        "january birthstone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Garnet Pendant | Aryal Siring Gems",
+        "metaDescription": "Rich red garnet pendant in elegant silver bezel. Perfect January birthstone piece.",
+        "keywords": [
+          "bezel",
+          "red",
+          "january birthstone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 90
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-13T00:00:00.000Z",
+      "updatedAt": "2026-06-13T00:00:00.000Z",
+      "publishedAt": "2026-06-13T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0008",
+      "sku": "PND-0008",
+      "slug": "amethyst-teardrop-pendant",
+      "name": "Amethyst Teardrop Pendant",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_pendants",
+      "shortDescription": "Pear-cut amethyst with a halo of sparkling CZ.",
+      "description": "A faceted pear-cut amethyst surrounded by a halo of cubic zirconia, on an 18-inch sterling silver chain.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 8400,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 8,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_amethyst",
+            "role": "primary",
+            "shape": "pear",
+            "caratWeight": 4,
+            "isNatural": true
+          },
+          {
+            "stoneId": "stn_cubic_zirconia",
+            "role": "accent",
+            "isNatural": false
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "halo",
+        "closureType": "lobster"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0008_m1",
+          "type": "image",
+          "url": "/images/products/amethyst-teardrop-pendant-1.jpg",
+          "alt": "Sterling silver pendant with a faceted purple amethyst on a fine chain",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0008_m2",
+          "type": "image",
+          "url": "/images/products/amethyst-teardrop-pendant-2.jpg",
+          "alt": "Ornate silver filigree pendant set with an amethyst cabochon among amethyst crystals",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0008_m3",
+          "type": "image",
+          "url": "/images/products/amethyst-teardrop-pendant-3.jpg",
+          "alt": "Amethyst drop pendant with a silver bail on a black cord",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 7.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Party",
+        "Gift"
+      ],
+      "tags": [
+        "teardrop",
+        "purple"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Amethyst Teardrop Pendant | Aryal Siring Gems",
+        "metaDescription": "Pear-cut amethyst with a halo of sparkling CZ.",
+        "keywords": [
+          "teardrop",
+          "purple"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": true,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 127
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-15T00:00:00.000Z",
+      "updatedAt": "2026-06-15T00:00:00.000Z",
+      "publishedAt": "2026-06-15T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0009",
+      "sku": "PND-0009",
+      "slug": "om-silver-pendant",
+      "name": "Om Silver Pendant",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_pendants",
+      "shortDescription": "Hand-engraved Om symbol pendant in sterling silver.",
+      "description": "A bold Om symbol cut and engraved by hand from solid sterling silver. Worn by men and women alike.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 4200,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 25,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "spiritual"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "closureType": "lobster"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0009_m1",
+          "type": "image",
+          "url": "/images/products/om-silver-pendant-1.jpg",
+          "alt": "Silver Om (ॐ) symbol pendant with a tassel on a prayer-bead mala",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0009_m2",
+          "type": "image",
+          "url": "/images/products/om-silver-pendant-2.jpg",
+          "alt": "Om (ॐ) amulet pendant on a silver chain",
+          "isPrimary": false,
+          "sortOrder": 1
+        }
+      ],
+      "shipping": {
+        "weightGrams": 8.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "engraving": {
+          "available": true,
+          "maxCharacters": 20,
+          "price": 500
+        }
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear",
+        "Religious"
+      ],
+      "tags": [
+        "om",
+        "spiritual",
+        "religious",
+        "no stone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Om Silver Pendant | Aryal Siring Gems",
+        "metaDescription": "Hand-engraved Om symbol pendant in sterling silver.",
+        "keywords": [
+          "om",
+          "spiritual",
+          "religious",
+          "no stone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": true,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.9,
+        "count": 24
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-17T00:00:00.000Z",
+      "updatedAt": "2026-06-17T00:00:00.000Z",
+      "publishedAt": "2026-06-17T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0010",
+      "sku": "PND-0010",
+      "slug": "tiger-eye-mens-pendant",
+      "name": "Tiger Eye Men's Pendant",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_pendants",
+      "shortDescription": "Rectangular tiger eye in a rugged oxidised silver frame.",
+      "description": "A rectangular tiger eye slab framed in rugged oxidised silver with a tribal border. Designed for men.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "men",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 6900,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 7,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_oxidised_silver",
+            "role": "primary",
+            "finish": "oxidised"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_tiger_eye",
+            "role": "primary",
+            "shape": "rectangle",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "tribal"
+        ],
+        "finish": "oxidised",
+        "hallmarked": true,
+        "settingType": "bezel",
+        "closureType": "lobster"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0010_m1",
+          "type": "image",
+          "url": "/images/products/tiger-eye-mens-pendant-1.jpg",
+          "alt": "Silver pendant with an oval golden-brown tiger eye stone on a chain",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0010_m2",
+          "type": "image",
+          "url": "/images/products/tiger-eye-mens-pendant-2.jpg",
+          "alt": "Tiger eye stone set in a silver prong pendant with eucalyptus leaves",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0010_m3",
+          "type": "image",
+          "url": "/images/products/tiger-eye-mens-pendant-3.jpg",
+          "alt": "Tiger eye necklace with a banded oval tiger eye pendant",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 15.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear"
+      ],
+      "tags": [
+        "gents pendant",
+        "brown",
+        "tribal"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Tiger Eye Men's Pendant | Aryal Siring Gems",
+        "metaDescription": "Rectangular tiger eye in a rugged oxidised silver frame.",
+        "keywords": [
+          "gents pendant",
+          "brown",
+          "tribal"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 61
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z",
+      "publishedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0011",
+      "sku": "PND-0011",
+      "slug": "moonstone-crescent-pendant",
+      "name": "Moonstone Crescent Pendant",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_pendants",
+      "shortDescription": "Delicate crescent moon pendant with rainbow moonstone.",
+      "description": "A slim crescent moon cradling a round rainbow moonstone that flashes blue in the light.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 5600,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 10,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_moonstone",
+            "role": "primary",
+            "shape": "round",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel",
+        "closureType": "lobster"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0011_m1",
+          "type": "image",
+          "url": "/images/products/moonstone-crescent-pendant-1.jpg",
+          "alt": "Sterling silver moonstone pendant with a milky blue sheen on a fine chain",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0011_m2",
+          "type": "image",
+          "url": "/images/products/moonstone-crescent-pendant-2.jpg",
+          "alt": "Silver teardrop moonstone pendant on a dark surface",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0011_m3",
+          "type": "image",
+          "url": "/images/products/moonstone-crescent-pendant-3.jpg",
+          "alt": "Close-up of a wire-wrapped silver pendant with a rainbow moonstone",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 5.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear"
+      ],
+      "tags": [
+        "moon",
+        "crescent",
+        "celestial"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Moonstone Crescent Pendant | Aryal Siring Gems",
+        "metaDescription": "Delicate crescent moon pendant with rainbow moonstone.",
+        "keywords": [
+          "moon",
+          "crescent",
+          "celestial"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": true,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 98
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-21T00:00:00.000Z",
+      "updatedAt": "2026-06-21T00:00:00.000Z",
+      "publishedAt": "2026-06-21T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0012",
+      "sku": "NCK-0012",
+      "slug": "turquoise-statement-necklace",
+      "name": "Turquoise Statement Necklace",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_necklaces",
+      "shortDescription": "Elegant statement necklace with genuine Tibetan turquoise stones crafted using traditional techniques.",
+      "description": "An elegant statement necklace featuring genuine Tibetan turquoise stones, handcrafted with traditional silversmithing techniques passed down through generations.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Natural Tibetan Turquoise",
+        "Ethically Sourced Stones",
+        "Adjustable Length"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 28000,
+        "compareAtPrice": 35000,
+        "currency": "NPR",
+        "discount": {
+          "type": "fixed",
+          "value": 7000
+        },
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 3,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_turquoise",
+            "role": "primary",
+            "isNatural": true
+          },
+          {
+            "stoneId": "stn_coral",
+            "role": "accent",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "statement",
+          "tibetan"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel",
+        "closureType": "lobster",
+        "necklaceType": "statement"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0012_m1",
+          "type": "image",
+          "url": "/images/products/turquoise-statement-necklace-1.jpg",
+          "alt": "Tibetan statement collar necklace inlaid with turquoise and red coral",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0012_m2",
+          "type": "image",
+          "url": "/images/products/turquoise-statement-necklace-2.jpg",
+          "alt": "Chunky turquoise nugget statement necklace worn over a black top",
+          "isPrimary": false,
+          "sortOrder": 1
+        }
+      ],
+      "shipping": {
+        "weightGrams": 45.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Statement",
+        "Festive"
+      ],
+      "tags": [
+        "tibetan",
+        "statement",
+        "bridal"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Turquoise Statement Necklace | Aryal Siring Gems",
+        "metaDescription": "Elegant statement necklace with genuine Tibetan turquoise stones crafted using traditional techniques.",
+        "keywords": [
+          "tibetan",
+          "statement",
+          "bridal"
+        ]
+      },
+      "flags": {
+        "isFeatured": true,
+        "isNew": false,
+        "isBestseller": true,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.9,
+        "count": 135
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-23T00:00:00.000Z",
+      "updatedAt": "2026-06-23T00:00:00.000Z",
+      "publishedAt": "2026-06-23T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0013",
+      "sku": "NCK-0013",
+      "slug": "amethyst-and-cz-silver-necklace",
+      "name": "Amethyst & CZ Silver Necklace",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_necklaces",
+      "shortDescription": "Graduated amethyst necklace with CZ accents.",
+      "description": "Five graduated oval amethysts linked by sterling silver settings studded with cubic zirconia.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 19500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 4,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_amethyst",
+            "role": "primary",
+            "isNatural": true
+          },
+          {
+            "stoneId": "stn_cubic_zirconia",
+            "role": "accent",
+            "isNatural": false
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel",
+        "closureType": "lobster",
+        "necklaceType": "statement"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0013_m1",
+          "type": "image",
+          "url": "/images/products/amethyst-and-cz-silver-necklace-1.jpg",
+          "alt": "Purple amethyst pendant on a silver chain displayed on a wooden stand",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0013_m2",
+          "type": "image",
+          "url": "/images/products/amethyst-and-cz-silver-necklace-2.jpg",
+          "alt": "Silver necklace with a small purple amethyst pendant in an open gift box",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0013_m3",
+          "type": "image",
+          "url": "/images/products/amethyst-and-cz-silver-necklace-3.jpg",
+          "alt": "Faceted amethyst point pendant with white flowers on a white background",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 22.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Party",
+        "Wedding"
+      ],
+      "tags": [
+        "purple",
+        "sparkle",
+        "evening"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Amethyst & CZ Silver Necklace | Aryal Siring Gems",
+        "metaDescription": "Graduated amethyst necklace with CZ accents.",
+        "keywords": [
+          "purple",
+          "sparkle",
+          "evening"
+        ]
+      },
+      "flags": {
+        "isFeatured": true,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 32
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-25T00:00:00.000Z",
+      "updatedAt": "2026-06-25T00:00:00.000Z",
+      "publishedAt": "2026-06-25T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0014",
+      "sku": "NCK-0014",
+      "slug": "peridot-silver-choker",
+      "name": "Peridot Silver Choker",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_necklaces",
+      "shortDescription": "Sterling silver choker set with bright green peridots.",
+      "description": "A close-fitting sterling silver choker with a row of bright green peridots, finished with an adjustable hook.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 16500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 5,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_peridot",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel",
+        "adjustable": true,
+        "closureType": "hook",
+        "necklaceType": "choker"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0014_m1",
+          "type": "image",
+          "url": "/images/products/peridot-silver-choker-1.jpg",
+          "alt": "Silver chain necklace with a round green gemstone pendant on a white stand",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0014_m2",
+          "type": "image",
+          "url": "/images/products/peridot-silver-choker-2.jpg",
+          "alt": "Fine silver chain with a small green stone pendant worn at the neck",
+          "isPrimary": false,
+          "sortOrder": 1
+        }
+      ],
+      "shipping": {
+        "weightGrams": 18.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Festive"
+      ],
+      "tags": [
+        "choker",
+        "green",
+        "august birthstone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Peridot Silver Choker | Aryal Siring Gems",
+        "metaDescription": "Sterling silver choker set with bright green peridots.",
+        "keywords": [
+          "choker",
+          "green",
+          "august birthstone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.4,
+        "count": 69
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-27T00:00:00.000Z",
+      "updatedAt": "2026-06-27T00:00:00.000Z",
+      "publishedAt": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0015",
+      "sku": "EAR-0015",
+      "slug": "moonstone-drop-earrings",
+      "name": "Moonstone Drop Earrings",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_earrings",
+      "shortDescription": "Delicate drop earrings with rainbow moonstone that shimmer with an ethereal blue glow.",
+      "description": "Delicate drop earrings featuring rainbow moonstone cabochons that shimmer with an ethereal blue glow. Perfect for adding a touch of mystique to any outfit.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Natural Rainbow Moonstone",
+        "Secure Hook Closure",
+        "Lightweight & Comfortable"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 8500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 8,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_moonstone",
+            "role": "primary",
+            "shape": "oval",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel",
+        "earringType": "drops",
+        "closureType": "hook"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0015_m1",
+          "type": "image",
+          "url": "/images/products/moonstone-drop-earrings-1.jpg",
+          "alt": "Handmade silver drop earrings with milky moonstone cabochons hanging from a pine branch",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0015_m2",
+          "type": "image",
+          "url": "/images/products/moonstone-drop-earrings-2.jpg",
+          "alt": "Close-up of a polished oval moonstone cabochon with milky sheen",
+          "isPrimary": false,
+          "sortOrder": 1
+        }
+      ],
+      "shipping": {
+        "weightGrams": 8.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear",
+        "Office"
+      ],
+      "tags": [
+        "drop",
+        "dangle"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Moonstone Drop Earrings | Aryal Siring Gems",
+        "metaDescription": "Delicate drop earrings with rainbow moonstone that shimmer with an ethereal blue glow.",
+        "keywords": [
+          "drop",
+          "dangle"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": true,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 106
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-06-29T00:00:00.000Z",
+      "updatedAt": "2026-06-29T00:00:00.000Z",
+      "publishedAt": "2026-06-29T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0016",
+      "sku": "EAR-0016",
+      "slug": "peridot-stud-earrings",
+      "name": "Peridot Stud Earrings",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_earrings",
+      "shortDescription": "Classic stud earrings with vibrant green peridot. August birthstone symbolizing strength.",
+      "description": "Classic stud earrings featuring vibrant green peridot gemstones. August's birthstone symbolizing strength and balance.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Natural Peridot Stones",
+        "Secure Push-Back Closure",
+        "August Birthstone"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 6500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 10,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_peridot",
+            "role": "primary",
+            "shape": "round",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "bezel",
+        "earringType": "studs",
+        "closureType": "push-back"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0016_m1",
+          "type": "image",
+          "url": "/images/products/peridot-stud-earrings-1.jpg",
+          "alt": "Pair of round lime-green peridot-coloured stud earrings in silver prong settings",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0016_m2",
+          "type": "image",
+          "url": "/images/products/peridot-stud-earrings-2.jpg",
+          "alt": "Small green stone stud earring worn in the ear lobe",
+          "isPrimary": false,
+          "sortOrder": 1
+        }
+      ],
+      "shipping": {
+        "weightGrams": 4.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear",
+        "Office"
+      ],
+      "tags": [
+        "studs",
+        "green",
+        "august birthstone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Peridot Stud Earrings | Aryal Siring Gems",
+        "metaDescription": "Classic stud earrings with vibrant green peridot. August birthstone symbolizing strength.",
+        "keywords": [
+          "studs",
+          "green",
+          "august birthstone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": true,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 143
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-01T00:00:00.000Z",
+      "updatedAt": "2026-07-01T00:00:00.000Z",
+      "publishedAt": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0017",
+      "sku": "EAR-0017",
+      "slug": "amethyst-silver-jhumka",
+      "name": "Amethyst Silver Jhumka",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_earrings",
+      "shortDescription": "Oxidised silver jhumkas with amethyst tops.",
+      "description": "Traditional bell-shaped oxidised silver jhumkas crowned with faceted amethysts and finished with tiny silver beads.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 7800,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 6,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_oxidised_silver",
+            "role": "primary",
+            "finish": "oxidised"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_amethyst",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "ethnic",
+          "traditional"
+        ],
+        "finish": "oxidised",
+        "hallmarked": true,
+        "settingType": "bezel",
+        "earringType": "jhumka",
+        "closureType": "hook"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0017_m1",
+          "type": "image",
+          "url": "/images/products/amethyst-silver-jhumka-1.jpg",
+          "alt": "Pair of oxidised silver jhumka bell earrings with star tops and dangling bells",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0017_m2",
+          "type": "image",
+          "url": "/images/products/amethyst-silver-jhumka-2.jpg",
+          "alt": "Oxidised silver jhumka earring worn by a woman, side view",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0017_m3",
+          "type": "image",
+          "url": "/images/products/amethyst-silver-jhumka-3.jpg",
+          "alt": "Hennaed hands fastening a silver jhumka earring",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 14.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ],
+      "tags": [
+        "jhumka",
+        "jhumki",
+        "traditional",
+        "ethnic"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Amethyst Silver Jhumka | Aryal Siring Gems",
+        "metaDescription": "Oxidised silver jhumkas with amethyst tops.",
+        "keywords": [
+          "jhumka",
+          "jhumki",
+          "traditional",
+          "ethnic"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 40
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "updatedAt": "2026-07-03T00:00:00.000Z",
+      "publishedAt": "2026-07-03T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0018",
+      "sku": "EAR-0018",
+      "slug": "mens-cz-stud-earrings",
+      "name": "Men's CZ Stud Earrings",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_earrings",
+      "shortDescription": "Solitaire-style CZ studs for men.",
+      "description": "Brilliant-cut cubic zirconia solitaires in sterling silver four-prong settings, sold as a pair.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "men",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 3200,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 18,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_cubic_zirconia",
+            "role": "primary",
+            "shape": "round",
+            "isNatural": false
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "prong",
+        "earringType": "studs",
+        "closureType": "push-back"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0018_m1",
+          "type": "image",
+          "url": "/images/products/mens-cz-stud-earrings-1.jpg",
+          "alt": "Pair of round clear cubic zirconia stud earrings in six-prong white-metal settings",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0018_m2",
+          "type": "image",
+          "url": "/images/products/mens-cz-stud-earrings-2.jpg",
+          "alt": "Small clear stud earring worn in a man's ear lobe",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0018_m3",
+          "type": "image",
+          "url": "/images/products/mens-cz-stud-earrings-3.jpg",
+          "alt": "Clear round stud earrings with screw backs on a black reflective surface",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 2.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear",
+        "Party"
+      ],
+      "tags": [
+        "studs",
+        "gents earring",
+        "single stone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Men's CZ Stud Earrings | Aryal Siring Gems",
+        "metaDescription": "Solitaire-style CZ studs for men.",
+        "keywords": [
+          "studs",
+          "gents earring",
+          "single stone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.3,
+        "count": 77
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-05T00:00:00.000Z",
+      "updatedAt": "2026-07-05T00:00:00.000Z",
+      "publishedAt": "2026-07-05T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0019",
+      "sku": "BRC-0019",
+      "slug": "oxidized-silver-cuff",
+      "name": "Oxidized Silver Cuff",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_bracelets",
+      "shortDescription": "Bold oxidized silver cuff with hand-carved tribal patterns inspired by ancient Nepali art.",
+      "description": "A bold oxidized silver cuff bracelet featuring intricate hand-carved tribal patterns inspired by ancient Nepali art.",
+      "features": [
+        "925 Certified Silver",
+        "Handcrafted & Hand-Carved",
+        "Oxidized Finish",
+        "Adjustable Size",
+        "Ancient Tribal Design"
+      ],
+      "gender": "unisex",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 15000,
+        "compareAtPrice": 18000,
+        "currency": "NPR",
+        "discount": {
+          "type": "percentage",
+          "value": 17
+        },
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 7,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_oxidised_silver",
+            "role": "primary",
+            "finish": "oxidised"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "traditional",
+          "tribal"
+        ],
+        "finish": "oxidised",
+        "hallmarked": true,
+        "closureType": "open"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0019_m1",
+          "type": "image",
+          "url": "/images/products/oxidized-silver-cuff-1.jpg",
+          "alt": "Oxidised silver open cuff with textured pattern on a leather wallet",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0019_m2",
+          "type": "image",
+          "url": "/images/products/oxidized-silver-cuff-2.jpg",
+          "alt": "Textured oxidised silver cuff worn on the wrist",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0019_m3",
+          "type": "image",
+          "url": "/images/products/oxidized-silver-cuff-3.jpg",
+          "alt": "Open silver cuff bracelet displayed on a dark wooden block",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 35.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Statement",
+        "Everyday Wear"
+      ],
+      "tags": [
+        "cuff",
+        "tribal",
+        "hand carved",
+        "no stone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Oxidized Silver Cuff | Aryal Siring Gems",
+        "metaDescription": "Bold oxidized silver cuff with hand-carved tribal patterns inspired by ancient Nepali art.",
+        "keywords": [
+          "cuff",
+          "tribal",
+          "hand carved",
+          "no stone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 114
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-07T00:00:00.000Z",
+      "updatedAt": "2026-07-07T00:00:00.000Z",
+      "publishedAt": "2026-07-07T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0020",
+      "sku": "BRC-0020",
+      "slug": "mens-silver-kada",
+      "name": "Men's Silver Kada",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_bracelets",
+      "shortDescription": "Heavy solid sterling silver kada for men.",
+      "description": "A solid, heavy sterling silver kada with a polished rounded profile. Built to be worn every day.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "men",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 21000,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 3,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "closureType": "open"
+      },
+      "variants": [
+        {
+          "id": "BRC-0020-V1",
+          "sku": "BRC-0020-SIZE-2-6",
+          "name": "Size 2.6",
+          "options": {
+            "bangleSize": "2.6"
+          },
+          "stockCount": 1,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "BRC-0020-V2",
+          "sku": "BRC-0020-SIZE-2-8",
+          "name": "Size 2.8",
+          "options": {
+            "bangleSize": "2.8"
+          },
+          "stockCount": 1,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "BRC-0020-V3",
+          "sku": "BRC-0020-SIZE-2-10",
+          "name": "Size 2.10",
+          "options": {
+            "bangleSize": "2.10"
+          },
+          "stockCount": 1,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0020_m1",
+          "type": "image",
+          "url": "/images/products/mens-silver-kada-1.jpg",
+          "alt": "Thick plain kada bangle worn on a man's wrist",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0020_m2",
+          "type": "image",
+          "url": "/images/products/mens-silver-kada-2.jpg",
+          "alt": "Man's hand wearing a solid silver kada against green leaves",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0020_m3",
+          "type": "image",
+          "url": "/images/products/mens-silver-kada-3.jpg",
+          "alt": "Man adjusting a silver bangle on his wrist",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 50.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "engraving": {
+          "available": true,
+          "maxCharacters": 20,
+          "price": 500
+        }
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear",
+        "Religious"
+      ],
+      "tags": [
+        "kada",
+        "kara",
+        "heavy",
+        "gents bracelet",
+        "no stone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Men's Silver Kada | Aryal Siring Gems",
+        "metaDescription": "Heavy solid sterling silver kada for men.",
+        "keywords": [
+          "kada",
+          "kara",
+          "heavy",
+          "gents bracelet",
+          "no stone"
+        ]
+      },
+      "flags": {
+        "isFeatured": true,
+        "isNew": false,
+        "isBestseller": true,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.9,
+        "count": 11
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-09T00:00:00.000Z",
+      "updatedAt": "2026-07-09T00:00:00.000Z",
+      "publishedAt": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0021",
+      "sku": "BRC-0021",
+      "slug": "turquoise-inlay-bracelet",
+      "name": "Turquoise Inlay Bracelet",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_bracelets",
+      "shortDescription": "Sterling silver link bracelet with turquoise inlay.",
+      "description": "Flat sterling silver links, each inlaid with a slice of turquoise, joined with a secure box clasp.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 13200,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 4,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_turquoise",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "boho"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "settingType": "inlay",
+        "closureType": "box-clasp"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0021_m1",
+          "type": "image",
+          "url": "/images/products/turquoise-inlay-bracelet-1.jpg",
+          "alt": "Slim silver cuff bracelet set with turquoise stones on a pink display",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0021_m2",
+          "type": "image",
+          "url": "/images/products/turquoise-inlay-bracelet-2.jpg",
+          "alt": "Silver bracelet with a row of natural turquoise beads",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0021_m3",
+          "type": "image",
+          "url": "/images/products/turquoise-inlay-bracelet-3.jpg",
+          "alt": "Silver chain bracelet with turquoise nuggets and lobster clasp",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 20.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Statement"
+      ],
+      "tags": [
+        "inlay",
+        "blue",
+        "boho"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Turquoise Inlay Bracelet | Aryal Siring Gems",
+        "metaDescription": "Sterling silver link bracelet with turquoise inlay.",
+        "keywords": [
+          "inlay",
+          "blue",
+          "boho"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 48
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-11T00:00:00.000Z",
+      "updatedAt": "2026-07-11T00:00:00.000Z",
+      "publishedAt": "2026-07-11T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0022",
+      "sku": "BNG-0022",
+      "slug": "oxidised-tribal-bangle-pair",
+      "name": "Oxidised Tribal Bangle Pair",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_bangles",
+      "shortDescription": "A pair of engraved oxidised silver bangles.",
+      "description": "Two hand-engraved oxidised silver bangles with a tribal motif. Sold as a pair.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 17500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 6,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_oxidised_silver",
+            "role": "primary",
+            "finish": "oxidised"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "ethnic",
+          "tribal"
+        ],
+        "finish": "oxidised",
+        "hallmarked": true,
+        "closureType": "open",
+        "pieceCount": 2
+      },
+      "variants": [
+        {
+          "id": "BNG-0022-V1",
+          "sku": "BNG-0022-SIZE-2-4",
+          "name": "Size 2.4",
+          "options": {
+            "bangleSize": "2.4"
+          },
+          "stockCount": 2,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "BNG-0022-V2",
+          "sku": "BNG-0022-SIZE-2-6",
+          "name": "Size 2.6",
+          "options": {
+            "bangleSize": "2.6"
+          },
+          "stockCount": 2,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "BNG-0022-V3",
+          "sku": "BNG-0022-SIZE-2-8",
+          "name": "Size 2.8",
+          "options": {
+            "bangleSize": "2.8"
+          },
+          "stockCount": 2,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0022_m1",
+          "type": "image",
+          "url": "/images/products/oxidised-tribal-bangle-pair-1.jpg",
+          "alt": "Stack of oxidised silver bangles on a hennaed wrist",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0022_m2",
+          "type": "image",
+          "url": "/images/products/oxidised-tribal-bangle-pair-2.jpg",
+          "alt": "Oxidised silver tribal bangles worn on a tattooed arm",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0022_m3",
+          "type": "image",
+          "url": "/images/products/oxidised-tribal-bangle-pair-3.jpg",
+          "alt": "Chunky tribal silver bracelet on an outstretched arm",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 40.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ],
+      "tags": [
+        "bangle",
+        "chura",
+        "tribal",
+        "ethnic",
+        "no stone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Oxidised Tribal Bangle Pair | Aryal Siring Gems",
+        "metaDescription": "A pair of engraved oxidised silver bangles.",
+        "keywords": [
+          "bangle",
+          "chura",
+          "tribal",
+          "ethnic",
+          "no stone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 85
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-13T00:00:00.000Z",
+      "updatedAt": "2026-07-13T00:00:00.000Z",
+      "publishedAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0023",
+      "sku": "CHN-0023",
+      "slug": "mens-silver-rope-chain",
+      "name": "Men's Silver Rope Chain",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_chains",
+      "shortDescription": "Sparkle-cut rope chain in solid sterling silver.",
+      "description": "A 4mm sparkle-cut rope chain in solid sterling silver with a lobster clasp.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "men",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 14500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 9,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "hallmarked": true,
+        "closureType": "lobster"
+      },
+      "variants": [
+        {
+          "id": "CHN-0023-V1",
+          "sku": "CHN-0023-20-INCH",
+          "name": "20 inch",
+          "options": {
+            "chainLength": "20"
+          },
+          "stockCount": 3,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "CHN-0023-V2",
+          "sku": "CHN-0023-22-INCH",
+          "name": "22 inch",
+          "options": {
+            "chainLength": "22"
+          },
+          "price": 15500,
+          "stockCount": 3,
+          "isDefault": false,
+          "isActive": true
+        },
+        {
+          "id": "CHN-0023-V3",
+          "sku": "CHN-0023-24-INCH",
+          "name": "24 inch",
+          "options": {
+            "chainLength": "24"
+          },
+          "price": 16500,
+          "stockCount": 3,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0023_m1",
+          "type": "image",
+          "url": "/images/products/mens-silver-rope-chain-1.jpg",
+          "alt": "Sterling silver rope chain with lobster clasp on a grey background",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0023_m2",
+          "type": "image",
+          "url": "/images/products/mens-silver-rope-chain-2.jpg",
+          "alt": "Man wearing a silver rope chain over a red turtleneck",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0023_m3",
+          "type": "image",
+          "url": "/images/products/mens-silver-rope-chain-3.jpg",
+          "alt": "Silver chain necklace laid on brown leather",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 28.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear"
+      ],
+      "tags": [
+        "rope chain",
+        "gents chain",
+        "no stone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Men's Silver Rope Chain | Aryal Siring Gems",
+        "metaDescription": "Sparkle-cut rope chain in solid sterling silver.",
+        "keywords": [
+          "rope chain",
+          "gents chain",
+          "no stone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 122
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "publishedAt": "2026-07-15T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0024",
+      "sku": "ANK-0024",
+      "slug": "silver-ghungroo-payal",
+      "name": "Silver Ghungroo Payal",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_jewelry",
+      "subcategoryId": "cat_anklets",
+      "shortDescription": "White-metal payal with tinkling ghungroo bells.",
+      "description": "A pair of white-metal anklets with rows of small ghungroo bells. Affordable and light.",
+      "features": [
+        "Durable White Metal",
+        "Handcrafted in Nepal",
+        "Tarnish Resistant Finish",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 2400,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 30,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_white_metal",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "finish": "polished",
+        "pieceCount": 2
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0024_m1",
+          "type": "image",
+          "url": "/images/products/silver-ghungroo-payal-1.jpg",
+          "alt": "Pair of traditional silver payal anklets with rows of small ghungroo bells",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0024_m2",
+          "type": "image",
+          "url": "/images/products/silver-ghungroo-payal-2.jpg",
+          "alt": "Bare feet wearing thin silver anklets with small bells",
+          "isPrimary": false,
+          "sortOrder": 1
+        }
+      ],
+      "shipping": {
+        "weightGrams": 30.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ],
+      "tags": [
+        "payal",
+        "anklet",
+        "ghungroo",
+        "bells",
+        "no stone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Silver Ghungroo Payal | Aryal Siring Gems",
+        "metaDescription": "White-metal payal with tinkling ghungroo bells.",
+        "keywords": [
+          "payal",
+          "anklet",
+          "ghungroo",
+          "bells",
+          "no stone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": false,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.2,
+        "count": 19
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-17T00:00:00.000Z",
+      "updatedAt": "2026-07-17T00:00:00.000Z",
+      "publishedAt": "2026-07-17T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0025",
+      "sku": "SNK-0025",
+      "slug": "tibetan-turquoise-bead-necklace",
+      "name": "Tibetan Turquoise Bead Necklace",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_stone_necklaces",
+      "shortDescription": "Hand-strung Tibetan turquoise beads with a silver clasp.",
+      "description": "Chunky natural turquoise nuggets hand-strung on strong thread with sterling silver spacers and clasp.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 18500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 5,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "accent"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_turquoise",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "boho",
+          "tibetan"
+        ],
+        "closureType": "lobster",
+        "necklaceType": "beaded"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0025_m1",
+          "type": "image",
+          "url": "/images/products/tibetan-turquoise-bead-necklace-1.jpg",
+          "alt": "Strand of turquoise chip beads coiled on white fabric",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0025_m2",
+          "type": "image",
+          "url": "/images/products/tibetan-turquoise-bead-necklace-2.jpg",
+          "alt": "Strands of mottled turquoise beads with small black spacer beads",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0025_m3",
+          "type": "image",
+          "url": "/images/products/tibetan-turquoise-bead-necklace-3.jpg",
+          "alt": "Close-up of round turquoise beads in bulk",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 60.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Statement",
+        "Everyday Wear"
+      ],
+      "tags": [
+        "beads",
+        "tibetan",
+        "boho",
+        "beaded necklace"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Tibetan Turquoise Bead Necklace | Aryal Siring Gems",
+        "metaDescription": "Hand-strung Tibetan turquoise beads with a silver clasp.",
+        "keywords": [
+          "beads",
+          "tibetan",
+          "boho",
+          "beaded necklace"
+        ]
+      },
+      "flags": {
+        "isFeatured": true,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 56
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-19T00:00:00.000Z",
+      "updatedAt": "2026-07-19T00:00:00.000Z",
+      "publishedAt": "2026-07-19T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0026",
+      "sku": "SNK-0026",
+      "slug": "baltic-amber-bead-necklace",
+      "name": "Baltic Amber Bead Necklace",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_stone_necklaces",
+      "shortDescription": "Warm honey-coloured amber beads, knotted between each bead.",
+      "description": "Polished Baltic amber beads individually knotted on silk. Light, warm and glowing.",
+      "features": [
+        "100% Natural Stones",
+        "Ethically Sourced",
+        "Hand Selected",
+        "Gift Pouch Included"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 16000,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 4,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [],
+        "stones": [
+          {
+            "stoneId": "stn_amber",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "closureType": "knotted",
+        "necklaceType": "beaded"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0026_m1",
+          "type": "image",
+          "url": "/images/products/baltic-amber-bead-necklace-1.jpg",
+          "alt": "Round amber bead necklace in honey and cognac tones on white",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0026_m2",
+          "type": "image",
+          "url": "/images/products/baltic-amber-bead-necklace-2.jpg",
+          "alt": "Butterscotch Baltic amber bead necklace on a light background",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0026_m3",
+          "type": "image",
+          "url": "/images/products/baltic-amber-bead-necklace-3.jpg",
+          "alt": "Raw Baltic amber necklaces displayed in a shop showcase",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 25.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear"
+      ],
+      "tags": [
+        "beads",
+        "honey",
+        "beaded necklace",
+        "lightweight"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Baltic Amber Bead Necklace | Aryal Siring Gems",
+        "metaDescription": "Warm honey-coloured amber beads, knotted between each bead.",
+        "keywords": [
+          "beads",
+          "honey",
+          "beaded necklace",
+          "lightweight"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": true,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 93
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-21T00:00:00.000Z",
+      "updatedAt": "2026-07-21T00:00:00.000Z",
+      "publishedAt": "2026-07-21T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0027",
+      "sku": "SNK-0027",
+      "slug": "red-coral-and-turquoise-necklace",
+      "name": "Red Coral & Turquoise Necklace",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_stone_necklaces",
+      "shortDescription": "Traditional Himalayan necklace of red coral and turquoise.",
+      "description": "Alternating red coral and turquoise beads with sterling silver accents, a classic Himalayan combination.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 24500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 2,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "accent"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_coral",
+            "role": "primary",
+            "isNatural": true
+          },
+          {
+            "stoneId": "stn_turquoise",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "ethnic",
+          "tibetan"
+        ],
+        "closureType": "lobster",
+        "necklaceType": "beaded"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0027_m1",
+          "type": "image",
+          "url": "/images/products/red-coral-and-turquoise-necklace-1.jpg",
+          "alt": "Tibetan necklace strung with coral, amber and turquoise beads and a silver amulet box pendant",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0027_m2",
+          "type": "image",
+          "url": "/images/products/red-coral-and-turquoise-necklace-2.jpg",
+          "alt": "Tibetan bead bracelet with red coral, turquoise-inlaid and amber beads on driftwood",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0027_m3",
+          "type": "image",
+          "url": "/images/products/red-coral-and-turquoise-necklace-3.jpg",
+          "alt": "Himalayan hair ornament set with large turquoise and red coral stones",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 55.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ],
+      "tags": [
+        "tibetan",
+        "beads",
+        "ethnic",
+        "beaded necklace"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Red Coral & Turquoise Necklace | Aryal Siring Gems",
+        "metaDescription": "Traditional Himalayan necklace of red coral and turquoise.",
+        "keywords": [
+          "tibetan",
+          "beads",
+          "ethnic",
+          "beaded necklace"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": true,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.9,
+        "count": 130
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-23T00:00:00.000Z",
+      "updatedAt": "2026-07-23T00:00:00.000Z",
+      "publishedAt": "2026-07-23T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0028",
+      "sku": "SNK-0028",
+      "slug": "lapis-lazuli-bead-necklace",
+      "name": "Lapis Lazuli Bead Necklace",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_stone_necklaces",
+      "shortDescription": "Round 8mm lapis lazuli beads with a silver clasp.",
+      "description": "Deep blue 8mm lapis lazuli rounds strung with a sterling silver toggle clasp.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 12500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 6,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "accent"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_lapis_lazuli",
+            "role": "primary",
+            "sizeMm": "8",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "closureType": "toggle",
+        "necklaceType": "beaded",
+        "beadSizeMm": 8
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0028_m1",
+          "type": "image",
+          "url": "/images/products/lapis-lazuli-bead-necklace-1.jpg",
+          "alt": "Multi-strand lapis lazuli heishi bead necklace on a white bust",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0028_m2",
+          "type": "image",
+          "url": "/images/products/lapis-lazuli-bead-necklace-2.jpg",
+          "alt": "Twisted multi-strand lapis lazuli bead necklace with silver clasp",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0028_m3",
+          "type": "image",
+          "url": "/images/products/lapis-lazuli-bead-necklace-3.jpg",
+          "alt": "Chunky faceted lapis lazuli bead necklace on a display bust",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 40.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear"
+      ],
+      "tags": [
+        "beads",
+        "blue",
+        "beaded necklace"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Lapis Lazuli Bead Necklace | Aryal Siring Gems",
+        "metaDescription": "Round 8mm lapis lazuli beads with a silver clasp.",
+        "keywords": [
+          "beads",
+          "blue",
+          "beaded necklace"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 27
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-25T00:00:00.000Z",
+      "updatedAt": "2026-07-25T00:00:00.000Z",
+      "publishedAt": "2026-07-25T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0029",
+      "sku": "SBR-0029",
+      "slug": "garnet-bead-bracelet",
+      "name": "Garnet Bead Bracelet",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_stone_bracelets",
+      "shortDescription": "Stretch bracelet of 6mm faceted garnet beads.",
+      "description": "Faceted 6mm garnet beads on strong elastic cord. One size fits most.",
+      "features": [
+        "100% Natural Stones",
+        "Ethically Sourced",
+        "Hand Selected",
+        "Gift Pouch Included"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 3800,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 15,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [],
+        "stones": [
+          {
+            "stoneId": "stn_garnet",
+            "role": "primary",
+            "sizeMm": "6",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "adjustable": true,
+        "closureType": "elastic",
+        "beadSizeMm": 6
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0029_m1",
+          "type": "image",
+          "url": "/images/products/garnet-bead-bracelet-1.jpg",
+          "alt": "Deep red stone chip bead bracelet with silver spacer bead on wood",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0029_m2",
+          "type": "image",
+          "url": "/images/products/garnet-bead-bracelet-2.jpg",
+          "alt": "Delicate bracelet with dark red garnet-coloured beads on textured wood",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0029_m3",
+          "type": "image",
+          "url": "/images/products/garnet-bead-bracelet-3.jpg",
+          "alt": "Strands of polished red garnet chip beads",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 12.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear"
+      ],
+      "tags": [
+        "stretch bracelet",
+        "beads",
+        "red",
+        "january birthstone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Garnet Bead Bracelet | Aryal Siring Gems",
+        "metaDescription": "Stretch bracelet of 6mm faceted garnet beads.",
+        "keywords": [
+          "stretch bracelet",
+          "beads",
+          "red",
+          "january birthstone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.4,
+        "count": 64
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-27T00:00:00.000Z",
+      "updatedAt": "2026-07-27T00:00:00.000Z",
+      "publishedAt": "2026-07-27T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0030",
+      "sku": "SBR-0030",
+      "slug": "amethyst-chip-bracelet",
+      "name": "Amethyst Chip Bracelet",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_stone_bracelets",
+      "shortDescription": "Raw amethyst chips on elastic cord.",
+      "description": "Natural amethyst chips on elastic cord. A simple, calming everyday bracelet.",
+      "features": [
+        "100% Natural Stones",
+        "Ethically Sourced",
+        "Hand Selected",
+        "Gift Pouch Included"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 1800,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 40,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [],
+        "stones": [
+          {
+            "stoneId": "stn_amethyst",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "adjustable": true,
+        "closureType": "elastic"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0030_m1",
+          "type": "image",
+          "url": "/images/products/amethyst-chip-bracelet-1.jpg",
+          "alt": "Banded purple amethyst bead bracelet with silver clasp on white",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0030_m2",
+          "type": "image",
+          "url": "/images/products/amethyst-chip-bracelet-2.jpg",
+          "alt": "Raw amethyst crystal point strung between small black and silver beads",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0030_m3",
+          "type": "image",
+          "url": "/images/products/amethyst-chip-bracelet-3.jpg",
+          "alt": "Amethyst bead bracelet with a faceted purple drop charm on white",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 10.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear",
+        "Gift"
+      ],
+      "tags": [
+        "chip bracelet",
+        "healing",
+        "stretch bracelet",
+        "beads"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Amethyst Chip Bracelet | Aryal Siring Gems",
+        "metaDescription": "Raw amethyst chips on elastic cord.",
+        "keywords": [
+          "chip bracelet",
+          "healing",
+          "stretch bracelet",
+          "beads"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": true,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.3,
+        "count": 101
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-29T00:00:00.000Z",
+      "updatedAt": "2026-07-29T00:00:00.000Z",
+      "publishedAt": "2026-07-29T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0031",
+      "sku": "SBR-0031",
+      "slug": "tiger-eye-mens-bead-bracelet",
+      "name": "Tiger Eye Men's Bead Bracelet",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_stone_bracelets",
+      "shortDescription": "10mm tiger eye beads with onyx and a silver bead.",
+      "description": "10mm tiger eye beads, two black onyx accents and a sterling silver focal bead on stretch cord.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "men",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 4500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 14,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "accent"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_tiger_eye",
+            "role": "primary",
+            "sizeMm": "10",
+            "isNatural": true
+          },
+          {
+            "stoneId": "stn_onyx",
+            "role": "accent",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "contemporary"
+        ],
+        "adjustable": true,
+        "closureType": "elastic",
+        "beadSizeMm": 10
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0031_m1",
+          "type": "image",
+          "url": "/images/products/tiger-eye-mens-bead-bracelet-1.jpg",
+          "alt": "Close-up of tiger eye and black onyx beads on a bracelet",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0031_m2",
+          "type": "image",
+          "url": "/images/products/tiger-eye-mens-bead-bracelet-2.jpg",
+          "alt": "Man wearing a tiger eye bead bracelet, hand in jeans pocket",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0031_m3",
+          "type": "image",
+          "url": "/images/products/tiger-eye-mens-bead-bracelet-3.jpg",
+          "alt": "Tiger eye bead mala with dark tassel on white",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 22.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Everyday Wear"
+      ],
+      "tags": [
+        "beads",
+        "gents bracelet",
+        "stretch bracelet"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Tiger Eye Men's Bead Bracelet | Aryal Siring Gems",
+        "metaDescription": "10mm tiger eye beads with onyx and a silver bead.",
+        "keywords": [
+          "beads",
+          "gents bracelet",
+          "stretch bracelet"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 138
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-07-31T00:00:00.000Z",
+      "updatedAt": "2026-07-31T00:00:00.000Z",
+      "publishedAt": "2026-07-31T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0032",
+      "sku": "MAL-0032",
+      "slug": "nepali-rudraksha-mala",
+      "name": "Nepali Rudraksha Mala",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_malas",
+      "shortDescription": "108-bead five-mukhi Nepali rudraksha mala with silver caps.",
+      "description": "Genuine five-mukhi rudraksha from Nepal, 108 beads plus guru bead, finished with sterling silver caps.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 9500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 8,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "accent"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_rudraksha",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "spiritual",
+          "traditional"
+        ],
+        "closureType": "knotted",
+        "beadCount": 108,
+        "mukhi": 5
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0032_m1",
+          "type": "image",
+          "url": "/images/products/nepali-rudraksha-mala-1.jpg",
+          "alt": "108+1 bead five mukhi rudraksha mala laid out in a spiral",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0032_m2",
+          "type": "image",
+          "url": "/images/products/nepali-rudraksha-mala-2.jpg",
+          "alt": "Rudraksha japa malas hanging at a prayer bead stall",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0032_m3",
+          "type": "image",
+          "url": "/images/products/nepali-rudraksha-mala-3.jpg",
+          "alt": "Rudraksha bead mala with small white spacer beads hanging from a branch",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 35.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Religious",
+        "Meditation"
+      ],
+      "tags": [
+        "108 beads",
+        "japa mala",
+        "prayer beads",
+        "spiritual"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Nepali Rudraksha Mala | Aryal Siring Gems",
+        "metaDescription": "108-bead five-mukhi Nepali rudraksha mala with silver caps.",
+        "keywords": [
+          "108 beads",
+          "japa mala",
+          "prayer beads",
+          "spiritual"
+        ]
+      },
+      "flags": {
+        "isFeatured": true,
+        "isNew": false,
+        "isBestseller": true,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.9,
+        "count": 35
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-02T00:00:00.000Z",
+      "updatedAt": "2026-08-02T00:00:00.000Z",
+      "publishedAt": "2026-08-02T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0033",
+      "sku": "MAL-0033",
+      "slug": "crystal-quartz-sphatik-mala",
+      "name": "Crystal Quartz Sphatik Mala",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_malas",
+      "shortDescription": "108-bead clear quartz (sphatik) mala.",
+      "description": "Hand-knotted 8mm clear quartz beads, 108 plus guru bead, used for japa meditation.",
+      "features": [
+        "100% Natural Stones",
+        "Ethically Sourced",
+        "Hand Selected",
+        "Gift Pouch Included"
+      ],
+      "gender": "unisex",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 6200,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 10,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [],
+        "stones": [
+          {
+            "stoneId": "stn_crystal_quartz",
+            "role": "primary",
+            "sizeMm": "8",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "spiritual"
+        ],
+        "closureType": "knotted",
+        "beadSizeMm": 8,
+        "beadCount": 108
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0033_m1",
+          "type": "image",
+          "url": "/images/products/crystal-quartz-sphatik-mala-1.jpg",
+          "alt": "String of clear rock crystal quartz beads on a white background",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0033_m2",
+          "type": "image",
+          "url": "/images/products/crystal-quartz-sphatik-mala-2.jpg",
+          "alt": "Clear faceted crystal bead necklace on white",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0033_m3",
+          "type": "image",
+          "url": "/images/products/crystal-quartz-sphatik-mala-3.jpg",
+          "alt": "Faceted clear rock crystal quartz beads",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 45.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Religious",
+        "Meditation"
+      ],
+      "tags": [
+        "108 beads",
+        "japa mala",
+        "prayer beads",
+        "spiritual"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Crystal Quartz Sphatik Mala | Aryal Siring Gems",
+        "metaDescription": "108-bead clear quartz (sphatik) mala.",
+        "keywords": [
+          "108 beads",
+          "japa mala",
+          "prayer beads",
+          "spiritual"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 72
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-04T00:00:00.000Z",
+      "updatedAt": "2026-08-04T00:00:00.000Z",
+      "publishedAt": "2026-08-04T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0034",
+      "sku": "SBR-0034",
+      "slug": "conch-shell-bangle",
+      "name": "Conch Shell Bangle",
+      "status": "active",
+      "productType": "variable",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_stone_bracelets",
+      "shortDescription": "Traditional conch shell bangle with a silver clasp.",
+      "description": "A hand-carved conch shell (shankha) bangle with sterling silver end caps. Worn by brides for good fortune.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 5400,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 8,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "accent"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_shell",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "traditional"
+        ]
+      },
+      "variants": [
+        {
+          "id": "SBR-0034-V1",
+          "sku": "SBR-0034-SIZE-2-4",
+          "name": "Size 2.4",
+          "options": {
+            "bangleSize": "2.4"
+          },
+          "stockCount": 4,
+          "isDefault": true,
+          "isActive": true
+        },
+        {
+          "id": "SBR-0034-V2",
+          "sku": "SBR-0034-SIZE-2-6",
+          "name": "Size 2.6",
+          "options": {
+            "bangleSize": "2.6"
+          },
+          "stockCount": 4,
+          "isDefault": false,
+          "isActive": true
+        }
+      ],
+      "media": [
+        {
+          "id": "prd_0034_m1",
+          "type": "image",
+          "url": "/images/products/conch-shell-bangle-1.jpg",
+          "alt": "Carved white conch shell (shankha) bangles tied in pairs",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0034_m2",
+          "type": "image",
+          "url": "/images/products/conch-shell-bangle-2.jpg",
+          "alt": "Hands holding a pair of carved white conch shell bangles",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0034_m3",
+          "type": "image",
+          "url": "/images/products/conch-shell-bangle-3.jpg",
+          "alt": "Rows of white shankha conch bangles with red stripes at a market stall",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 25.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Wedding",
+        "Religious"
+      ],
+      "tags": [
+        "shankha",
+        "sankha",
+        "bangle",
+        "bridal"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Conch Shell Bangle | Aryal Siring Gems",
+        "metaDescription": "Traditional conch shell bangle with a silver clasp.",
+        "keywords": [
+          "shankha",
+          "sankha",
+          "bangle",
+          "bridal"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 109
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-06T00:00:00.000Z",
+      "updatedAt": "2026-08-06T00:00:00.000Z",
+      "publishedAt": "2026-08-06T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0035",
+      "sku": "SER-0035",
+      "slug": "tibetan-amber-and-coral-earrings",
+      "name": "Tibetan Amber & Coral Earrings",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_stone_jewelry",
+      "subcategoryId": "cat_stone_earrings",
+      "shortDescription": "Amber drops with coral beads on sterling silver hooks.",
+      "description": "Rounded amber drops topped with tiny coral beads on sterling silver hooks.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "women",
+      "ageGroup": "adult",
+      "pricing": {
+        "price": 4800,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 7,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "accent"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_amber",
+            "role": "primary",
+            "isNatural": true
+          },
+          {
+            "stoneId": "stn_coral",
+            "role": "accent",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "ethnic",
+          "tibetan"
+        ],
+        "earringType": "drops",
+        "closureType": "hook"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0035_m1",
+          "type": "image",
+          "url": "/images/products/tibetan-amber-and-coral-earrings-1.jpg",
+          "alt": "Pair of antique Tibetan hoop earrings with stacked red coral beads",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0035_m2",
+          "type": "image",
+          "url": "/images/products/tibetan-amber-and-coral-earrings-2.jpg",
+          "alt": "Antique Himalayan silver earrings with coral drops",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0035_m3",
+          "type": "image",
+          "url": "/images/products/tibetan-amber-and-coral-earrings-3.jpg",
+          "alt": "Silver and coral drop earrings from Ladakh or Tibet on display",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 9.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Festive"
+      ],
+      "tags": [
+        "tibetan",
+        "drop",
+        "ethnic"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Tibetan Amber & Coral Earrings | Aryal Siring Gems",
+        "metaDescription": "Amber drops with coral beads on sterling silver hooks.",
+        "keywords": [
+          "tibetan",
+          "drop",
+          "ethnic"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 146
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-08T00:00:00.000Z",
+      "updatedAt": "2026-08-08T00:00:00.000Z",
+      "publishedAt": "2026-08-08T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0036",
+      "sku": "GRW-0036",
+      "slug": "natural-amethyst-crystal",
+      "name": "Natural Amethyst Crystal",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_gemstones",
+      "subcategoryId": "cat_raw",
+      "shortDescription": "Beautiful natural amethyst crystal point from the Himalayan region.",
+      "description": "A beautiful natural amethyst crystal point sourced from the Himalayan region. Perfect for collectors or crystal enthusiasts.",
+      "features": [
+        "Natural Himalayan Amethyst",
+        "Ethically Sourced",
+        "Certificate of Authenticity",
+        "Unique Formation",
+        "Healing Properties"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 4500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 15,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [],
+        "stones": [
+          {
+            "stoneId": "stn_amethyst",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "crystalForm": "point"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0036_m1",
+          "type": "image",
+          "url": "/images/products/natural-amethyst-crystal-1.jpg",
+          "alt": "Raw natural amethyst crystal cluster with deep purple points",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0036_m2",
+          "type": "image",
+          "url": "/images/products/natural-amethyst-crystal-2.jpg",
+          "alt": "Single natural amethyst crystal point showing purple colour zoning",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0036_m3",
+          "type": "image",
+          "url": "/images/products/natural-amethyst-crystal-3.jpg",
+          "alt": "Close view of a raw amethyst cluster with violet crystal terminations",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 25.0,
+        "shippingClass": "fragile",
+        "isFragile": true,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Nepal"
+      },
+      "occasions": [],
+      "tags": [
+        "crystal point",
+        "healing",
+        "collector"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Natural Amethyst Crystal | Aryal Siring Gems",
+        "metaDescription": "Beautiful natural amethyst crystal point from the Himalayan region.",
+        "keywords": [
+          "crystal point",
+          "healing",
+          "collector"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": false,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 43
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-10T00:00:00.000Z",
+      "updatedAt": "2026-08-10T00:00:00.000Z",
+      "publishedAt": "2026-08-10T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0037",
+      "sku": "GTM-0037",
+      "slug": "tumbled-rose-quartz-set",
+      "name": "Tumbled Rose Quartz Set",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_gemstones",
+      "subcategoryId": "cat_tumbled",
+      "shortDescription": "Five polished rose quartz tumbled stones.",
+      "description": "A set of five polished rose quartz tumbled stones, each about 2-3cm, in a cotton pouch.",
+      "features": [
+        "100% Natural Stones",
+        "Ethically Sourced",
+        "Hand Selected",
+        "Gift Pouch Included"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 1500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 35,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [],
+        "stones": [
+          {
+            "stoneId": "stn_rose_quartz",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "crystalForm": "tumbled",
+        "pieceCount": 5
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0037_m1",
+          "type": "image",
+          "url": "/images/products/tumbled-rose-quartz-set-1.jpg",
+          "alt": "Set of tumbled pale pink rose quartz stones",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0037_m2",
+          "type": "image",
+          "url": "/images/products/tumbled-rose-quartz-set-2.jpg",
+          "alt": "Tumbled and raw rose quartz pieces on a soft lilac background",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0037_m3",
+          "type": "image",
+          "url": "/images/products/tumbled-rose-quartz-set-3.jpg",
+          "alt": "Close-up of translucent pink rose quartz surface",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 100.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Brazil"
+      },
+      "occasions": [
+        "Gift"
+      ],
+      "tags": [
+        "tumbled",
+        "healing",
+        "set of 5",
+        "reiki"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Tumbled Rose Quartz Set | Aryal Siring Gems",
+        "metaDescription": "Five polished rose quartz tumbled stones.",
+        "keywords": [
+          "tumbled",
+          "healing",
+          "set of 5",
+          "reiki"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": false,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.4,
+        "count": 80
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-12T00:00:00.000Z",
+      "updatedAt": "2026-08-12T00:00:00.000Z",
+      "publishedAt": "2026-08-12T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0038",
+      "sku": "GFC-0038",
+      "slug": "faceted-garnet-5-carat",
+      "name": "Faceted Garnet 5 Carat",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_gemstones",
+      "subcategoryId": "cat_faceted",
+      "shortDescription": "5-carat oval faceted garnet with lab certificate.",
+      "description": "An eye-clean 5-carat oval garnet, faceted for maximum sparkle and supplied with a lab certificate.",
+      "features": [
+        "100% Natural Stones",
+        "Ethically Sourced",
+        "Hand Selected",
+        "Gift Pouch Included"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 6800,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 6,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [],
+        "stones": [
+          {
+            "stoneId": "stn_garnet",
+            "role": "primary",
+            "shape": "oval",
+            "caratWeight": 5,
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "crystalForm": "faceted"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0038_m1",
+          "type": "image",
+          "url": "/images/products/faceted-garnet-5-carat-1.jpg",
+          "alt": "Oval faceted deep red almandine garnet loose gemstone",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0038_m2",
+          "type": "image",
+          "url": "/images/products/faceted-garnet-5-carat-2.jpg",
+          "alt": "Side angle of an oval faceted red garnet showing its facets",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0038_m3",
+          "type": "image",
+          "url": "/images/products/faceted-garnet-5-carat-3.jpg",
+          "alt": "Round faceted deep red garnet gemstones on a white background",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 1.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "gemstone_lab",
+          "issuer": "Independent Gem Lab"
+        }
+      ],
+      "origin": {
+        "country": "India"
+      },
+      "occasions": [],
+      "tags": [
+        "loose stone",
+        "certified",
+        "january birthstone"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Faceted Garnet 5 Carat | Aryal Siring Gems",
+        "metaDescription": "5-carat oval faceted garnet with lab certificate.",
+        "keywords": [
+          "loose stone",
+          "certified",
+          "january birthstone"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": false,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 117
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-14T00:00:00.000Z",
+      "updatedAt": "2026-08-14T00:00:00.000Z",
+      "publishedAt": "2026-08-14T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0039",
+      "sku": "GCB-0039",
+      "slug": "turquoise-cabochon",
+      "name": "Turquoise Cabochon",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_gemstones",
+      "subcategoryId": "cat_cabochon",
+      "shortDescription": "12-carat natural turquoise cabochon, ready to set.",
+      "description": "A smooth 12-carat natural turquoise cabochon with fine matrix, ideal for a ring or pendant.",
+      "features": [
+        "100% Natural Stones",
+        "Ethically Sourced",
+        "Hand Selected",
+        "Gift Pouch Included"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 3900,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 12,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [],
+        "stones": [
+          {
+            "stoneId": "stn_turquoise",
+            "role": "primary",
+            "shape": "oval",
+            "caratWeight": 12,
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "crystalForm": "cabochon"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0039_m1",
+          "type": "image",
+          "url": "/images/products/turquoise-cabochon-1.jpg",
+          "alt": "Polished oval Persian turquoise cabochons from Nishapur",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0039_m2",
+          "type": "image",
+          "url": "/images/products/turquoise-cabochon-2.jpg",
+          "alt": "Oval sky-blue turquoise cabochon with fine matrix veining",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0039_m3",
+          "type": "image",
+          "url": "/images/products/turquoise-cabochon-3.jpg",
+          "alt": "Assorted turquoise cabochons in blue-green shades with matrix",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 4.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Tibet"
+      },
+      "occasions": [],
+      "tags": [
+        "loose stone",
+        "ring stone",
+        "firoza"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Turquoise Cabochon | Aryal Siring Gems",
+        "metaDescription": "12-carat natural turquoise cabochon, ready to set.",
+        "keywords": [
+          "loose stone",
+          "ring stone",
+          "firoza"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": false,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 14
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-16T00:00:00.000Z",
+      "updatedAt": "2026-08-16T00:00:00.000Z",
+      "publishedAt": "2026-08-16T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0040",
+      "sku": "GRW-0040",
+      "slug": "raw-lapis-lazuli-chunk",
+      "name": "Raw Lapis Lazuli Chunk",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_gemstones",
+      "subcategoryId": "cat_raw",
+      "shortDescription": "Rough Afghan lapis lazuli with pyrite flecks.",
+      "description": "An unpolished chunk of Afghan lapis lazuli showing natural gold pyrite inclusions.",
+      "features": [
+        "100% Natural Stones",
+        "Ethically Sourced",
+        "Hand Selected",
+        "Gift Pouch Included"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 2800,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 10,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [],
+        "stones": [
+          {
+            "stoneId": "stn_lapis_lazuli",
+            "role": "primary",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "crystalForm": "raw"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0040_m1",
+          "type": "image",
+          "url": "/images/products/raw-lapis-lazuli-chunk-1.jpg",
+          "alt": "Raw deep blue lapis lazuli chunk from Afghanistan",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0040_m2",
+          "type": "image",
+          "url": "/images/products/raw-lapis-lazuli-chunk-2.jpg",
+          "alt": "Rough lapis lazuli slab in royal blue with golden pyrite flecks",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0040_m3",
+          "type": "image",
+          "url": "/images/products/raw-lapis-lazuli-chunk-3.jpg",
+          "alt": "Rough lapis lazuli stone with blue lazurite and white calcite",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 80.0,
+        "shippingClass": "fragile",
+        "isFragile": true,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Afghanistan"
+      },
+      "occasions": [],
+      "tags": [
+        "raw",
+        "rough",
+        "collector",
+        "healing"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Raw Lapis Lazuli Chunk | Aryal Siring Gems",
+        "metaDescription": "Rough Afghan lapis lazuli with pyrite flecks.",
+        "keywords": [
+          "raw",
+          "rough",
+          "collector",
+          "healing"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": false,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.3,
+        "count": 51
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-18T00:00:00.000Z",
+      "updatedAt": "2026-08-18T00:00:00.000Z",
+      "publishedAt": "2026-08-18T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0041",
+      "sku": "IDL-0041",
+      "slug": "silver-ganesh-idol",
+      "name": "Silver Ganesh Idol",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_idols_statues",
+      "subcategoryId": "cat_deity_idols",
+      "shortDescription": "Pure silver Ganesh idol, hand-finished.",
+      "description": "A detailed Lord Ganesh idol cast in 999 fine silver and hand-finished, ideal for the home temple or as a gift.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 32000,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 3,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_fine_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "spiritual"
+        ],
+        "finish": "polished",
+        "deity": "ganesh",
+        "posture": "seated",
+        "heightCm": 7
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0041_m1",
+          "type": "image",
+          "url": "/images/products/silver-ganesh-idol-1.jpg",
+          "alt": "Silver Ganesh idol seated on a yellow cloth with an orange sash",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0041_m2",
+          "type": "image",
+          "url": "/images/products/silver-ganesh-idol-2.jpg",
+          "alt": "Close-up of a silver-toned seated Ganesh murti in relief",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0041_m3",
+          "type": "image",
+          "url": "/images/products/silver-ganesh-idol-3.jpg",
+          "alt": "Polished metal Ganesha statuette with trident and axe against a dark background",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 120.0,
+        "dimensions": {
+          "height": 7,
+          "width": 5,
+          "unit": "cm"
+        },
+        "shippingClass": "fragile",
+        "isFragile": true,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 21,
+        "notes": "Larger sizes and other deities made to order."
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Religious",
+        "Gift"
+      ],
+      "tags": [
+        "ganesh",
+        "ganesha",
+        "ganpati",
+        "god",
+        "murti",
+        "pooja"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Silver Ganesh Idol | Aryal Siring Gems",
+        "metaDescription": "Pure silver Ganesh idol, hand-finished.",
+        "keywords": [
+          "ganesh",
+          "ganesha",
+          "ganpati",
+          "god",
+          "murti",
+          "pooja"
+        ]
+      },
+      "flags": {
+        "isFeatured": true,
+        "isNew": false,
+        "isBestseller": true,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.9,
+        "count": 88
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-20T00:00:00.000Z",
+      "updatedAt": "2026-08-20T00:00:00.000Z",
+      "publishedAt": "2026-08-20T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0042",
+      "sku": "IDL-0042",
+      "slug": "silver-laxmi-idol",
+      "name": "Silver Laxmi Idol",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_idols_statues",
+      "subcategoryId": "cat_deity_idols",
+      "shortDescription": "Pure silver Goddess Laxmi idol for Tihar and Diwali.",
+      "description": "Goddess Laxmi seated on a lotus, cast in 999 fine silver. A treasured gift for Tihar and Diwali.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 29500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 3,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_fine_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "spiritual"
+        ],
+        "finish": "polished",
+        "deity": "laxmi",
+        "posture": "seated",
+        "heightCm": 7
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0042_m1",
+          "type": "image",
+          "url": "/images/products/silver-laxmi-idol-1.jpg",
+          "alt": "Four-armed seated Laxmi idol in metal holding lotuses",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0042_m2",
+          "type": "image",
+          "url": "/images/products/silver-laxmi-idol-2.jpg",
+          "alt": "Nepali-style metal statue of Lakshmi-Narayana seated on a lotus base",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0042_m3",
+          "type": "image",
+          "url": "/images/products/silver-laxmi-idol-3.jpg",
+          "alt": "Standing metal statue of the goddess Lakshmi with lotus stem",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 110.0,
+        "dimensions": {
+          "height": 7,
+          "width": 5,
+          "unit": "cm"
+        },
+        "shippingClass": "fragile",
+        "isFragile": true,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 21,
+        "notes": "Larger sizes and other deities made to order."
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Religious",
+        "Festive"
+      ],
+      "tags": [
+        "laxmi",
+        "lakshmi",
+        "goddess",
+        "murti",
+        "diwali",
+        "tihar"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Silver Laxmi Idol | Aryal Siring Gems",
+        "metaDescription": "Pure silver Goddess Laxmi idol for Tihar and Diwali.",
+        "keywords": [
+          "laxmi",
+          "lakshmi",
+          "goddess",
+          "murti",
+          "diwali",
+          "tihar"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 125
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-22T00:00:00.000Z",
+      "updatedAt": "2026-08-22T00:00:00.000Z",
+      "publishedAt": "2026-08-22T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0043",
+      "sku": "BDH-0043",
+      "slug": "white-metal-buddha-statue",
+      "name": "White Metal Buddha Statue",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_idols_statues",
+      "subcategoryId": "cat_buddha_statues",
+      "shortDescription": "Meditating Shakyamuni Buddha in white metal.",
+      "description": "A 15cm meditating Shakyamuni Buddha statue cast in white metal by Kathmandu artisans.",
+      "features": [
+        "Durable White Metal",
+        "Handcrafted in Nepal",
+        "Tarnish Resistant Finish",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 8500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 8,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_white_metal",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "spiritual"
+        ],
+        "finish": "polished",
+        "deity": "buddha",
+        "posture": "meditating",
+        "heightCm": 15
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0043_m1",
+          "type": "image",
+          "url": "/images/products/white-metal-buddha-statue-1.jpg",
+          "alt": "Small silver seated Buddha figurine between brass Buddha statues",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0043_m2",
+          "type": "image",
+          "url": "/images/products/white-metal-buddha-statue-2.jpg",
+          "alt": "Silver-toned Guru Rinpoche statue in an ornate Tibetan Buddhist shrine",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0043_m3",
+          "type": "image",
+          "url": "/images/products/white-metal-buddha-statue-3.jpg",
+          "alt": "Small metal Buddha figurine seated in meditation",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 650.0,
+        "dimensions": {
+          "height": 15,
+          "unit": "cm"
+        },
+        "shippingClass": "heavy",
+        "isFragile": true,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 21,
+        "notes": "Larger sizes and other deities made to order."
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Religious",
+        "Home"
+      ],
+      "tags": [
+        "buddha",
+        "shakyamuni",
+        "meditation",
+        "statue",
+        "patan"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "White Metal Buddha Statue | Aryal Siring Gems",
+        "metaDescription": "Meditating Shakyamuni Buddha in white metal.",
+        "keywords": [
+          "buddha",
+          "shakyamuni",
+          "meditation",
+          "statue",
+          "patan"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 22
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-24T00:00:00.000Z",
+      "updatedAt": "2026-08-24T00:00:00.000Z",
+      "publishedAt": "2026-08-24T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0044",
+      "sku": "FIG-0044",
+      "slug": "silver-elephant-figurine",
+      "name": "Silver Elephant Figurine",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_idols_statues",
+      "subcategoryId": "cat_figurines",
+      "shortDescription": "Sterling silver elephant with turquoise and coral inlay.",
+      "description": "A good-luck elephant in sterling silver, its saddle inlaid with tiny turquoise and coral stones.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 15500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 4,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_turquoise",
+            "role": "accent",
+            "isNatural": true
+          },
+          {
+            "stoneId": "stn_coral",
+            "role": "accent",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "traditional"
+        ],
+        "finish": "polished",
+        "heightCm": 6
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0044_m1",
+          "type": "image",
+          "url": "/images/products/silver-elephant-figurine-1.jpg",
+          "alt": "Ornate silver elephant figurine with raised trunk and engraved blanket",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0044_m2",
+          "type": "image",
+          "url": "/images/products/silver-elephant-figurine-2.jpg",
+          "alt": "Decorative silver elephant with raised trunk on a wooden shelf",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0044_m3",
+          "type": "image",
+          "url": "/images/products/silver-elephant-figurine-3.jpg",
+          "alt": "Engraved silver elephant figurine on a dark wooden stand",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 70.0,
+        "dimensions": {
+          "height": 6,
+          "unit": "cm"
+        },
+        "shippingClass": "fragile",
+        "isFragile": true,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "customization": {
+        "sizeCustomizable": true,
+        "leadTimeDays": 21,
+        "notes": "Larger sizes and other deities made to order."
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Gift",
+        "Home"
+      ],
+      "tags": [
+        "elephant",
+        "hathi",
+        "showpiece",
+        "good luck"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Silver Elephant Figurine | Aryal Siring Gems",
+        "metaDescription": "Sterling silver elephant with turquoise and coral inlay.",
+        "keywords": [
+          "elephant",
+          "hathi",
+          "showpiece",
+          "good luck"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": true,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 59
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-26T00:00:00.000Z",
+      "updatedAt": "2026-08-26T00:00:00.000Z",
+      "publishedAt": "2026-08-26T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0045",
+      "sku": "POJ-0045",
+      "slug": "silver-pooja-thali",
+      "name": "Silver Pooja Thali",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_home_decor",
+      "subcategoryId": "cat_pooja_items",
+      "shortDescription": "Exquisite handcrafted pooja thali with traditional Nepali patterns and accessories.",
+      "description": "An exquisite handcrafted pooja thali set featuring traditional Nepali patterns. Includes diya holder and small containers for kumkum and rice.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Complete Pooja Set",
+        "Includes Diya Holder",
+        "Premium Gift Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 35000,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 4,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "traditional"
+        ],
+        "finish": "polished",
+        "pieceCount": 5
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0045_m1",
+          "type": "image",
+          "url": "/images/products/silver-pooja-thali-1.jpg",
+          "alt": "Silver pooja thali with a lit diya and red roses held in hands",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0045_m2",
+          "type": "image",
+          "url": "/images/products/silver-pooja-thali-2.jpg",
+          "alt": "Silver puja thali with small bowls and a covered kalash",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0045_m3",
+          "type": "image",
+          "url": "/images/products/silver-pooja-thali-3.jpg",
+          "alt": "Silver puja plate with copper kalash, marigolds and offerings",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 150.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Religious",
+        "Wedding"
+      ],
+      "tags": [
+        "thali",
+        "puja",
+        "diya",
+        "gift set"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Silver Pooja Thali | Aryal Siring Gems",
+        "metaDescription": "Exquisite handcrafted pooja thali with traditional Nepali patterns and accessories.",
+        "keywords": [
+          "thali",
+          "puja",
+          "diya",
+          "gift set"
+        ]
+      },
+      "flags": {
+        "isFeatured": true,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 96
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-28T00:00:00.000Z",
+      "updatedAt": "2026-08-28T00:00:00.000Z",
+      "publishedAt": "2026-08-28T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0046",
+      "sku": "POJ-0046",
+      "slug": "silver-diya-pair",
+      "name": "Silver Diya Pair",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_home_decor",
+      "subcategoryId": "cat_pooja_items",
+      "shortDescription": "A pair of sterling silver oil lamps.",
+      "description": "Two hand-beaten sterling silver diyas with lotus petal rims.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 9800,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 10,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "traditional"
+        ],
+        "finish": "polished",
+        "pieceCount": 2
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0046_m1",
+          "type": "image",
+          "url": "/images/products/silver-diya-pair-1.jpg",
+          "alt": "Lit metal oil diya on an engraved metal plate",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0046_m2",
+          "type": "image",
+          "url": "/images/products/silver-diya-pair-2.jpg",
+          "alt": "Two lit metal diyas glowing in the dark",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0046_m3",
+          "type": "image",
+          "url": "/images/products/silver-diya-pair-3.jpg",
+          "alt": "Pair of ornate metal diyas among flower petals",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 40.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Religious",
+        "Festive"
+      ],
+      "tags": [
+        "diya",
+        "deepak",
+        "lamp",
+        "puja",
+        "tihar",
+        "diwali"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Silver Diya Pair | Aryal Siring Gems",
+        "metaDescription": "A pair of sterling silver oil lamps.",
+        "keywords": [
+          "diya",
+          "deepak",
+          "lamp",
+          "puja",
+          "tihar",
+          "diwali"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 133
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-08-30T00:00:00.000Z",
+      "updatedAt": "2026-08-30T00:00:00.000Z",
+      "publishedAt": "2026-08-30T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0047",
+      "sku": "POJ-0047",
+      "slug": "silver-kalash",
+      "name": "Silver Kalash",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_home_decor",
+      "subcategoryId": "cat_pooja_items",
+      "shortDescription": "Engraved sterling silver kalash for rituals.",
+      "description": "A sterling silver kalash engraved with auspicious symbols, used in pujas and weddings.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 22000,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 3,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "traditional"
+        ],
+        "finish": "polished"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0047_m1",
+          "type": "image",
+          "url": "/images/products/silver-kalash-1.jpg",
+          "alt": "Silver kalash with embossed deity figures on a white pedestal",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0047_m2",
+          "type": "image",
+          "url": "/images/products/silver-kalash-2.jpg",
+          "alt": "Traditional silver ritual pots decorated with flowers on a thali",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0047_m3",
+          "type": "image",
+          "url": "/images/products/silver-kalash-3.jpg",
+          "alt": "Silver kalash with mango leaves and coconut during a puja",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 95.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Religious",
+        "Wedding"
+      ],
+      "tags": [
+        "kalash",
+        "lota",
+        "puja",
+        "auspicious"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Silver Kalash | Aryal Siring Gems",
+        "metaDescription": "Engraved sterling silver kalash for rituals.",
+        "keywords": [
+          "kalash",
+          "lota",
+          "puja",
+          "auspicious"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.6,
+        "count": 30
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z",
+      "publishedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0048",
+      "sku": "UTN-0048",
+      "slug": "silver-drinking-glass",
+      "name": "Silver Drinking Glass",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_home_decor",
+      "subcategoryId": "cat_utensils",
+      "shortDescription": "Plain polished sterling silver drinking glass.",
+      "description": "A classic polished sterling silver glass, a traditional gift for newborns and weddings.",
+      "features": [
+        "925 Certified Sterling Silver",
+        "Handcrafted by Master Artisans",
+        "Hallmarked Purity",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 18000,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 6,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_925_silver",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "minimal"
+        ],
+        "finish": "polished",
+        "capacityMl": 250
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0048_m1",
+          "type": "image",
+          "url": "/images/products/silver-drinking-glass-1.jpg",
+          "alt": "Ornate embossed silver glass holder",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0048_m2",
+          "type": "image",
+          "url": "/images/products/silver-drinking-glass-2.jpg",
+          "alt": "Hand holding a plain metal drinking tumbler",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0048_m3",
+          "type": "image",
+          "url": "/images/products/silver-drinking-glass-3.jpg",
+          "alt": "Metal drinking tumbler on a blue surface",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 90.0,
+        "shippingClass": "standard",
+        "isFragile": false,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [
+        {
+          "type": "authenticity",
+          "issuer": "Aryal Siring Gems"
+        }
+      ],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Gift"
+      ],
+      "tags": [
+        "glass",
+        "gilas",
+        "tableware",
+        "baby gift"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Silver Drinking Glass | Aryal Siring Gems",
+        "metaDescription": "Plain polished sterling silver drinking glass.",
+        "keywords": [
+          "glass",
+          "gilas",
+          "tableware",
+          "baby gift"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": true,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 67
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-09-03T00:00:00.000Z",
+      "updatedAt": "2026-09-03T00:00:00.000Z",
+      "publishedAt": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0049",
+      "sku": "DEC-0049",
+      "slug": "tibetan-singing-bowl",
+      "name": "Tibetan Singing Bowl",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_home_decor",
+      "subcategoryId": "cat_decor",
+      "shortDescription": "Hand-hammered singing bowl with wooden striker and cushion.",
+      "description": "A hand-hammered white-metal singing bowl from Kathmandu with a wooden striker and silk cushion.",
+      "features": [
+        "Durable White Metal",
+        "Handcrafted in Nepal",
+        "Tarnish Resistant Finish",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 6500,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 12,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_white_metal",
+            "role": "primary",
+            "finish": "hammered"
+          }
+        ],
+        "stones": []
+      },
+      "attributes": {
+        "style": [
+          "tibetan"
+        ],
+        "finish": "hammered"
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0049_m1",
+          "type": "image",
+          "url": "/images/products/tibetan-singing-bowl-1.jpg",
+          "alt": "Hands playing a Tibetan singing bowl with a wooden mallet",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0049_m2",
+          "type": "image",
+          "url": "/images/products/tibetan-singing-bowl-2.jpg",
+          "alt": "Himalayan singing bowl with wooden striker",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0049_m3",
+          "type": "image",
+          "url": "/images/products/tibetan-singing-bowl-3.jpg",
+          "alt": "Engraved Tibetan singing bowl with mantra script on an orange cushion with mallet",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 500.0,
+        "dimensions": {
+          "diameter": 12,
+          "unit": "cm"
+        },
+        "shippingClass": "heavy",
+        "isFragile": true,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Meditation",
+        "Home"
+      ],
+      "tags": [
+        "singing bowl",
+        "sound healing",
+        "meditation",
+        "tibetan"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Tibetan Singing Bowl | Aryal Siring Gems",
+        "metaDescription": "Hand-hammered singing bowl with wooden striker and cushion.",
+        "keywords": [
+          "singing bowl",
+          "sound healing",
+          "meditation",
+          "tibetan"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": false,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 104
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-09-05T00:00:00.000Z",
+      "updatedAt": "2026-09-05T00:00:00.000Z",
+      "publishedAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "prd_0050",
+      "sku": "WAL-0050",
+      "slug": "ashtamangala-wall-hanging",
+      "name": "Ashtamangala Wall Hanging",
+      "status": "active",
+      "productType": "simple",
+      "categoryId": "cat_home_decor",
+      "subcategoryId": "cat_wall_hangings",
+      "shortDescription": "Eight auspicious symbols in white metal with stone inlay.",
+      "description": "The eight auspicious Buddhist symbols in white metal, inlaid with turquoise and coral chips.",
+      "features": [
+        "Durable White Metal",
+        "Handcrafted in Nepal",
+        "Tarnish Resistant Finish",
+        "Gift Ready Packaging"
+      ],
+      "gender": "unisex",
+      "ageGroup": "all",
+      "pricing": {
+        "price": 7400,
+        "currency": "NPR",
+        "taxIncluded": true
+      },
+      "inventory": {
+        "trackInventory": true,
+        "stockCount": 5,
+        "lowStockThreshold": 2,
+        "allowBackorder": false
+      },
+      "materials": {
+        "metals": [
+          {
+            "metalId": "met_white_metal",
+            "role": "primary",
+            "finish": "polished"
+          }
+        ],
+        "stones": [
+          {
+            "stoneId": "stn_turquoise",
+            "role": "accent",
+            "isNatural": true
+          },
+          {
+            "stoneId": "stn_coral",
+            "role": "accent",
+            "isNatural": true
+          }
+        ]
+      },
+      "attributes": {
+        "style": [
+          "spiritual"
+        ],
+        "finish": "polished",
+        "heightCm": 25
+      },
+      "variants": [],
+      "media": [
+        {
+          "id": "prd_0050_m1",
+          "type": "image",
+          "url": "/images/products/ashtamangala-wall-hanging-1.jpg",
+          "alt": "Newari Ashtamangala mandala in metal inlaid with turquoise and coral stones",
+          "isPrimary": true,
+          "sortOrder": 0
+        },
+        {
+          "id": "prd_0050_m2",
+          "type": "image",
+          "url": "/images/products/ashtamangala-wall-hanging-2.jpg",
+          "alt": "Painted Tibetan motif combining the eight auspicious symbols",
+          "isPrimary": false,
+          "sortOrder": 1
+        },
+        {
+          "id": "prd_0050_m3",
+          "type": "image",
+          "url": "/images/products/ashtamangala-wall-hanging-3.jpg",
+          "alt": "Dharma wheel roundel from the Ashtamangala eight auspicious symbols",
+          "isPrimary": false,
+          "sortOrder": 2
+        }
+      ],
+      "shipping": {
+        "weightGrams": 300.0,
+        "dimensions": {
+          "height": 25,
+          "unit": "cm"
+        },
+        "shippingClass": "fragile",
+        "isFragile": true,
+        "freeShipping": false,
+        "processingDays": 2
+      },
+      "certifications": [],
+      "origin": {
+        "country": "Nepal",
+        "region": "Kathmandu Valley"
+      },
+      "occasions": [
+        "Home",
+        "Gift"
+      ],
+      "tags": [
+        "ashtamangala",
+        "eight auspicious symbols",
+        "buddhist",
+        "wall decor"
+      ],
+      "searchKeywords": [],
+      "seo": {
+        "metaTitle": "Ashtamangala Wall Hanging | Aryal Siring Gems",
+        "metaDescription": "Eight auspicious symbols in white metal with stone inlay.",
+        "keywords": [
+          "ashtamangala",
+          "eight auspicious symbols",
+          "buddhist",
+          "wall decor"
+        ]
+      },
+      "flags": {
+        "isFeatured": false,
+        "isNew": false,
+        "isBestseller": false,
+        "isHandmade": false,
+        "isGiftable": true
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 141
+      },
+      "relatedProductIds": [],
+      "createdAt": "2026-09-07T00:00:00.000Z",
+      "updatedAt": "2026-09-07T00:00:00.000Z",
+      "publishedAt": "2026-09-07T00:00:00.000Z"
+    }
+  ]
+}

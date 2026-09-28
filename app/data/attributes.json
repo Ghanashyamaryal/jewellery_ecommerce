@@ -1,0 +1,158 @@
+{
+  "$schema": "./schemas/attributes.schema.json",
+  "version": 1,
+  "items": [
+    {
+      "id": "attr_style", "key": "style", "label": "Style", "type": "multiselect",
+      "options": [
+        { "value": "traditional", "label": "Traditional" },
+        { "value": "tibetan", "label": "Tibetan" },
+        { "value": "tribal", "label": "Tribal" },
+        { "value": "minimal", "label": "Minimal" },
+        { "value": "boho", "label": "Boho" },
+        { "value": "contemporary", "label": "Contemporary" },
+        { "value": "ethnic", "label": "Ethnic" },
+        { "value": "spiritual", "label": "Spiritual" },
+        { "value": "statement", "label": "Statement" }
+      ],
+      "filterable": true, "searchable": true, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 1
+    },
+    {
+      "id": "attr_finish", "key": "finish", "label": "Finish", "type": "select",
+      "options": [
+        { "value": "polished", "label": "High Polish" },
+        { "value": "oxidised", "label": "Oxidised" },
+        { "value": "matte", "label": "Matte" },
+        { "value": "hammered", "label": "Hammered" },
+        { "value": "antique", "label": "Antique" },
+        { "value": "rhodium-plated", "label": "Rhodium Plated" },
+        { "value": "gold-plated", "label": "Gold Plated" }
+      ],
+      "filterable": true, "searchable": true, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 2
+    },
+    {
+      "id": "attr_ring_size", "key": "ringSize", "label": "Ring Size", "type": "select",
+      "options": [
+        { "value": "5", "label": "5" }, { "value": "6", "label": "6" }, { "value": "7", "label": "7" },
+        { "value": "8", "label": "8" }, { "value": "9", "label": "9" }, { "value": "10", "label": "10" },
+        { "value": "11", "label": "11" }, { "value": "12", "label": "12" }, { "value": "13", "label": "13" }
+      ],
+      "filterable": true, "searchable": false, "isVariantAxis": true, "showOnProductPage": false, "sortOrder": 3
+    },
+    {
+      "id": "attr_chain_length", "key": "chainLength", "label": "Chain Length", "type": "select", "unit": "inch",
+      "options": [
+        { "value": "16", "label": "16 inch" }, { "value": "18", "label": "18 inch" }, { "value": "20", "label": "20 inch" },
+        { "value": "22", "label": "22 inch" }, { "value": "24", "label": "24 inch" }
+      ],
+      "filterable": true, "searchable": false, "isVariantAxis": true, "showOnProductPage": true, "sortOrder": 4
+    },
+    {
+      "id": "attr_bangle_size", "key": "bangleSize", "label": "Bangle Size", "type": "select",
+      "options": [
+        { "value": "2.2", "label": "2.2" }, { "value": "2.4", "label": "2.4" }, { "value": "2.6", "label": "2.6" },
+        { "value": "2.8", "label": "2.8" }, { "value": "2.10", "label": "2.10" }
+      ],
+      "filterable": true, "searchable": false, "isVariantAxis": true, "showOnProductPage": false, "sortOrder": 5
+    },
+    {
+      "id": "attr_adjustable", "key": "adjustable", "label": "Adjustable", "type": "boolean",
+      "filterable": true, "searchable": false, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 6
+    },
+    {
+      "id": "attr_setting_type", "key": "settingType", "label": "Setting", "type": "select",
+      "options": [
+        { "value": "bezel", "label": "Bezel" }, { "value": "prong", "label": "Prong" },
+        { "value": "inlay", "label": "Inlay" }, { "value": "cluster", "label": "Cluster" },
+        { "value": "halo", "label": "Halo" }, { "value": "strung", "label": "Strung / Beaded" }
+      ],
+      "filterable": false, "searchable": true, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 7
+    },
+    {
+      "id": "attr_closure_type", "key": "closureType", "label": "Closure", "type": "select",
+      "options": [
+        { "value": "lobster", "label": "Lobster Clasp" }, { "value": "hook", "label": "Hook" },
+        { "value": "push-back", "label": "Push Back" }, { "value": "screw-back", "label": "Screw Back" },
+        { "value": "box-clasp", "label": "Box Clasp" }, { "value": "toggle", "label": "Toggle" },
+        { "value": "elastic", "label": "Elastic / Stretch" }, { "value": "open", "label": "Open / Slip-on" },
+        { "value": "knotted", "label": "Knotted" }
+      ],
+      "filterable": false, "searchable": false, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 8
+    },
+    {
+      "id": "attr_earring_type", "key": "earringType", "label": "Earring Type", "type": "select",
+      "options": [
+        { "value": "studs", "label": "Studs" }, { "value": "drops", "label": "Drops" },
+        { "value": "hoops", "label": "Hoops" }, { "value": "jhumka", "label": "Jhumka" },
+        { "value": "chandbali", "label": "Chandbali" }, { "value": "ear-cuff", "label": "Ear Cuff" }
+      ],
+      "filterable": true, "searchable": true, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 9
+    },
+    {
+      "id": "attr_necklace_type", "key": "necklaceType", "label": "Necklace Type", "type": "select",
+      "options": [
+        { "value": "choker", "label": "Choker" }, { "value": "statement", "label": "Statement" },
+        { "value": "beaded", "label": "Beaded" }, { "value": "chain", "label": "Chain" },
+        { "value": "mala", "label": "Mala" }, { "value": "layered", "label": "Layered" }
+      ],
+      "filterable": true, "searchable": true, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 10
+    },
+    {
+      "id": "attr_bead_size", "key": "beadSizeMm", "label": "Bead Size", "type": "number", "unit": "mm",
+      "filterable": true, "searchable": false, "isVariantAxis": true, "showOnProductPage": true, "sortOrder": 11
+    },
+    {
+      "id": "attr_bead_count", "key": "beadCount", "label": "Bead Count", "type": "number",
+      "filterable": false, "searchable": false, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 12
+    },
+    {
+      "id": "attr_mukhi", "key": "mukhi", "label": "Mukhi (Faces)", "type": "number",
+      "filterable": true, "searchable": true, "isVariantAxis": true, "showOnProductPage": true, "sortOrder": 13
+    },
+    {
+      "id": "attr_crystal_form", "key": "crystalForm", "label": "Form", "type": "select",
+      "options": [
+        { "value": "raw", "label": "Raw / Rough" }, { "value": "point", "label": "Point" },
+        { "value": "cluster", "label": "Cluster" }, { "value": "tumbled", "label": "Tumbled" },
+        { "value": "faceted", "label": "Faceted" }, { "value": "cabochon", "label": "Cabochon" },
+        { "value": "sphere", "label": "Sphere" }
+      ],
+      "filterable": true, "searchable": true, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 14
+    },
+    {
+      "id": "attr_deity", "key": "deity", "label": "Deity", "type": "select",
+      "options": [
+        { "value": "ganesh", "label": "Ganesh" }, { "value": "laxmi", "label": "Laxmi" },
+        { "value": "saraswati", "label": "Saraswati" }, { "value": "shiva", "label": "Shiva" },
+        { "value": "krishna", "label": "Krishna" }, { "value": "hanuman", "label": "Hanuman" },
+        { "value": "durga", "label": "Durga" }, { "value": "buddha", "label": "Buddha" },
+        { "value": "tara", "label": "Tara" }, { "value": "guru-rinpoche", "label": "Guru Rinpoche" }
+      ],
+      "filterable": true, "searchable": true, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 15
+    },
+    {
+      "id": "attr_posture", "key": "posture", "label": "Posture", "type": "select",
+      "options": [
+        { "value": "seated", "label": "Seated" }, { "value": "standing", "label": "Standing" },
+        { "value": "meditating", "label": "Meditating" }, { "value": "reclining", "label": "Reclining" }
+      ],
+      "filterable": false, "searchable": true, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 16
+    },
+    {
+      "id": "attr_height", "key": "heightCm", "label": "Height", "type": "number", "unit": "cm",
+      "filterable": false, "searchable": false, "isVariantAxis": true, "showOnProductPage": true, "sortOrder": 17
+    },
+    {
+      "id": "attr_capacity", "key": "capacityMl", "label": "Capacity", "type": "number", "unit": "ml",
+      "filterable": false, "searchable": false, "isVariantAxis": true, "showOnProductPage": true, "sortOrder": 18
+    },
+    {
+      "id": "attr_piece_count", "key": "pieceCount", "label": "Pieces", "type": "number",
+      "filterable": false, "searchable": false, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 19
+    },
+    {
+      "id": "attr_hallmarked", "key": "hallmarked", "label": "Hallmarked", "type": "boolean",
+      "filterable": false, "searchable": false, "isVariantAxis": false, "showOnProductPage": true, "sortOrder": 20
+    }
+  ]
+}

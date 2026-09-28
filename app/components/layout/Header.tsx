@@ -1,87 +1,26 @@
 "use client";
-import { useState } from "react";
-import {
-  Search,
-  ShoppingBag,
-  Heart,
-  User,
-  Menu,
-  X,
-  ChevronDown,
-} from "lucide-react";
+import { useCallback, useState } from "react";
+import { Search, ShoppingBag, Heart, Menu } from "lucide-react";
 
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { Button } from "../ui/button";
 import { openCart, selectCartItemsCount } from "@/store/cartSlice";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
 import Link from "next/link";
-import { useTypewriter } from "@/hooks/use-typewriter";
-
-const navigation = [
-  {
-    name: "Jewelry",
-    href: "/shop/jewelry",
-    submenu: [
-      { name: "All Jewelry", href: "/shop/jewelry" },
-      { name: "Rings", href: "/shop?category=rings" },
-      { name: "Necklaces", href: "/shop?category=necklaces" },
-      { name: "Earrings", href: "/shop?category=earrings" },
-      { name: "Pendants", href: "/shop?category=pendants" },
-      { name: "Bracelets", href: "/shop?category=bracelets" },
-    ],
-  },
-  {
-    name: "Gemstones",
-    href: "/shop/gemstones",
-    submenu: [
-      { name: "All Gemstones", href: "/shop/gemstones" },
-      { name: "Amethyst", href: "/shop?stone=amethyst" },
-      { name: "Turquoise", href: "/shop?stone=turquoise" },
-      { name: "Moonstone", href: "/shop?stone=moonstone" },
-      { name: "Garnet", href: "/shop?stone=garnet" },
-      { name: "Peridot", href: "/shop?stone=peridot" },
-    ],
-  },
-  {
-    name: "Lifestyle",
-    href: "/shop/lifestyle",
-    submenu: [
-      { name: "All Lifestyle", href: "/shop/lifestyle" },
-      { name: "Pooja Items", href: "/shop?category=pooja-items" },
-      { name: "Silver Utensils", href: "/shop?category=utensils" },
-      { name: "Home Decor", href: "/shop?category=decor" },
-    ],
-  },
-  { name: "Bespoke", href: "/bespoke" },
-];
+import { HeaderSearch } from "./HeaderSearch";
+import { Logo } from "../common/Logo";
+import { MegaMenu } from "./MegaMenu";
+import { MobileNav } from "./MobileNav";
 
 export function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const dispatch = useAppDispatch();
   const cartItemsCount = useAppSelector(selectCartItemsCount);
 
-  const animatedPlaceholder = useTypewriter([
-    "rings",
-    "necklaces",
-    "gemstones",
-    "lifestyle",
-    "pendants",
-  ]);
+  const closeSearch = useCallback(() => setIsSearchOpen(false), []);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
-      <div className="bg-primary text-primary-foreground py-1 text-center text-xs md:text-sm overflow-hidden ">
-        <div className="animate-marquee whitespace-nowrap">
-          Free Shipping on Orders Above NPR 10,000 • 925 Certified Silver
-        </div>
-      </div>
-
       <div className="w-full max-w-390 mx-auto px-2  lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <Sheet>
@@ -94,76 +33,18 @@ export function Header() {
             <SheetContent
               side="left"
               className="w-[300px] sm:w-[400px] overflow-y-auto"
+              aria-describedby={undefined}
             >
-              <nav className="flex flex-col gap-4 mt-8">
-                {navigation.map((item) => (
-                  <div key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-lg font-medium text-foreground hover:text-muted-foreground transition-colors tracking-wide block py-2"
-                    >
-                      {item.name}
-                    </Link>
-                    {item.submenu && (
-                      <div className="pl-4 space-y-2 mt-2">
-                        {item.submenu.map((sub) => (
-                          <Link
-                            key={sub.name}
-                            href={sub.href}
-                            className="text-sm text-muted-foreground hover:text-foreground transition-colors block py-1"
-                          >
-                            {sub.name}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </nav>
+              <SheetTitle className="sr-only">Menu</SheetTitle>
+              <MobileNav />
             </SheetContent>
           </Sheet>
 
-          <Link href="/" className="flex items-center">
-            <h1 className="text-xl md:text-2xl font-serif font-cursive ">
-              <span className="font-semibold">Aryal siring gems</span>
-            </h1>
+          <Link href="/" aria-label="Aryal Siring Gems — home" className="flex items-center">
+            <Logo />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-6">
-            {navigation.map((item) =>
-              item.submenu ? (
-                <DropdownMenu key={item.name}>
-                  <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-foreground hover:text-muted-foreground transition-colors tracking-widest uppercase outline-none">
-                    {item.name}
-                    <ChevronDown className="h-3 w-3" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent
-                    align="start"
-                    className="w-48 bg-background border border-border shadow-lg z-50"
-                  >
-                    {item.submenu.map((sub) => (
-                      <DropdownMenuItem key={sub.name} asChild>
-                        <Link
-                          href={sub.href}
-                          className="w-full px-4 py-2 text-sm hover:bg-muted cursor-pointer"
-                        >
-                          {sub.name}
-                        </Link>
-                      </DropdownMenuItem>
-                    ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              ) : (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-sm font-medium text-foreground hover:text-muted-foreground transition-colors tracking-widest uppercase"
-                >
-                  {item.name}
-                </Link>
-              )
-            )}
-          </nav>
+          <MegaMenu />
 
           <div className="flex items-center gap-1 md:gap-2">
             <Button
@@ -189,12 +70,6 @@ export function Header() {
             <Button
               variant="ghost"
               size="icon"
-              asChild
-              className="text-foreground hover:text-muted-foreground hidden sm:flex"
-            ></Button>
-            <Button
-              variant="ghost"
-              size="icon"
               onClick={() => dispatch(openCart())}
               className="text-foreground hover:text-muted-foreground relative"
             >
@@ -209,27 +84,7 @@ export function Header() {
           </div>
         </div>
 
-        {isSearchOpen && (
-          <div className="py-4 border-t border-border animate-fade-in">
-            <div className="relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <input
-                type="search"
-                placeholder={`Search for ${animatedPlaceholder}|`}
-                className="w-full pl-12 pr-4 py-3 bg-muted border-0 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-primary"
-                autoFocus
-              />
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setIsSearchOpen(false)}
-                className="absolute right-2 top-1/2 -translate-y-1/2"
-              >
-                <X className="h-4 w-4" />
-              </Button>
-            </div>
-          </div>
-        )}
+        {isSearchOpen && <HeaderSearch onClose={closeSearch} />}
       </div>
     </header>
   );

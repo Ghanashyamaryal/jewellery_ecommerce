@@ -37,8 +37,8 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-serif">Our Heritage</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  The story of Aryal Sirin Gems begins in the ancient city of
-                  Patan, known worldwide for its master metalworkers. For over
+                  The story of Aryal Siring Gems begins in the ancient city of
+                  Kathmandu, known worldwide for its master metalworkers. For over
                   five decades, our family has dedicated itself to the art of
                   creating exquisite silver jewelry and preserving traditional
                   Nepali craftsmanship.

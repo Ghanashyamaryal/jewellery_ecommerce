@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
-import { Header } from "./components/layout/Header";
-import { Footer } from "./components/layout/Footer";
 import { Providers } from "./providers";
+import { NavigationProvider } from "@/components/layout/NavigationProvider";
+import { getNavigation } from "@/lib/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,9 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SmokeShop - Premium Smoking Accessories",
+  title: {
+    default: "Aryal Siring Gems — Handcrafted Silver Jewellery from Nepal",
+    template: "%s | Aryal Siring Gems",
+  },
   description:
-    "Your trusted online head shop for premium smoking accessories and essentials.",
+    "Handcrafted 925 sterling silver jewellery, natural gemstones, deity idols and silver home decor from Nepali silversmiths in Kathmandu.",
 };
 
 export default function RootLayout({
@@ -33,8 +36,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <Suspense fallback={<div className="h-20" />}></Suspense>
-          {children}
+          <NavigationProvider value={getNavigation()}>
+            <Suspense fallback={<div className="h-20" />}></Suspense>
+            {children}
+          </NavigationProvider>
         </Providers>
       </body>
     </html>

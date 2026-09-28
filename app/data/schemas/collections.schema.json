@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Collections",
+  "type": "object",
+  "required": [
+    "version",
+    "items"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/item"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "item": {
+      "type": "object",
+      "required": [
+        "id",
+        "slug",
+        "name",
+        "description",
+        "type",
+        "isActive",
+        "sortOrder"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^col_[a-z0-9_]+$"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "manual",
+            "rule"
+          ]
+        },
+        "productIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^prd_[a-z0-9_]+$"
+          }
+        },
+        "rules": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "categoryIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "stoneIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "metalIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "genders": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "men",
+                  "women",
+                  "unisex",
+                  "kids"
+                ]
+              }
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "occasions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "minPrice": {
+              "type": "number"
+            },
+            "maxPrice": {
+              "type": "number"
+            },
+            "isNew": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "startsAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endsAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sortOrder": {
+          "type": "integer"
+        },
+        "seo": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "metaTitle": {
+              "type": "string"
+            },
+            "metaDescription": {
+              "type": "string"
+            },
+            "keywords": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "canonicalUrl": {
+              "type": "string"
+            },
+            "ogImage": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

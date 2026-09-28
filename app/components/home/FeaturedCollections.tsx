@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
@@ -14,36 +15,37 @@ const collections: Collection[] = [
     name: "Signature Rings",
     description: "Handcrafted statement pieces",
     href: "/shop/jewelry/rings",
-    image:
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=800&fit=crop&q=80",
+    image: "/images/home/featured-rings.jpg",
   },
   {
     name: "Statement Necklaces",
     description: "Timeless elegance",
     href: "/shop/jewelry/necklaces",
-    image:
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=800&fit=crop&q=80",
+    image: "/images/home/featured-necklaces.jpg",
   },
   {
     name: "Rare Gemstones",
     description: "Nature's treasures",
     href: "/shop/gemstones",
-    image:
-      "https://www.nobbier.com/wp-content/uploads/2024/11/natural-red-diamond-rare-gem-1024x574.jpg",
+    image: "/images/home/featured-gemstones.jpg",
   },
   {
-    name: "Silver Lifestyle",
-    description: "Pooja items & décor",
-    href: "/shop/lifestyle",
-    image:
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=800&fit=crop&q=80",
+    name: "Stone & Bead Jewelry",
+    description: "Turquoise, amber, coral & more",
+    href: "/shop/stone-jewelry",
+    image: "/images/home/featured-stone-jewelry.jpg",
   },
   {
-    name: "Silver Lifestyles",
+    name: "Idols & Statues",
+    description: "Silver deities & Buddha statues",
+    href: "/shop/idols-statues",
+    image: "/images/home/featured-idols.jpg",
+  },
+  {
+    name: "Silver Home Decor",
     description: "Pooja items & décor",
-    href: "/shop/lifestyle",
-    image:
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=800&fit=crop&q=80",
+    href: "/shop/home-decor",
+    image: "/images/home/featured-home-decor.jpg",
   },
 ];
 
@@ -116,9 +118,9 @@ export default function FeaturedCollections() {
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {collections.map((collection, index) => (
-              <a
-                key={`${collection.name}-${index}`}
-                href="/shop"
+              <Link
+                key={collection.href}
+                href={collection.href}
                 className="group relative flex-shrink-0 min-w-[320px] max-w-[343px] w-full aspect-[3/4] overflow-hidden bg-muted snap-center animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
@@ -139,7 +141,7 @@ export default function FeaturedCollections() {
                     <ArrowRight className="h-4 w-4" />
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
 

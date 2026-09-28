@@ -3,14 +3,23 @@
 import Link from "next/link";
 import { Eye, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Product } from "@/data/products";
+import type { Product } from "@/types/catalog";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { selectIsInWishlist, toggleWishlist } from "@/store/wishlistSlice";
+import { getFinalPrice } from "@/lib/pricing";
 
 interface ProductCardProps {
   product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
+  const dispatch = useAppDispatch();
+  const isWishlisted = useAppSelector(selectIsInWishlist(product.id));
+  const finalPrice = getFinalPrice(product);
+  const strikePrice =
+    finalPrice < product.price ? product.price : product.comparePrice;
+
   const getRatingStars = (rating: number) => {
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 !== 0;
@@ -25,13 +34,13 @@ export function ProductCard({ product }: ProductCardProps) {
         <FaStarHalfAlt
           key={fullStars}
           className="text-yellow-500 text-[14px]"
-        />
+        />,
       );
     }
 
     while (stars.length < 5) {
       stars.push(
-        <FaStar key={stars.length} className="text-gray-300 text-[14px]" />
+        <FaStar key={stars.length} className="text-gray-300 text-[14px]" />,
       );
     }
 
@@ -41,22 +50,21 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group relative">
       {/* Image Container */}
-      <Link
-        href={`/product/${product.slug}`}
-        className="block aspect-[3/4] overflow-hidden bg-muted"
-      >
-        <img
-          src={product.images[0]}
-          alt={product.name}
-          className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
-        />
-        {product.images[1] && (
+      <div className="relative aspect-[3/4] overflow-hidden bg-muted">
+        <Link href={`/product/${product.slug}`} className="block w-full h-full">
           <img
-            src={product.images[1]}
+            src={product.images[0]}
             alt={product.name}
-            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
           />
-        )}
+          {product.images[1] && (
+            <img
+              src={product.images[1]}
+              alt={product.name}
+              className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            />
+          )}
+        </Link>
 
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col ">
@@ -73,8 +81,13 @@ export function ProductCard({ product }: ProductCardProps) {
             variant="secondary"
             size="icon"
             className="h-8 w-8 bg-background/90 hover:bg-background rounded-none"
+            onClick={() => dispatch(toggleWishlist(product))}
+            aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
+            aria-pressed={isWishlisted}
           >
-            <Heart className="h-4 w-4" />
+            <Heart
+              className={`h-4 w-4 ${isWishlisted ? "fill-red-500 text-red-500" : ""}`}
+            />
           </Button>
           <Button
             variant="secondary"
@@ -87,7 +100,7 @@ export function ProductCard({ product }: ProductCardProps) {
             </Link>
           </Button>
         </div>
-      </Link>
+      </div>
 
       {/* Product Info */}
       <div className="pt-4 px-1  space-y-2">
@@ -112,9 +125,9 @@ export function ProductCard({ product }: ProductCardProps) {
 
         {/* Weight and Rating */}
         <div className="flex items-center flex-wrap justify-between gap-1">
-          <div className="flex gap-1">
-            {getRatingStars(product?.rating ?? 4)}
-          </div>
+          {product.ratings.count > 0 && (
+            <div className="flex gap-1">{getRatingStars(product.rating)}</div>
+          )}
           <p className="text-xs text-muted-foreground">
             Approx. {product.weight}
           </p>
@@ -123,11 +136,11 @@ export function ProductCard({ product }: ProductCardProps) {
         {/* Price */}
         <div className="flex items-center gap-1">
           <span className="font-medium text-sm">
-            NPR {product.price.toLocaleString()}
+            NPR {finalPrice.toLocaleString()}
           </span>
-          {product.comparePrice && (
+          {strikePrice && strikePrice > finalPrice && (
             <span className="text-sm text-muted-foreground line-through">
-              NPR {product.comparePrice.toLocaleString()}
+              NPR {strikePrice.toLocaleString()}
             </span>
           )}
         </div>

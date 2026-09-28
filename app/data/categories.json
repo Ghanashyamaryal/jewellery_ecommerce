@@ -1,0 +1,482 @@
+{
+  "$schema": "./schemas/categories.schema.json",
+  "version": 1,
+  "items": [
+    {
+      "id": "cat_jewelry",
+      "slug": "jewelry",
+      "name": "Silver Jewelry",
+      "parentId": null,
+      "description": "Handcrafted 925 sterling silver and white-metal jewellery, with and without stones.",
+      "image": "/images/categories/jewelry.jpg",
+      "attributeIds": [
+        "attr_style",
+        "attr_finish",
+        "attr_setting_type",
+        "attr_closure_type",
+        "attr_adjustable",
+        "attr_hallmarked"
+      ],
+      "isActive": true,
+      "sortOrder": 1,
+      "seo": {
+        "metaTitle": "Silver Jewelry | Aryal Siring Gems",
+        "metaDescription": "Handcrafted 925 sterling silver and white-metal jewellery, with and without stones."
+      }
+    },
+    {
+      "id": "cat_rings",
+      "slug": "rings",
+      "name": "Rings",
+      "parentId": "cat_jewelry",
+      "description": "Silver rings for men and women.",
+      "attributeIds": [
+        "attr_ring_size"
+      ],
+      "isActive": true,
+      "sortOrder": 1,
+      "seo": {
+        "metaTitle": "Rings | Aryal Siring Gems",
+        "metaDescription": "Silver rings for men and women."
+      },
+      "image": "/images/categories/rings.jpg"
+    },
+    {
+      "id": "cat_pendants",
+      "slug": "pendants",
+      "name": "Pendants",
+      "parentId": "cat_jewelry",
+      "description": "Silver pendants and lockets.",
+      "attributeIds": [
+        "attr_chain_length"
+      ],
+      "isActive": true,
+      "sortOrder": 2,
+      "seo": {
+        "metaTitle": "Pendants | Aryal Siring Gems",
+        "metaDescription": "Silver pendants and lockets."
+      },
+      "image": "/images/categories/pendants.jpg"
+    },
+    {
+      "id": "cat_necklaces",
+      "slug": "necklaces",
+      "name": "Necklaces",
+      "parentId": "cat_jewelry",
+      "description": "Silver necklaces and chokers.",
+      "attributeIds": [
+        "attr_chain_length",
+        "attr_necklace_type"
+      ],
+      "isActive": true,
+      "sortOrder": 3,
+      "seo": {
+        "metaTitle": "Necklaces | Aryal Siring Gems",
+        "metaDescription": "Silver necklaces and chokers."
+      },
+      "image": "/images/categories/necklaces.jpg"
+    },
+    {
+      "id": "cat_earrings",
+      "slug": "earrings",
+      "name": "Earrings",
+      "parentId": "cat_jewelry",
+      "description": "Studs, drops, hoops and jhumkas.",
+      "attributeIds": [
+        "attr_earring_type"
+      ],
+      "isActive": true,
+      "sortOrder": 4,
+      "seo": {
+        "metaTitle": "Earrings | Aryal Siring Gems",
+        "metaDescription": "Studs, drops, hoops and jhumkas."
+      },
+      "image": "/images/categories/earrings.jpg"
+    },
+    {
+      "id": "cat_bracelets",
+      "slug": "bracelets",
+      "name": "Bracelets",
+      "parentId": "cat_jewelry",
+      "description": "Silver bracelets, cuffs and kadas.",
+      "attributeIds": [
+        "attr_bangle_size"
+      ],
+      "isActive": true,
+      "sortOrder": 5,
+      "seo": {
+        "metaTitle": "Bracelets | Aryal Siring Gems",
+        "metaDescription": "Silver bracelets, cuffs and kadas."
+      },
+      "image": "/images/categories/bracelets.jpg"
+    },
+    {
+      "id": "cat_bangles",
+      "slug": "bangles",
+      "name": "Bangles",
+      "parentId": "cat_jewelry",
+      "description": "Solid and oxidised silver bangles.",
+      "attributeIds": [
+        "attr_bangle_size",
+        "attr_piece_count"
+      ],
+      "isActive": true,
+      "sortOrder": 6,
+      "seo": {
+        "metaTitle": "Bangles | Aryal Siring Gems",
+        "metaDescription": "Solid and oxidised silver bangles."
+      },
+      "image": "/images/categories/bangles.jpg"
+    },
+    {
+      "id": "cat_chains",
+      "slug": "chains",
+      "name": "Chains",
+      "parentId": "cat_jewelry",
+      "description": "Silver chains for men and women.",
+      "attributeIds": [
+        "attr_chain_length"
+      ],
+      "isActive": true,
+      "sortOrder": 7,
+      "seo": {
+        "metaTitle": "Chains | Aryal Siring Gems",
+        "metaDescription": "Silver chains for men and women."
+      },
+      "image": "/images/categories/chains.jpg"
+    },
+    {
+      "id": "cat_anklets",
+      "slug": "anklets",
+      "name": "Anklets",
+      "parentId": "cat_jewelry",
+      "description": "Silver payal and anklets.",
+      "attributeIds": [
+        "attr_piece_count"
+      ],
+      "isActive": true,
+      "sortOrder": 8,
+      "seo": {
+        "metaTitle": "Anklets | Aryal Siring Gems",
+        "metaDescription": "Silver payal and anklets."
+      },
+      "image": "/images/categories/anklets.jpg"
+    },
+    {
+      "id": "cat_stone_jewelry",
+      "slug": "stone-jewelry",
+      "name": "Stone & Bead Jewelry",
+      "parentId": null,
+      "description": "Necklaces, bracelets and malas strung from turquoise, amber, coral, shell, lapis, garnet and more.",
+      "image": "/images/categories/stone-jewelry.jpg",
+      "attributeIds": [
+        "attr_style",
+        "attr_bead_size",
+        "attr_bead_count",
+        "attr_closure_type"
+      ],
+      "isActive": true,
+      "sortOrder": 2,
+      "seo": {
+        "metaTitle": "Stone & Bead Jewelry | Aryal Siring Gems",
+        "metaDescription": "Necklaces, bracelets and malas strung from turquoise, amber, coral, shell, lapis, garnet and more."
+      }
+    },
+    {
+      "id": "cat_stone_necklaces",
+      "slug": "stone-necklaces",
+      "name": "Stone Necklaces",
+      "parentId": "cat_stone_jewelry",
+      "description": "Beaded gemstone necklaces.",
+      "attributeIds": [
+        "attr_necklace_type",
+        "attr_chain_length"
+      ],
+      "isActive": true,
+      "sortOrder": 1,
+      "seo": {
+        "metaTitle": "Stone Necklaces | Aryal Siring Gems",
+        "metaDescription": "Beaded gemstone necklaces."
+      },
+      "image": "/images/categories/stone-necklaces.jpg"
+    },
+    {
+      "id": "cat_stone_bracelets",
+      "slug": "stone-bracelets",
+      "name": "Stone Bracelets",
+      "parentId": "cat_stone_jewelry",
+      "description": "Beaded gemstone bracelets.",
+      "attributeIds": [
+        "attr_bangle_size",
+        "attr_adjustable"
+      ],
+      "isActive": true,
+      "sortOrder": 2,
+      "seo": {
+        "metaTitle": "Stone Bracelets | Aryal Siring Gems",
+        "metaDescription": "Beaded gemstone bracelets."
+      },
+      "image": "/images/categories/stone-bracelets.jpg"
+    },
+    {
+      "id": "cat_malas",
+      "slug": "malas",
+      "name": "Malas",
+      "parentId": "cat_stone_jewelry",
+      "description": "108-bead prayer malas.",
+      "attributeIds": [
+        "attr_mukhi"
+      ],
+      "isActive": true,
+      "sortOrder": 3,
+      "seo": {
+        "metaTitle": "Malas | Aryal Siring Gems",
+        "metaDescription": "108-bead prayer malas."
+      },
+      "image": "/images/categories/malas.jpg"
+    },
+    {
+      "id": "cat_stone_earrings",
+      "slug": "stone-earrings",
+      "name": "Stone Earrings",
+      "parentId": "cat_stone_jewelry",
+      "description": "Bead and stone drop earrings.",
+      "attributeIds": [
+        "attr_earring_type"
+      ],
+      "isActive": true,
+      "sortOrder": 4,
+      "seo": {
+        "metaTitle": "Stone Earrings | Aryal Siring Gems",
+        "metaDescription": "Bead and stone drop earrings."
+      },
+      "image": "/images/categories/stone-earrings.jpg"
+    },
+    {
+      "id": "cat_gemstones",
+      "slug": "gemstones",
+      "name": "Gemstones",
+      "parentId": null,
+      "description": "Natural loose, raw and polished gemstones.",
+      "image": "/images/categories/gemstones.jpg",
+      "attributeIds": [
+        "attr_crystal_form",
+        "attr_piece_count"
+      ],
+      "isActive": true,
+      "sortOrder": 3,
+      "seo": {
+        "metaTitle": "Gemstones | Aryal Siring Gems",
+        "metaDescription": "Natural loose, raw and polished gemstones."
+      }
+    },
+    {
+      "id": "cat_tumbled",
+      "slug": "tumbled",
+      "name": "Tumbled Stones",
+      "parentId": "cat_gemstones",
+      "description": "Polished tumbled stones.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 1,
+      "seo": {
+        "metaTitle": "Tumbled Stones | Aryal Siring Gems",
+        "metaDescription": "Polished tumbled stones."
+      },
+      "image": "/images/categories/tumbled.jpg"
+    },
+    {
+      "id": "cat_faceted",
+      "slug": "faceted",
+      "name": "Faceted Stones",
+      "parentId": "cat_gemstones",
+      "description": "Cut and faceted gemstones.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 2,
+      "seo": {
+        "metaTitle": "Faceted Stones | Aryal Siring Gems",
+        "metaDescription": "Cut and faceted gemstones."
+      },
+      "image": "/images/categories/faceted.jpg"
+    },
+    {
+      "id": "cat_raw",
+      "slug": "raw",
+      "name": "Raw Crystals",
+      "parentId": "cat_gemstones",
+      "description": "Rough crystals and clusters.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 3,
+      "seo": {
+        "metaTitle": "Raw Crystals | Aryal Siring Gems",
+        "metaDescription": "Rough crystals and clusters."
+      },
+      "image": "/images/categories/raw.jpg"
+    },
+    {
+      "id": "cat_cabochon",
+      "slug": "cabochon",
+      "name": "Cabochons",
+      "parentId": "cat_gemstones",
+      "description": "Smooth domed stones for setting.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 4,
+      "seo": {
+        "metaTitle": "Cabochons | Aryal Siring Gems",
+        "metaDescription": "Smooth domed stones for setting."
+      },
+      "image": "/images/categories/cabochon.jpg"
+    },
+    {
+      "id": "cat_idols_statues",
+      "slug": "idols-statues",
+      "name": "Idols & Statues",
+      "parentId": null,
+      "description": "Silver and white-metal deity idols, Buddha statues and figurines.",
+      "image": "/images/categories/idols-statues.jpg",
+      "attributeIds": [
+        "attr_deity",
+        "attr_posture",
+        "attr_height",
+        "attr_finish",
+        "attr_style"
+      ],
+      "isActive": true,
+      "sortOrder": 4,
+      "seo": {
+        "metaTitle": "Idols & Statues | Aryal Siring Gems",
+        "metaDescription": "Silver and white-metal deity idols, Buddha statues and figurines."
+      }
+    },
+    {
+      "id": "cat_deity_idols",
+      "slug": "deity-idols",
+      "name": "Deity Idols",
+      "parentId": "cat_idols_statues",
+      "description": "Ganesh, Laxmi, Shiva, Krishna and more.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 1,
+      "seo": {
+        "metaTitle": "Deity Idols | Aryal Siring Gems",
+        "metaDescription": "Ganesh, Laxmi, Shiva, Krishna and more."
+      },
+      "image": "/images/categories/deity-idols.jpg"
+    },
+    {
+      "id": "cat_buddha_statues",
+      "slug": "buddha-statues",
+      "name": "Buddha Statues",
+      "parentId": "cat_idols_statues",
+      "description": "Buddha, Tara and Buddhist statues.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 2,
+      "seo": {
+        "metaTitle": "Buddha Statues | Aryal Siring Gems",
+        "metaDescription": "Buddha, Tara and Buddhist statues."
+      },
+      "image": "/images/categories/buddha-statues.jpg"
+    },
+    {
+      "id": "cat_figurines",
+      "slug": "figurines",
+      "name": "Figurines",
+      "parentId": "cat_idols_statues",
+      "description": "Animal and decorative figurines.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 3,
+      "seo": {
+        "metaTitle": "Figurines | Aryal Siring Gems",
+        "metaDescription": "Animal and decorative figurines."
+      },
+      "image": "/images/categories/figurines.jpg"
+    },
+    {
+      "id": "cat_home_decor",
+      "slug": "home-decor",
+      "name": "Home Decor",
+      "parentId": null,
+      "description": "Pooja items, silver utensils and decor for the home.",
+      "image": "/images/categories/home-decor.jpg",
+      "attributeIds": [
+        "attr_finish",
+        "attr_style",
+        "attr_piece_count",
+        "attr_height"
+      ],
+      "isActive": true,
+      "sortOrder": 5,
+      "seo": {
+        "metaTitle": "Home Decor | Aryal Siring Gems",
+        "metaDescription": "Pooja items, silver utensils and decor for the home."
+      }
+    },
+    {
+      "id": "cat_pooja_items",
+      "slug": "pooja-items",
+      "name": "Pooja Items",
+      "parentId": "cat_home_decor",
+      "description": "Thalis, diyas, kalash and prayer items.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 1,
+      "seo": {
+        "metaTitle": "Pooja Items | Aryal Siring Gems",
+        "metaDescription": "Thalis, diyas, kalash and prayer items."
+      },
+      "image": "/images/categories/pooja-items.jpg"
+    },
+    {
+      "id": "cat_utensils",
+      "slug": "utensils",
+      "name": "Silver Utensils",
+      "parentId": "cat_home_decor",
+      "description": "Glasses, bowls, plates and spoons.",
+      "attributeIds": [
+        "attr_capacity"
+      ],
+      "isActive": true,
+      "sortOrder": 2,
+      "seo": {
+        "metaTitle": "Silver Utensils | Aryal Siring Gems",
+        "metaDescription": "Glasses, bowls, plates and spoons."
+      },
+      "image": "/images/categories/utensils.jpg"
+    },
+    {
+      "id": "cat_decor",
+      "slug": "decor",
+      "name": "Decor",
+      "parentId": "cat_home_decor",
+      "description": "Singing bowls, photo frames and showpieces.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 3,
+      "seo": {
+        "metaTitle": "Decor | Aryal Siring Gems",
+        "metaDescription": "Singing bowls, photo frames and showpieces."
+      },
+      "image": "/images/categories/decor.jpg"
+    },
+    {
+      "id": "cat_wall_hangings",
+      "slug": "wall-hangings",
+      "name": "Wall Hangings",
+      "parentId": "cat_home_decor",
+      "description": "Toran, wall plates and hangings.",
+      "attributeIds": [],
+      "isActive": true,
+      "sortOrder": 4,
+      "seo": {
+        "metaTitle": "Wall Hangings | Aryal Siring Gems",
+        "metaDescription": "Toran, wall plates and hangings."
+      },
+      "image": "/images/categories/wall-hangings.jpg"
+    }
+  ]
+}

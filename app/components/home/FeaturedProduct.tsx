@@ -1,66 +1,33 @@
-import { products } from "@/data/products";
-import { ArrowRight, Instagram } from "lucide-react";
-import { ProductCard } from "../common/ProductCard";
+import { getBestsellers, getNewArrivals } from "@/lib/catalog";
+import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
-
-const instagramPosts = [
-  {
-    image:
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=400&fit=crop&q=80",
-    href: "#",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&h=400&fit=crop&q=80",
-    href: "#",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400&h=400&fit=crop&q=80",
-    href: "#",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&h=400&fit=crop&q=80",
-    href: "#",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1603974372039-adc49044b6bd?w=400&h=400&fit=crop&q=80",
-    href: "#",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=400&h=400&fit=crop&q=80",
-    href: "#",
-  },
-];
+import { ProductTabs } from "./ProductTabs";
 
 export function FeaturedProduct() {
   return (
     <section className="py-8 md:py-12 xl:py-16 bg-muted/30">
       <div className="w-full max-w-390 mx-auto px-4 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif mb-2">
-            Featured Products
-          </h2>
-          <p className="text-muted-foreground">Discover top-rated products</p>
+        <div className="text-center mb-8">
+          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
+            Shop the Favourites
+          </p>
+          <h2 className="text-3xl md:text-4xl font-serif">Loved by Our Customers</h2>
         </div>
 
-        {products.length > 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-6 gap-y-12">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        ) : null}
+        <ProductTabs
+          defaultValue="new"
+          tabs={[
+            { value: "bestsellers", label: "Best Sellers", products: getBestsellers(10) },
+            { value: "new", label: "New Arrivals", products: getNewArrivals(10) },
+          ]}
+        />
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-12">
           <Button
             asChild
             size="lg"
-            className="min-w-[200px] tracking-widest uppercase text-sm"
+            className="min-w-50 tracking-widest uppercase text-sm"
           >
             <Link href="/shop" className="flex items-center">
               All Products

@@ -4,9 +4,9 @@ import { Sparkles, Droplets, ShieldAlert, Waves } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
 export const metadata: Metadata = {
-  title: "Jewelry Care Guide - Aryal Sirin Gems",
+  title: "Jewelry Care Guide - Aryal Siring Gems",
   description:
-    "Learn how to clean and maintain your precious gemstones and fine jewelry from Aryal Sirin Gems.",
+    "Learn how to clean and maintain your precious gemstones and fine jewelry from Aryal Siring Gems.",
 };
 
 const CareInstructionsPage = () => {
@@ -18,7 +18,7 @@ const CareInstructionsPage = () => {
             Jewelry Care Guide
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Every piece from Aryal Sirin Gems is a work of art. With the right
+            Every piece from Aryal Siring Gems is a work of art. With the right
             care, your jewelry will maintain its brilliance and become a
             cherished family heirloom.
           </p>
@@ -94,13 +94,14 @@ const CareInstructionsPage = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="border p-3 font-medium">Diamonds</td>
-                    <td className="border p-3 text-green-600">
-                      Extremely Durable
+                    <td className="border p-3 font-medium">
+                      Quartz (Amethyst, Citrine, Crystal)
                     </td>
+                    <td className="border p-3 text-green-600">Durable</td>
                     <td className="border p-3 text-sm">
-                      Diamonds attract grease. Clean frequently to maintain
-                      fire. Avoid touching stones with bare fingers.
+                      Clean with warm soapy water and a soft brush. Keep
+                      amethyst and citrine out of strong sunlight to prevent
+                      fading.
                     </td>
                   </tr>
                   <tr>
@@ -121,7 +122,7 @@ const CareInstructionsPage = () => {
               <Sparkles className="text-amber-600" /> Professional Maintenance
             </h2>
             <p className="text-amber-900 leading-relaxed mb-4">
-              We recommend bringing your Aryal Sirin Gems jewelry to a
+              We recommend bringing your Aryal Siring Gems jewelry to a
               professional jeweler
               <strong> every 6 to 12 months</strong> for a safety check. They
               will:

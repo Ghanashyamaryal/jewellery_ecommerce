@@ -9,7 +9,7 @@ import {
 import { Layout } from "@/components/layout/Layout";
 
 export const metadata: Metadata = {
-  title: "FAQ - Aryal Sirin Gems",
+  title: "FAQ - Aryal Siring Gems",
   description:
     "Frequently asked questions about our gemstones, custom jewelry, and shipping.",
 };
@@ -21,7 +21,7 @@ const FAQPage = () => {
       questions: [
         {
           q: "Are your gemstones natural?",
-          a: "Yes, 100%. At Aryal Sirin Gems, we specialize exclusively in natural gemstones. Every stone is hand-selected and checked for authenticity. We do not deal in synthetic or lab-created stones unless explicitly stated.",
+          a: "Yes, 100%. At Aryal Siring Gems, we specialize exclusively in natural gemstones. Every stone is hand-selected and checked for authenticity. We do not deal in synthetic or lab-created stones unless explicitly stated.",
         },
         {
           q: "Do you provide lab certificates?",
@@ -73,7 +73,7 @@ const FAQPage = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-gray-600">
-            Everything you need to know about Aryal Sirin Gems. Can't find the
+            Everything you need to know about Aryal Siring Gems. Can't find the
             answer?{" "}
             <span className="text-blue-600 font-medium">
               WhatsApp us at +977 9860120739

@@ -42,3 +42,22 @@ const validationSchema = yup.object({
 });
 
 export default validationSchema;
+
+export const reviewSchema = yup.object({
+  rating: yup
+    .number()
+    .min(1, 'Please choose a star rating')
+    .max(5)
+    .required('Please choose a star rating'),
+  name: yup
+    .string()
+    .trim()
+    .min(2, 'Name must be at least 2 characters')
+    .required('Name is required'),
+  comment: yup
+    .string()
+    .trim()
+    .min(10, 'Review must be at least 10 characters')
+    .max(1000, 'Review must be under 1000 characters')
+    .required('Review is required'),
+});

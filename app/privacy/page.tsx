@@ -1,168 +1,315 @@
-import React from "react";
 import { Metadata } from "next";
-import { Layout } from "@/components/layout/Layout";
+import Link from "next/link";
+import { LegalPage } from "@/components/legal/LegalPage";
+import {
+  LegalContact,
+  LegalNotice,
+  LegalSection,
+} from "@/components/legal/LegalSection";
 
 export const metadata: Metadata = {
   title: "Privacy Policy - Aryal Siring Gems",
   description:
-    "Learn how Aryal Sirin Gems protects your personal data and ensures secure gemstone transactions.",
+    "How Aryal Siring Gems collects, uses, shares and protects your personal information when you browse, order or contact us.",
 };
 
-const PrivacyPolicyPage = () => {
+const SECTIONS = [
+  { id: "scope", title: "Who we are" },
+  { id: "collect", title: "Information we collect" },
+  { id: "use", title: "How we use it" },
+  { id: "sharing", title: "Who we share it with" },
+  { id: "device-storage", title: "Cookies & browser storage" },
+  { id: "whatsapp", title: "WhatsApp & social media" },
+  { id: "transfers", title: "International transfers" },
+  { id: "retention", title: "How long we keep it" },
+  { id: "security", title: "Security" },
+  { id: "rights", title: "Your rights" },
+  { id: "marketing", title: "Marketing" },
+  { id: "children", title: "Children" },
+  { id: "changes", title: "Changes to this policy" },
+  { id: "contact", title: "Contact us" },
+];
+
+export default function PrivacyPolicyPage() {
   return (
-    <Layout>
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8 text-gray-900 border-b pb-4">
-          Privacy Policy
-        </h1>
+    <LegalPage
+      eyebrow="Legal"
+      title="Privacy Policy"
+      lastUpdated="27 September 2026"
+      sections={SECTIONS}
+      intro={
+        <p>
+          Your privacy matters to us as much as the pieces we make. This policy
+          explains, in plain language, what personal information we collect,
+          why we collect it, and the choices you have. We never sell your
+          personal information.
+        </p>
+      }
+    >
+      <LegalSection id="scope" number={1} title="Who we are">
+        <p>
+          <strong>Aryal Siring Gems</strong> is a silversmith and gemstone
+          business based in Kathmandu, Nepal. We are responsible for the
+          personal information described in this policy. It applies to this
+          website and to orders and enquiries made through WhatsApp, email,
+          phone or in person.
+        </p>
+        <p>
+          We handle personal information in line with the Individual Privacy
+          Act, 2075 (2018) and the Electronic Transactions Act, 2063 (2008) of
+          Nepal. Where visitors from other countries have additional rights
+          under their local laws, we will respect those rights too.
+        </p>
+      </LegalSection>
 
-        <div className="prose prose-lg max-w-none">
-          <p className="text-gray-600 mb-6">
-            <strong>Last Updated:</strong> {new Date().toLocaleDateString()}
-          </p>
+      <LegalSection id="collect" number={2} title="Information we collect">
+        <h3>Information you give us</h3>
+        <ul>
+          <li>
+            <strong>Orders:</strong> your name, email address, phone number,
+            delivery address, city, province and postal code.
+          </li>
+          <li>
+            <strong>Bespoke requests and enquiries:</strong> your name, contact
+            details, message, budget, sizes, and any reference images or design
+            ideas you share.
+          </li>
+          <li>
+            <strong>Conversations:</strong> messages you send us by WhatsApp,
+            email or phone, including photos (for example, of an item you want
+            repaired or returned).
+          </li>
+          <li>
+            <strong>Payment confirmation:</strong> the transaction reference,
+            amount and status from eSewa, Khalti, your bank or our card payment
+            provider. We never receive or store your full card number, CVV or
+            wallet PIN.
+          </li>
+        </ul>
+        <h3>Information collected automatically</h3>
+        <ul>
+          <li>
+            <strong>Technical data:</strong> like almost every website, our
+            hosting provider records basic server logs, such as IP address,
+            browser type, device, pages requested and date and time. We use
+            these to keep the site secure and working.
+          </li>
+          <li>
+            <strong>Search terms:</strong> words you type into our search box
+            are processed to show you results. They are not linked to your
+            identity.
+          </li>
+        </ul>
+        <p>
+          We do not ask for sensitive information such as religious beliefs,
+          health details or government ID. Please don&apos;t send it to us
+          unless we specifically need it (for example, when customs requires it
+          for an international shipment).
+        </p>
+      </LegalSection>
 
-          <p className="text-gray-700 leading-relaxed mb-8">
-            At <strong>Aryal Sirin Gems</strong>, we value the trust you place
-            in us when purchasing fine jewelry and precious gemstones. This
-            Privacy Policy describes how we collect, use, and protect your
-            personal information when you visit our website or make a purchase.
-          </p>
+      <LegalSection id="use" number={3} title="How we use it">
+        <p>We use your information only for clear, limited purposes:</p>
+        <ul>
+          <li>to process, pack, ship and track your order;</li>
+          <li>
+            to design and make bespoke pieces, and to send you progress updates
+            and photos for approval;
+          </li>
+          <li>
+            to answer your questions and handle returns, repairs and warranty
+            claims;
+          </li>
+          <li>to verify payments and prevent fraud;</li>
+          <li>
+            to keep invoices and accounting records as required by Nepali tax
+            law;
+          </li>
+          <li>to keep our website secure and improve how it works;</li>
+          <li>
+            to send you news about new collections or offers, but only if you
+            have agreed to receive them (see section 11).
+          </li>
+        </ul>
+      </LegalSection>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
-              1. Information We Collect
-            </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              To provide you with a luxury shopping experience, we collect the
-              following:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>
-                <strong>Identity Data:</strong> Name, title, and date of birth
-                (for special anniversary offers).
-              </li>
-              <li>
-                <strong>Contact Data:</strong> Shipping address, billing
-                address, email address, and phone number.
-              </li>
-              <li>
-                <strong>Transaction Data:</strong> Details about the gemstones
-                or jewelry you have purchased and payment confirmation (we do
-                not store full credit card numbers on our local servers).
-              </li>
-              <li>
-                <strong>Technical Data:</strong> IP address, browser type, and
-                location data to help prevent fraudulent transactions.
-              </li>
-            </ul>
-          </section>
+      <LegalSection id="sharing" number={4} title="Who we share it with">
+        <p>
+          We share only what is needed, and only with people who help us serve
+          you:
+        </p>
+        <ul>
+          <li>
+            <strong>Couriers and logistics partners</strong>, in Nepal and
+            internationally (for example DHL or FedEx), who need your name,
+            address and phone number to deliver your parcel. For international
+            orders, customs authorities may also receive shipment details.
+          </li>
+          <li>
+            <strong>Payment providers</strong> such as eSewa, Khalti, banks and
+            our card payment provider, to process payments and refunds.
+          </li>
+          <li>
+            <strong>Gemological laboratories</strong>, only if you ask for a
+            stone to be independently certified.
+          </li>
+          <li>
+            <strong>Service providers</strong> who host our website or provide
+            email and messaging, under obligations to keep your data
+            confidential.
+          </li>
+          <li>
+            <strong>Authorities</strong>, where we are legally required to, or
+            to protect our rights, our customers or the public against fraud.
+          </li>
+        </ul>
+        <LegalNotice>
+          We never sell, rent or trade your personal information, and we do not
+          share it with advertisers.
+        </LegalNotice>
+      </LegalSection>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
-              2. How We Use Your Information
-            </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              We use your data to:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Process and deliver your jewelry orders securely.</li>
-              <li>Send you authenticity certificates for your gemstones.</li>
-              <li>
-                Communicate via WhatsApp or Email regarding custom design
-                progress.
-              </li>
-              <li>
-                Improve our website design and collection based on customer
-                preferences.
-              </li>
-            </ul>
-          </section>
+      <LegalSection
+        id="device-storage"
+        number={5}
+        title="Cookies & browser storage"
+      >
+        <p>
+          Your shopping cart and wishlist are saved in your browser&apos;s local
+          storage, on your own device, so they are still there when you come
+          back. This information stays on your device until you check out or
+          contact us.
+        </p>
+        <p>
+          We currently do not use advertising cookies or third-party tracking
+          for marketing. If we introduce analytics or advertising tools in the
+          future, we will update this policy and ask for your consent where the
+          law requires it.
+        </p>
+        <p>
+          You can clear your cart, wishlist and any cookies at any time through
+          your browser settings. Some features, like saving your cart, will not
+          work if browser storage is disabled.
+        </p>
+      </LegalSection>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
-              3. Data Security for High-Value Items
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              We implement industry-standard security measures to ensure your
-              personal details are safe. Access to your order history and
-              personal information is restricted to authorized employees who
-              require the data to fulfill your luxury service. We use SSL
-              encryption for all data transmitted through our checkout process.
-            </p>
-          </section>
+      <LegalSection id="whatsapp" number={6} title="WhatsApp & social media">
+        <p>
+          Many customers prefer to talk to us on WhatsApp. When you message us
+          there, WhatsApp (owned by Meta) processes your messages under its own
+          privacy policy. The same applies when you interact with us on
+          Instagram, Facebook or YouTube, or share a product using those
+          platforms. We only use the information you send us in those chats to
+          help you with your enquiry or order.
+        </p>
+      </LegalSection>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
-              4. Sharing with Third Parties
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              We do not sell or rent your personal information. We only share
-              data with trusted partners necessary for business operations, such
-              as:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>
-                <strong>Logistics Partners:</strong> Secure couriers used to
-                deliver your jewelry.
-              </li>
-              <li>
-                <strong>Payment Gateways:</strong> To process secure payments.
-              </li>
-              <li>
-                <strong>Gemological Labs:</strong> If you request third-party
-                certification for a stone.
-              </li>
-            </ul>
-          </section>
+      <LegalSection id="transfers" number={7} title="International transfers">
+        <p>
+          Some of our service providers, such as website hosting and email,
+          may store data on servers outside Nepal. When we ship internationally,
+          your details travel with the parcel to the destination country. In
+          each case we share only what is necessary and use reputable
+          providers that protect personal information.
+        </p>
+      </LegalSection>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
-              5. Your Rights
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              You have the right to access, correct, or request the deletion of
-              your personal data at any time. If you wish to opt-out of our
-              gemstone newsletter or anniversary reminders, you can do so by
-              clicking the "unsubscribe" link or contacting us directly.
-            </p>
-          </section>
+      <LegalSection id="retention" number={8} title="How long we keep it">
+        <ul>
+          <li>
+            <strong>Orders and invoices:</strong> for as long as Nepali tax and
+            accounting laws require, and to handle warranty claims.
+          </li>
+          <li>
+            <strong>Enquiries and bespoke requests</strong> that don&apos;t
+            lead to an order: up to 24 months, so we can pick up where we left
+            off if you come back.
+          </li>
+          <li>
+            <strong>Marketing preferences:</strong> until you unsubscribe.
+          </li>
+          <li>
+            <strong>Server logs:</strong> for a short period, usually no more
+            than 90 days, unless needed to investigate a security issue.
+          </li>
+        </ul>
+        <p>
+          When we no longer need information, we delete it or make it
+          anonymous.
+        </p>
+      </LegalSection>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
-              6. Cookies
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Our website uses cookies to remember your "Wishlist" items and to
-              analyze site traffic. You can choose to disable cookies in your
-              browser settings, though some features of the store may not
-              function correctly.
-            </p>
-          </section>
+      <LegalSection id="security" number={9} title="Security">
+        <p>
+          Our website uses HTTPS encryption. Payments are handled by the
+          payment providers&apos; own secure systems, and access to customer
+          information is limited to the people who need it to fulfil your order.
+          No system is completely secure, so please never send us full card
+          numbers, passwords or PINs by message or email. We will never ask for
+          them.
+        </p>
+        <p>
+          If a data breach is likely to affect you, we will tell you and the
+          relevant authorities as required by law.
+        </p>
+      </LegalSection>
 
-          <section className="mb-8 border-t pt-8">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900">
-              Contact Our Privacy Team
-            </h2>
-            <div className="p-6 bg-blue-50 rounded-lg border-l-4 border-blue-400">
-              <p className="text-gray-800 font-bold">
-                Aryal Sirin Gems - Privacy Officer
-              </p>
-              <p className="text-gray-700">
-                <strong>Email:</strong> privacy@aryalsiringems.com
-              </p>
-              <p className="text-gray-700">
-                <strong>WhatsApp:</strong> +977 9860120739
-              </p>
-              <p className="text-gray-700 text-sm mt-2 italic">
-                Please contact us if you have questions regarding the security
-                of your data or transaction history.
-              </p>
-            </div>
-          </section>
-        </div>
-      </div>
-    </Layout>
+      <LegalSection id="rights" number={10} title="Your rights">
+        <p>You can ask us to:</p>
+        <ul>
+          <li>tell you what personal information we hold about you;</li>
+          <li>correct information that is wrong or incomplete;</li>
+          <li>
+            delete your information, where we don&apos;t need to keep it for
+            legal reasons;
+          </li>
+          <li>stop using your information for marketing;</li>
+          <li>withdraw any consent you have given.</li>
+        </ul>
+        <p>
+          To make a request, contact us using the details below. We may ask you
+          to confirm your identity first, and we will respond within 30 days.
+          There is no charge.
+        </p>
+      </LegalSection>
+
+      <LegalSection id="marketing" number={11} title="Marketing">
+        <p>
+          We will only send you marketing messages about new collections,
+          festival offers or events if you have agreed to receive them. You can
+          opt out at any time by replying &quot;STOP&quot; on WhatsApp, using
+          the unsubscribe link in an email, or simply telling us. Messages about
+          your orders are not marketing and will still be sent.
+        </p>
+      </LegalSection>
+
+      <LegalSection id="children" number={12} title="Children">
+        <p>
+          Our website is intended for adults. We do not knowingly collect
+          personal information from children under 16. If you believe a child
+          has given us their information, please contact us and we will delete
+          it. Orders from anyone under 18 require a parent or guardian&apos;s
+          consent, as explained in our{" "}
+          <Link href="/terms-and-condition">Terms and Conditions</Link>.
+        </p>
+      </LegalSection>
+
+      <LegalSection id="changes" number={13} title="Changes to this policy">
+        <p>
+          We may update this policy when our services or the law change. We
+          will change the &quot;last updated&quot; date at the top of this page,
+          and if the changes are significant, we will let you know by email or
+          WhatsApp where we can.
+        </p>
+      </LegalSection>
+
+      <LegalSection id="contact" number={14} title="Contact us">
+        <p>
+          For any privacy question or request, get in touch. We read every
+          message.
+        </p>
+        <LegalContact />
+      </LegalSection>
+    </LegalPage>
   );
-};
-
-export default PrivacyPolicyPage;
+}

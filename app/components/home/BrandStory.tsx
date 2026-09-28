@@ -30,11 +30,11 @@ export function BrandStory() {
               <p>
                 For generations, the Aryal family has been at the heart of
                 Nepali silversmithing. Our journey began in the ancient streets
-                of Patan, where master artisans shaped precious metals into
+                of Kathmandu, where master artisans shaped precious metals into
                 works of art.
               </p>
               <p>
-                Every piece of jewelry at Aryal Sirin Gems carries the essence
+                Every piece of jewelry at Aryal Siring Gems carries the essence
                 of this rich heritage. We use only 925 Sterling Silver,
                 certified for purity, and source our gemstones ethically from
                 the Himalayan region and beyond.

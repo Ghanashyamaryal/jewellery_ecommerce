@@ -1,6 +1,7 @@
 "use client";
 import { Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
+import { Logo } from "../common/Logo";
 
 const footerLinks = {
   shop: [
@@ -8,7 +9,10 @@ const footerLinks = {
     { name: "Rings", href: "/shop/jewelry/rings" },
     { name: "Necklaces", href: "/shop/jewelry/necklaces" },
     { name: "Earrings", href: "/shop/jewelry/earrings" },
+    { name: "Stone Jewelry", href: "/shop/stone-jewelry" },
     { name: "Gemstones", href: "/shop/gemstones" },
+    { name: "Idols & Statues", href: "/shop/idols-statues" },
+    { name: "Home Decor", href: "/shop/home-decor" },
   ],
   about: [
     { name: "Our Story", href: "/about" },
@@ -38,10 +42,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <h2 className="text-2xl font-serif tracking-wider mb-4">
-              <span className="font-semibold">ARYAL</span>
-              <span className="font-light italic ml-1">Sirin Gems</span>
-            </h2>
+            <Logo className="mb-6" />
             <p className="text-sm text-primary-foreground/70 leading-relaxed mb-6">
               Crafting exquisite Nepali silver jewelry and curating rare
               gemstones since generations. Each piece tells a story of heritage
@@ -144,7 +145,7 @@ export function Footer() {
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-primary-foreground/50">
-              © {new Date().getFullYear()} Aryal Sirin Gems. All rights
+              © {new Date().getFullYear()} Aryal Siring Gems. All rights
               reserved.
             </p>
             <div className="flex items-center gap-4">

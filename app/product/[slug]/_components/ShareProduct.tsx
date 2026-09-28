@@ -125,7 +125,7 @@ export default function ShareProduct({
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" size="lg" className="h-10 w-full">
+        <Button variant="outline" size="icon" className="h-11 w-11 shrink-0" aria-label="Share">
           <Share2 className="h-5 w-5" />
         </Button>
       </DialogTrigger>

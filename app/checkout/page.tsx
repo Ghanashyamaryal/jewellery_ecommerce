@@ -39,7 +39,7 @@ export default function Checkout() {
   });
 
   const subtotal = cartItems.reduce(
-    (sum, item) => sum + item.product.price * item.quantity,
+    (sum, item) => sum + item.unitPrice * item.quantity,
     0
   );
   const shipping = 0;
@@ -66,8 +66,10 @@ export default function Checkout() {
         total,
         items: cartItems.map((item) => ({
           id: item.product.id,
+          variantId: item.variant?.id,
+          engraving: item.engraving,
           name: item.product.name,
-          price: item.product.price,
+          price: item.unitPrice,
           quantity: item.quantity,
         })),
       };
@@ -323,14 +325,24 @@ export default function Checkout() {
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="space-y-3 max-h-64 overflow-y-auto">
-                        {cartItems.map((item, index) => (
+                        {cartItems.map((item) => (
                           <div
-                            key={`${item.product.id}-${index}`}
+                            key={item.lineId}
                             className="flex justify-between text-sm"
                           >
                             <div className="flex-1">
                               <p className="font-medium">{item.product.name}</p>
                               <div className="space-y-0.5">
+                                {item.variant && (
+                                  <p className="text-muted-foreground text-xs">
+                                    {item.variant.name}
+                                  </p>
+                                )}
+                                {item.engraving && (
+                                  <p className="text-muted-foreground text-xs">
+                                    Engraving: “{item.engraving}”
+                                  </p>
+                                )}
                                 <p className="text-muted-foreground text-xs">
                                   Qty: {item.quantity}
                                 </p>
@@ -338,7 +350,7 @@ export default function Checkout() {
                             </div>
                             <span className="font-medium ml-2">
                               Rs.{" "}
-                              {(item.product.price * item.quantity).toFixed(2)}
+                              {(item.unitPrice * item.quantity).toFixed(2)}
                             </span>
                           </div>
                         ))}

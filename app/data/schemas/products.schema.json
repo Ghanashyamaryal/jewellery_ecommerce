@@ -1,0 +1,685 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Products",
+  "type": "object",
+  "required": [
+    "version",
+    "items"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/item"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "item": {
+      "type": "object",
+      "required": [
+        "id",
+        "sku",
+        "slug",
+        "name",
+        "status",
+        "productType",
+        "categoryId",
+        "shortDescription",
+        "description",
+        "features",
+        "gender",
+        "ageGroup",
+        "pricing",
+        "inventory",
+        "materials",
+        "attributes",
+        "variants",
+        "media",
+        "shipping",
+        "certifications",
+        "occasions",
+        "tags",
+        "searchKeywords",
+        "flags",
+        "ratings",
+        "relatedProductIds",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^prd_[a-z0-9_]+$"
+        },
+        "sku": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "active",
+            "archived"
+          ],
+          "description": "Only active products appear on the site"
+        },
+        "productType": {
+          "enum": [
+            "simple",
+            "variable",
+            "made_to_order"
+          ]
+        },
+        "categoryId": {
+          "type": "string",
+          "pattern": "^cat_[a-z0-9_]+$",
+          "description": "Top-level category"
+        },
+        "subcategoryId": {
+          "type": "string",
+          "pattern": "^cat_[a-z0-9_]+$"
+        },
+        "shortDescription": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "careInstructions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gender": {
+          "enum": [
+            "men",
+            "women",
+            "unisex",
+            "kids"
+          ]
+        },
+        "ageGroup": {
+          "enum": [
+            "adult",
+            "kids",
+            "all"
+          ]
+        },
+        "pricing": {
+          "type": "object",
+          "required": [
+            "price",
+            "currency",
+            "taxIncluded"
+          ],
+          "properties": {
+            "price": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "compareAtPrice": {
+              "type": "number"
+            },
+            "costPrice": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "discount": {
+              "type": "object",
+              "required": [
+                "type",
+                "value"
+              ],
+              "properties": {
+                "type": {
+                  "enum": [
+                    "percentage",
+                    "fixed"
+                  ]
+                },
+                "value": {
+                  "type": "number"
+                },
+                "startsAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "endsAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "label": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "taxIncluded": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "inventory": {
+          "type": "object",
+          "required": [
+            "trackInventory",
+            "stockCount",
+            "lowStockThreshold",
+            "allowBackorder"
+          ],
+          "properties": {
+            "trackInventory": {
+              "type": "boolean"
+            },
+            "stockCount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "lowStockThreshold": {
+              "type": "integer"
+            },
+            "allowBackorder": {
+              "type": "boolean"
+            },
+            "barcode": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "materials": {
+          "type": "object",
+          "required": [
+            "metals",
+            "stones"
+          ],
+          "properties": {
+            "metals": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "metalId",
+                  "role"
+                ],
+                "properties": {
+                  "metalId": {
+                    "type": "string",
+                    "pattern": "^met_[a-z0-9_]+$"
+                  },
+                  "role": {
+                    "enum": [
+                      "primary",
+                      "plating",
+                      "accent"
+                    ]
+                  },
+                  "finish": {
+                    "type": "string"
+                  },
+                  "weightGrams": {
+                    "type": "number"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "stones": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "stoneId",
+                  "role",
+                  "isNatural"
+                ],
+                "properties": {
+                  "stoneId": {
+                    "type": "string",
+                    "pattern": "^stn_[a-z0-9_]+$"
+                  },
+                  "role": {
+                    "enum": [
+                      "primary",
+                      "secondary",
+                      "accent"
+                    ]
+                  },
+                  "shape": {
+                    "type": "string"
+                  },
+                  "cut": {
+                    "type": "string"
+                  },
+                  "caratWeight": {
+                    "type": "number"
+                  },
+                  "count": {
+                    "type": "integer"
+                  },
+                  "sizeMm": {
+                    "type": "string"
+                  },
+                  "color": {
+                    "type": "string"
+                  },
+                  "treatment": {
+                    "type": "string"
+                  },
+                  "isNatural": {
+                    "type": "boolean"
+                  },
+                  "origin": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "attributes": {
+          "type": "object",
+          "description": "Keys must be attribute keys enabled on the product's category",
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          }
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "sku",
+              "name",
+              "options",
+              "stockCount",
+              "isDefault",
+              "isActive"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "sku": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "options": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "price": {
+                "type": "number"
+              },
+              "compareAtPrice": {
+                "type": "number"
+              },
+              "stockCount": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "weightGrams": {
+                "type": "number"
+              },
+              "mediaIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "isDefault": {
+                "type": "boolean"
+              },
+              "isActive": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "media": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "url",
+              "alt",
+              "isPrimary",
+              "sortOrder"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "image",
+                  "video"
+                ]
+              },
+              "url": {
+                "type": "string"
+              },
+              "alt": {
+                "type": "string"
+              },
+              "isPrimary": {
+                "type": "boolean"
+              },
+              "sortOrder": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "shipping": {
+          "type": "object",
+          "required": [
+            "weightGrams",
+            "shippingClass",
+            "isFragile",
+            "freeShipping",
+            "processingDays"
+          ],
+          "properties": {
+            "weightGrams": {
+              "type": "number"
+            },
+            "dimensions": {
+              "type": "object",
+              "required": [
+                "unit"
+              ],
+              "properties": {
+                "length": {
+                  "type": "number"
+                },
+                "width": {
+                  "type": "number"
+                },
+                "height": {
+                  "type": "number"
+                },
+                "diameter": {
+                  "type": "number"
+                },
+                "unit": {
+                  "enum": [
+                    "mm",
+                    "cm",
+                    "in"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "shippingClass": {
+              "enum": [
+                "standard",
+                "fragile",
+                "heavy",
+                "oversized"
+              ]
+            },
+            "isFragile": {
+              "type": "boolean"
+            },
+            "freeShipping": {
+              "type": "boolean"
+            },
+            "processingDays": {
+              "type": "integer"
+            }
+          },
+          "additionalProperties": false
+        },
+        "customization": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "engraving": {
+              "type": "object",
+              "required": [
+                "available",
+                "maxCharacters",
+                "price"
+              ],
+              "properties": {
+                "available": {
+                  "type": "boolean"
+                },
+                "maxCharacters": {
+                  "type": "integer"
+                },
+                "price": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
+            },
+            "sizeCustomizable": {
+              "type": "boolean"
+            },
+            "stoneCustomizable": {
+              "type": "boolean"
+            },
+            "leadTimeDays": {
+              "type": "integer"
+            },
+            "notes": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "issuer"
+            ],
+            "properties": {
+              "type": {
+                "enum": [
+                  "hallmark",
+                  "gemstone_lab",
+                  "authenticity",
+                  "other"
+                ]
+              },
+              "issuer": {
+                "type": "string"
+              },
+              "certificateNumber": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "origin": {
+          "type": "object",
+          "required": [
+            "country"
+          ],
+          "properties": {
+            "country": {
+              "type": "string"
+            },
+            "region": {
+              "type": "string"
+            },
+            "artisan": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "occasions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "searchKeywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "seo": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "metaTitle": {
+              "type": "string"
+            },
+            "metaDescription": {
+              "type": "string"
+            },
+            "keywords": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "canonicalUrl": {
+              "type": "string"
+            },
+            "ogImage": {
+              "type": "string"
+            }
+          }
+        },
+        "flags": {
+          "type": "object",
+          "required": [
+            "isFeatured",
+            "isNew",
+            "isBestseller",
+            "isHandmade",
+            "isGiftable"
+          ],
+          "properties": {
+            "isFeatured": {
+              "type": "boolean"
+            },
+            "isNew": {
+              "type": "boolean"
+            },
+            "isBestseller": {
+              "type": "boolean"
+            },
+            "isHandmade": {
+              "type": "boolean"
+            },
+            "isGiftable": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "ratings": {
+          "type": "object",
+          "required": [
+            "average",
+            "count"
+          ],
+          "properties": {
+            "average": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        "relatedProductIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^prd_[a-z0-9_]+$"
+          }
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "publishedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

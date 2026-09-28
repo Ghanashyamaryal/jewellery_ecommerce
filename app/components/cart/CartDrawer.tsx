@@ -60,7 +60,7 @@ export function CartDrawer() {
               <div className="space-y-4">
                 {items.map((item) => (
                   <div
-                    key={item.product.id}
+                    key={item.lineId}
                     className="flex gap-4 p-4 bg-muted/50 rounded-sm"
                   >
                     <Link
@@ -83,17 +83,24 @@ export function CartDrawer() {
                         {item.product.name}
                       </Link>
                       <p className="text-xs text-muted-foreground mt-1">
-                        {item.product.metalType}
+                        {[item.product.metal?.slug !== "none" && item.product.metal?.name, item.variant?.name]
+                          .filter(Boolean)
+                          .join(" · ")}
                       </p>
+                      {item.engraving && (
+                        <p className="text-xs text-muted-foreground mt-1">
+                          Engraving: “{item.engraving}”
+                        </p>
+                      )}
                       <p className="text-sm font-medium mt-2">
-                        NPR {item.product.price.toLocaleString()}
+                        NPR {item.unitPrice.toLocaleString()}
                       </p>
                       <div className="flex items-center gap-2 mt-3">
                         <button
                           onClick={() =>
                             dispatch(
                               updateQuantity({
-                                productId: item.product.id,
+                                lineId: item.lineId,
                                 quantity: item.quantity - 1,
                               })
                             )
@@ -109,7 +116,7 @@ export function CartDrawer() {
                           onClick={() =>
                             dispatch(
                               updateQuantity({
-                                productId: item.product.id,
+                                lineId: item.lineId,
                                 quantity: item.quantity + 1,
                               })
                             )
@@ -121,8 +128,9 @@ export function CartDrawer() {
                       </div>
                     </div>
                     <button
-                      onClick={() => dispatch(removeFromCart(item.product.id))}
+                      onClick={() => dispatch(removeFromCart(item.lineId))}
                       className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={`Remove ${item.product.name}`}
                     >
                       <X className="h-4 w-4" />
                     </button>

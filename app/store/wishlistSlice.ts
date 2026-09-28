@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Product } from "../data/products";
+import type { Product } from "@/types/catalog";
 
 export interface WishlistItem {
     product: Product;
@@ -16,7 +16,14 @@ const loadInitialState = (): WishlistState => {
         try {
             const savedWishlist = localStorage.getItem("wishlist");
             if (savedWishlist) {
-                return JSON.parse(savedWishlist);
+                const parsed = JSON.parse(savedWishlist);
+                // Drop items saved before the catalog schema change
+                return {
+                    items: (parsed.items || []).filter(
+                        (item: WishlistItem) =>
+                            item?.product?.id && item.product.pricing && item.product.metal
+                    ),
+                };
             }
         } catch (error) {
             console.error("Failed to load wishlist from localStorage:", error);

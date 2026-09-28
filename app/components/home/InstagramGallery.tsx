@@ -2,33 +2,27 @@ import { Instagram } from "lucide-react";
 
 const instagramPosts = [
   {
-    image:
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=400&fit=crop&q=80",
+    image: "/images/home/insta-1.jpg",
     href: "#",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&h=400&fit=crop&q=80",
+    image: "/images/home/insta-2.jpg",
     href: "#",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400&h=400&fit=crop&q=80",
+    image: "/images/home/insta-3.jpg",
     href: "#",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&h=400&fit=crop&q=80",
+    image: "/images/home/insta-4.jpg",
     href: "#",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1603974372039-adc49044b6bd?w=400&h=400&fit=crop&q=80",
+    image: "/images/home/insta-5.jpg",
     href: "#",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=400&h=400&fit=crop&q=80",
+    image: "/images/home/insta-6.jpg",
     href: "#",
   },
 ];
